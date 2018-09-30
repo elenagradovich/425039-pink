@@ -99,35 +99,63 @@
           </p>
         </section>
         <section class="index-content__plans plans">
-          <table class="plans__table">
-            <caption class="visually-hidden">Тарифные планы</h2>
-            <tr class="plans__header">
-              <th class="plans__title">База<br>
-                <span class="plans__price">1.99 USD</span>
-              </th>
-              <th class="plans__title">Стандарт<br>
-                <span class="plans__price">3.99 USD</span>
-              </th>
-              <th class="plans__title">Анлим<br>
-                <span class="plans__price">9.99 USD</span>
-              </th>
-            </tr>
-            <tr class="plans__row plans__row--pink">
-              <td class="plans__pink incl">Розовый фильтр</td>
-              <td class="plans__pink incl">Розовый фильтр</td>
-              <td class="plans__pink incl">Розовый фильтр</td>
-            </tr>
-            <tr class="plans__row plans__row--smile">
-              <td class="plans__smile not-incl">Смайлики</td>
-              <td class="plans__smile incl">Смайлики</td>
-              <td class="plans__smile incl">Смайлики</td>
-            </tr>
-            <tr class="plans__row plans__row--comment">
-              <td class="plans__comment not-incl">Комментарии</td>
-              <td class="plans__comment not-incl">Комментарии</td>
-              <td class="plans__comment incl">Комментарии</td>
-            </tr>
-          </table>
+          <h2 class="visually-hidden">Тарифные планы</h2>
+          <ul class="plans__list">
+            <li class="plans__item plan">
+              <table class="plan__table">
+                <tr class="plan__header">
+                  <th class="plan__title">База<br>
+                    <span class="plan__price">1.99 USD</span>
+                  </th>
+                </tr>
+                <tr class="plan__row plans__row--pink">
+                  <td class="plans__pink incl">Розовый фильтр</td>
+                </tr>
+                <tr class="plans__row plans__row--smile">
+                  <td class="plans__smile not-incl">Смайлики</td>
+                </tr>
+                <tr class="plans__row plans__row--comment">
+                  <td class="plans__comment not-incl">Комментарии</td>
+                </tr>
+              </table>
+            </li>
+            <li class="plans__item plans__item--standart">
+              <table class="plans__table">
+                <tr class="plans__header">
+                  <th class="plans__title">Стандарт<br>
+                    <span class="plans__price">3.99 USD</span>
+                  </th>
+                </tr>
+                <tr class="plans__row plans__row--pink">
+                  <td class="plans__pink incl">Розовый фильтр</td>
+                </tr>
+                <tr class="plans__row plans__row--smile">
+                  <td class="plans__smile incl">Смайлики</td>
+                </tr>
+                <tr class="plans__row plans__row--comment">
+                  <td class="plans__comment not-incl">Комментарии</td>
+                </tr>
+              </table>
+            </li>
+            <li class="plans__item plans__item--unlim">
+              <table class="plans__table">
+                <tr class="plans__header">
+                  <th class="plans__title">Анлим<br>
+                    <span class="plans__price">9.99 USD</span>
+                  </th>
+                </tr>
+                <tr class="plans__row plans__row--pink">
+                  <td class="plans__pink incl">Розовый фильтр</td>
+                </tr>
+                <tr class="plans__row plans__row--smile">
+                  <td class="plans__smile incl">Смайлики</td>
+                </tr>
+                <tr class="plans__row plans__row--comment">
+                  <td class="plans__comment incl">Комментарии</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
           <p class="plans__toggles slider-toggles">
             <button class="slider-toggles__toggle" type="button"></button>
             <button class="slider-toggles__toggle active-toggle" type="button"></button>
@@ -153,7 +181,7 @@
         </li>
       </ul>
       <div class="footer-index__map map">
-        <h3 class="visually-hidden">Мы на карте</h2>
+        <h3 class="visually-hidden">Мы на карте</h3>
         <iframe class="map__position" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1538124081605" width="600" height="450" style="border:0" allowfullscreen></iframe>
         <svg class="map__marker"></svg>
       </div>
