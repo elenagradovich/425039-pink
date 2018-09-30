@@ -98,44 +98,37 @@
             <button class="slider-toggles__toggle" type="button"></button>
           </p>
         </section>
-        <section class="index-content__service-rates service-rates">
-          <h2 class="visually-hidden">Тарифные планы</h2>
-          <ul class="service-rates__list">
-            <li class="service-rates__item slide">
-              <header class="slide__header">
-                <h3 class="slide__title">База</h3>
-                <span class="slide__price">1.99 USD</span>
-              </header>
-              <ul class="slide__features features">
-                <li class="features__item features__item--included">Розовый фильтр</li>
-                <li class="features__item features__item--not-included">Смайлики</li>
-                <li class="features__item features__item--not-included">Комментарии</li>
-              </ul>
-            </li>
-            <li class="service-rates__item slide">
-              <header class="slide__header">
-                <h3 class="slide__title">Стандарт</h3>
-                <span class="slide__price">3.99 USD</span>
-              </header>
-              <ul class="slide__features features">
-                <li class="features__item features__item--included">Розовый фильтр</li>
-                <li class="features__item features__item--included">Смайлики</li>
-                <li class="features__item features__item--not-included">Комментарии</li>
-              </ul>
-            </li>
-            <li class="service-rates__item slide">
-              <header class="slide__header">
-                <h3 class="slide__title">Анлим</h3>
-                <span class="slide__price">9.99 USD</span>
-              </header>
-              <ul class="slide__features features">
-                <li class="features__item features__item--included">Розовый фильтр</li>
-                <li class="features__item features__item--included">Смайлики</li>
-                <li class="features__item features__item--included">Комментарии</li>
-              </ul>
-            </li>
-          </ul>
-          <p class="service-rates__toggles slider-toggles">
+        <section class="index-content__plans plans">
+          <table class="plans__table">
+            <caption class="visually-hidden">Тарифные планы</h2>
+            <tr class="plans__header">
+              <th class="plans__title">База<br>
+                <span class="plans__price">1.99 USD</span>
+              </th>
+              <th class="plans__title">Стандарт<br>
+                <span class="plans__price">3.99 USD</span>
+              </th>
+              <th class="plans__title">Анлим<br>
+                <span class="plans__price">9.99 USD</span>
+              </th>
+            </tr>
+            <tr class="plans__row plans__row--pink">
+              <td class="plans__pink incl">Розовый фильтр</td>
+              <td class="plans__pink incl">Розовый фильтр</td>
+              <td class="plans__pink incl">Розовый фильтр</td>
+            </tr>
+            <tr class="plans__row plans__row--smile">
+              <td class="plans__smile not-incl">Смайлики</td>
+              <td class="plans__smile incl">Смайлики</td>
+              <td class="plans__smile incl">Смайлики</td>
+            </tr>
+            <tr class="plans__row plans__row--comment">
+              <td class="plans__comment not-incl">Комментарии</td>
+              <td class="plans__comment not-incl">Комментарии</td>
+              <td class="plans__comment incl">Комментарии</td>
+            </tr>
+          </table>
+          <p class="plans__toggles slider-toggles">
             <button class="slider-toggles__toggle" type="button"></button>
             <button class="slider-toggles__toggle active-toggle" type="button"></button>
             <button class="slider-toggles__toggle" type="button"></button>
