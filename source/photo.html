@@ -5,15 +5,14 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header--photo">
-      <div class="page-header__menu">
-        <div class="header__logo logo">
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__logo logo">
           <a class="logo__link" href="index.html">
-            <svg class="logo__image logo__image--header"></svg>
             <svg class="logo__name logo__name--header"></svg>
           </a>
         </div>
-        <button class="page-header__trigger">
+        <button class="page-header__trigger trigger">
           <svg class="trigger__cross"></svg>
           <svg class="trigger__burger visually-hidden"></svg>
         </button>
@@ -21,143 +20,149 @@
       <nav class="page-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a>Фотографии</a>
+            <a class="navigation__link">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a href="form.html">Конкурс</a>
+            <a class="navigation__link" href="form.html">Конкурс</a>
           </li>
           <li class="navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main main-photo">
-      <div class="main-photo__header">
-        <h1 class="main__header">Фотографии пользователей</h1>
+    <main class="page-content photo-content">
+      <div class="photo-content__header">
+        <h1 class="photo-content__header">Фотографии пользователей</h1>
       </div>
-      <section class="main-photo__gallery gallery">
+      <section class="photo-content__gallery gallery">
         <h2 class="visually-hidden">Галерея</h2>
         <p class="gallery__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/320x137" width="320" height="137" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Анна</span>
-              <span class="gallery__time">(5 минут назад)</span>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/320x137" width="320" height="137" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Анна</span>
+              <span class="gallery-card__time">(5 минут назад)</span>
             </div>
-            <p class="gallery__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">215</span>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Левон</span>
-              <span class="gallery__time">(5 часов назад) назад</span>
-            </div>
-            <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">356</span>
+            <p class="gallery-card__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">215</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Левон</span>
-              <span class="gallery__time">(5 часов назад) назад</span>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Левон</span>
+              <span class="gallery-card__time">(5 часов назад) назад</span>
             </div>
-            <p class="gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">356</span>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Антон</span>
-              <span class="gallery__time">(12 часов назад) назад</span>
-            </div>
-            <p class="gallery__comment">Соседи будут рады!</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">666</span>
+            <p class="gallery-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">356</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Борис</span>
-              <span class="gallery__time">(20 часов назад) назад</span>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Левон</span>
+              <span class="gallery-card__time">(5 часов назад) назад</span>
             </div>
-            <p class="gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">215</span>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Сергей</span>
-              <span class="gallery__time">(25 часов назад) назад</span>
-            </div>
-            <p class="gallery__comment">Самая кубанская в мире!</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">4</span>
+            <p class="gallery-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">356</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Максим</span>
-              <span class="gallery__time">(40 часов назад) назад</span>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Антон</span>
+              <span class="gallery-card__time">(12 часов назад) назад</span>
             </div>
-            <p class="gallery__comment">Где снег-то?</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">150</span>
+            <p class="gallery-card__comment">Соседи будут рады!</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">666</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
-            <div class="gallery__info">
-              <span class="gallery__author">Надежда</span>
-              <span class="gallery__time">(45 часов назад) назад</span>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Борис</span>
+              <span class="gallery-card__time">(20 часов назад) назад</span>
             </div>
-            <p class="gallery__comment">Всем GM и взаимные лайки!</p>
-            <div class="gallery__likes">Нравится
-              <span class="gallery__likes-count">2560</span>
+            <p class="gallery-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">215</span>
+            </div>
+          </li>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card__author">Сергей</span>
+              <span class="gallery-card__time">(25 часов назад) назад</span>
+            </div>
+            <p class="gallery-card__comment">Самая кубанская в мире!</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">4</span>
+            </div>
+          </li>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery__info">
+              <span class="gallery-card__author">Максим</span>
+              <span class="gallery-card__time">(40 часов назад) назад</span>
+            </div>
+            <p class="gallery-card__comment">Где снег-то?</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">150</span>
+            </div>
+          </li>
+          <li class="gallery__item gallery-card">
+            <img class="gallery-card__image" src="http://placehold.it/280x180" width="280" height="180" alt="Изображение пользователя">
+            <div class="gallery-card__info">
+              <span class="gallery-card_author">Надежда</span>
+              <span class="gallery-card__time">(45 часов назад) назад</span>
+            </div>
+            <p class="gallery-card__comment">Всем GM и взаимные лайки!</p>
+            <div class="gallery-card__likes">Нравится
+              <span class="gallery-card__likes-count">2560</span>
             </div>
           </li>
         </ul>
         <p class="gallery__footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </section>
-      <form class="upload-photo-form" method="post" action="#" enctype="multipart/form-data">
+      <form class="photo-content__form upload-photo-form" method="post" action="#" enctype="multipart/form-data">
         <div class="upload-photo-form__wrapper">
           <h2 class="visually-hidden">Форма редактирования фото</h2>
           <img class="upload-photo-form__preview" src="http://placehold.it/280x374" width="280" height="374">
-          <div class="upload-photo-form__effects">
-            <input class="visually-hidden" type="radio" name="effect" id="effect-crop" value="crop" checked>
-            <label class="upload-effect upload-effect--crop" for="effect-crop"></label>
-            <input class="visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
-            <label class="upload-effect upload-effect--fill" for="effect-fill"></label>
-            <input class="visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
-            <label class="upload-effect upload-effect--contrast" for="effect-contrast"></label>
+          <div class="upload-photo-form__effects effects">
+            <div class="effects__item effects__item--crop">
+              <input class="visually-hidden" type="radio" name="effect" id="effect-crop" value="crop" checked>
+              <label class="upload-effect upload-effect--crop" for="effect-crop"></label>
+            </div>
+            <div class="effects__item effects__item--fill">
+              <input class="visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
+              <label class="upload-effect upload-effect--fill" for="effect-fill"></label>
+            </div>
+            <div class="effects__item effects__item--contrast">
+              <input class="visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
+              <label class="upload-effect upload-effect--contrast" for="effect-contrast"></label>
+            </div>
           </div>
-          <div class="filter">
+          <div class="upload-photo-form__filter filter">
             <div class="filter__pin"></div>
           </div>
-          <div class="upload-photo-form__controls">
-            <button class="btn upload-photo-form__submit" type="submit">Запостить</button>
-            <button class="btn upload-photo-form__cancel" type="button">Отмена</button>
+          <div class="upload-photo-form__controls controls">
+            <button class="btn controls__submit" type="submit">Запостить</button>
+            <button class="btn controls__cancel" type="button">Отмена</button>
           </div>
         </div>
       </form>
     </main>
-    <footer class="page-footer--photo footer">
+    <footer class="footer footer--photo">
       <div class="footer__logo logo">
         <a class="logo__link" href="index.html">
           <svg class="logo__image logo__image--footer"></svg>
@@ -167,19 +172,19 @@
       <div class="footer__social social">
         <a class="social__twitter" href="" target="-blank">
           <span class="visually-hidden">Мы в twitter</span>
-          <svg></svg>
+          <svg class="social__image social__image--twitter"></svg>
         </a>
         <a class="social__facebook" href="" target="-blank">
           <span class="visually-hidden">Мы в facebook</span>
-          <svg></svg>
+          <svg class="social__image social__image--facebook"></svg>
         </a>
         <a class="social__youtube" href="" target="-blank">
           <span class="visually-hidden">Мы в youtube</span>
-          <svg></svg>
+          <svg class="social__image social__image--youtube"></svg>
         </a>
       </div>
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__comment">Разработано</p>
           <span class="visually-hidden">html academy</span>
           <svg class="copyright__image"></svg>

@@ -5,15 +5,14 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header--photo">
-      <div class="page-header__menu">
-        <div class="header__logo logo">
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__logo logo">
           <a class="logo__link" href="index.html">
-            <svg class="logo__image logo__image--header"></svg>
             <svg class="logo__name logo__name--header"></svg>
           </a>
         </div>
-        <button class="page-header__trigger">
+        <button class="page-header__trigger trigger">
           <svg class="trigger__cross"></svg>
           <svg class="trigger__burger visually-hidden"></svg>
         </button>
@@ -21,30 +20,30 @@
       <nav class="page-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation__link" href="photo.html">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a>Конкурс</a>
+            <a class="navigation__link">Конкурс</a>
           </li>
           <li class="navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main main-form">
-      <div class="main-photo__header">
-        <h1 class="main__header main-form__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <main class="page-content form-page">
+      <div class="form-page__header">
+        <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="form-header">
+      <p class="form-page__rule">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
-      <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="review-form__wrapper">
-          <fieldset  class="review-form__personal-info personal-info">
+      <form class="form-page__review review" action="https://echo.htmlacademy.ru" method="post">
+        <div class="review__wrapper">
+          <fieldset  class="review__personal-info personal-info">
             <legend class="visually-hidden">Персональные данные</legend>
             <div class="personal-info__surname surname">
               <label class="surname__label" for="user-surname">Фамилия</label>
@@ -59,7 +58,7 @@
               <input class="patronymic__field" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="review-form__achivements achivements">
+          <fieldset class="review__achivements achivements">
             <legend class="achivements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achivements__list">
               <li class="achivements__item">
@@ -88,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__contacts contacts">
+          <fieldset class="review__contacts contacts">
             <legend class="contacts__title">Контактная информация</legend>
             <div class="contacts__phone phone">
               <label class="phone__label" for="phone">Номер телефона</label>
@@ -99,7 +98,7 @@
               <input class="email__field" id="email" type="text" name="email" placeholder="Введите почту *">
             </div>
           </fieldset>
-          <fieldset class="review-form__app app">
+          <fieldset class="review__app app">
             <legend class="app__title">С каким приложением путешествовали?</legend>
             <ul class="app__list">
               <li class="app__item">
@@ -116,16 +115,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__comment comment">
+          <fieldset class="review__comment comment">
             <legend class="comment__title">Опишите свои эмоции</legend>
             <textarea class="comment__content" cols="40" rows="5" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
         </div>
-        <input class="review-form__submit" type="submit" value="Отправить форму">
-        <span class="review-form__required">* - обязательные поля</span>
+        <input class="review__submit" type="submit" value="Отправить форму">
+        <span class="review__required">* - обязательные поля</span>
       </form>
     </main>
-    <footer class="page-footer--form footer">
+    <footer class="footer footer--form">
       <div class="footer__logo logo">
         <a class="logo__link" href="index.html">
           <svg class="logo__image logo__image--footer"></svg>
@@ -135,19 +134,19 @@
       <div class="footer__social social">
         <a class="social__twitter" href="#" target="-blank">
           <span class="visually-hidden">Мы в twitter</span>
-          <svg></svg>
+          <svg class="social__image social__image--twitter"></svg>
         </a>
         <a class="social__facebook" href="#" target="-blank">
           <span class="visually-hidden">Мы в facebook</span>
-          <svg></svg>
+          <svg class="social__image social__image--facebook"></svg>
         </a>
         <a class="social__youtube" href="#" target="-blank">
           <span class="visually-hidden">Мы в youtube</span>
-          <svg></svg>
+          <svg class="social__image social__image--youtube"></svg>
         </a>
       </div>
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__comment">Разработано</p>
           <span class="visually-hidden">html academy</span>
           <svg class="copyright__image"></svg>

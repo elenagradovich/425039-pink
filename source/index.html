@@ -5,15 +5,14 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header--index">
-      <div class="page-header__menu">
-        <div class="header__logo logo">
-          <a class="logo__link" href="index.html">
-            <svg class="logo__image logo__image--header"></svg>
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__logo logo">
+          <a class="logo__link">
             <svg class="logo__name logo__name--header"></svg>
           </a>
         </div>
-        <button class="page-header__trigger">
+        <button class="page-header__trigger trigger">
           <svg class="trigger__cross"></svg>
           <svg class="trigger__burger visually-hidden"></svg>
         </button>
@@ -21,45 +20,54 @@
       <nav class="page-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a>Главная</a>
+            <a class="navigation__link">Главная</a>
           </li>
           <li class="navigation__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation__link" href="photo.html">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a href="form.html">Конкурс</a>
+            <a class="navigation__link" href="form.html">Конкурс</a>
           </li>
           <li class="navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main main-index">
-      <div class="main-index__header">
-        <section class="main-index__downloads downloads">
-          <h1 class="visually-hidden">Познакомьтесь с нашим приложением</h1>
+    <main class="page-content index-content">
+      <div class="index-content__inner">
+        <section class="index-content__downloads downloads">
+          <h1 class="visually-hidden">Приложение ПИНК</h1>
           <h2 class="visually-hidden">Где можно скачать приложение</h2>
           <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
           <ul class="downloads__list">
             <li class="downloads__item">
-              <a class="downloads__item--apple" href="https://www.apple.com/ru/itunes/" target="_blank"></a>
+              <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
+                <svg class="downloads__image"></svg>
+                <span class="visually-hidden">Логотип Apple</span>
+              </a>
             </li>
             <li class="downloads__item">
-              <a class=" downloads__item--android" href="https://play.google.com/store" target="_blank"></a>
+              <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
+                <svg class="downloads__image"></svg>
+                <span class="visually-hidden">Логотип Android</span>
+              </a>
             </li>
             <li class="downloads__item">
-              <a class="downloads__item--windows" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" ></a>
+              <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
+                <svg class="downloads__image"></svg>
+                <span class="visually-hidden">Логотип Microsoft</span>
+              </a>
             </li>
           </ul>
           <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </section>
-        <div class="main-index__slogan slogan">
+        <div class="index-content__slogan slogan">
           <p>Устали от серости мегаполиса?</p>
           <p>Нам есть, что вам предложить!</p>
         </div>
-        <section class="main-index__advantages advantages">
+        <section class="index-content__advantages advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -76,88 +84,85 @@
             </li>
           </ul>
         </section>
-        <section class="main-index__comments comments">
+        <section class="index-content__comments comments">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="comments__list slider-list">
-            <li class="comments__item slider__item">
-              <h3 class="comments__title">Николай Петров</h3>
-              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <li class="slider-list__item">
+              <h3 class="slider-list__title">Николай Петров</h3>
+              <p class="slider-list__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <p class="comments__toggles slider">
-            <button class="slider__toggle  active-toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+          <p class="comments__toggles slider-toggles">
+            <button class="slider-toggles__toggle  active-toggle" type="button"></button>
+            <button class="slider-toggles__toggle" type="button"></button>
+            <button class="slider-toggles__toggle" type="button"></button>
           </p>
         </section>
-        <section class="main-index__service-rates service-rates">
+        <section class="index-content__service-rates service-rates">
           <h2 class="visually-hidden">Тарифные планы</h2>
-          <ul class="service-rates__list slider__list">
-            <li class="service-rates__item slider__item">
-              <header class="service-rates__header">
-                <h3 class="service-rates__title">База</h3>
-                <span class="service-rates__price">1.99 USD</span>
+          <ul class="service-rates__list">
+            <li class="service-rates__item slide">
+              <header class="slide__header">
+                <h3 class="slide__title">База</h3>
+                <span class="slide__price">1.99 USD</span>
               </header>
-              <ul class="features">
-                <li class="feature__item feature--included">Розовый фильтр</li>
-                <li class="feature__item feature--not-included">Смайлики</li>
-                <li class="feature__item feature--not-included">Комментарии</li>
+              <ul class="slide__features features">
+                <li class="features__item features__item--included">Розовый фильтр</li>
+                <li class="features__item features__item--not-included">Смайлики</li>
+                <li class="features__item features__item--not-included">Комментарии</li>
               </ul>
             </li>
-            <li class="service-rates__item slider__item">
-              <header class="service-rates__header">
-                <h3 class="service-rates__title">Стандарт</h3>
-                <span class="service-rates__price">3.99 USD</span>
+            <li class="service-rates__item slide">
+              <header class="slide__header">
+                <h3 class="slide__title">Стандарт</h3>
+                <span class="slide__price">3.99 USD</span>
               </header>
-              <ul class="features">
-                <li class="feature__item feature--included">Розовый фильтр</li>
-                <li class="feature__item feature--included">Смайлики</li>
-                <li class="feature__item feature--not-included">Комментарии</li>
+              <ul class="slide__features features">
+                <li class="features__item features__item--included">Розовый фильтр</li>
+                <li class="features__item features__item--included">Смайлики</li>
+                <li class="features__item features__item--not-included">Комментарии</li>
               </ul>
             </li>
-            <li class="service-rates__item slider__item">
-              <header class="service-rates__header">
-                <h3 class="service-rates__title">Анлим</h3>
-                <span class="service-rates__price">9.99 USD</span>
+            <li class="service-rates__item slide">
+              <header class="slide__header">
+                <h3 class="slide__title">Анлим</h3>
+                <span class="slide__price">9.99 USD</span>
               </header>
-              <ul class="features">
-                <li class="feature__item feature--included">Розовый фильтр</li>
-                <li class="feature__item feature--included">Смайлики</li>
-                <li class="feature__item feature--included">Комментарии</li>
+              <ul class="slide__features features">
+                <li class="features__item features__item--included">Розовый фильтр</li>
+                <li class="features__item features__item--included">Смайлики</li>
+                <li class="features__item features__item--included">Комментарии</li>
               </ul>
             </li>
           </ul>
-          <p class="service-rates__toggles slider">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle active-toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+          <p class="service-rates__toggles slider-toggles">
+            <button class="slider-toggles__toggle" type="button"></button>
+            <button class="slider-toggles__toggle active-toggle" type="button"></button>
+            <button class="slider-toggles__toggle" type="button"></button>
           </p>
         </section>
       </div>
     </main>
-
-    <footer class="page-footer--index footer">
-      <ul class="footer__contacts contacts">
-        <li>Остались вопросы? Свяжитесь с нами!</li>
+    <footer class="footer-index">
+      <h2 class="footer-index__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="footer-index__contacts contacts">
         <li class="contacts__item">
           <span class="contacts__comment">Звоните:</span>
           <a class="contacts__info contacts__info--link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
           <span class="contacts__comment">Пишите:</span>
-          <a class="contacts__info contacts__info--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__info contacts__info--link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
           <span class="contacts__comment">Приезжайте в гости:</span>
-          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</span>
         </li>
       </ul>
-      <div class="footer__map map">
-        <h2 class="visually-hidden">Мы на карте</h2>
+      <div class="footer-index__map map">
+        <h3 class="visually-hidden">Мы на карте</h2>
         <iframe class="map__position" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1538124081605" width="600" height="450" style="border:0" allowfullscreen></iframe>
-        <span class="map__marker">
-          <img src="http://placehold.it/75x22" alt="marker" width="36" height="35">
-        </span>
+        <svg class="map__marker"></svg>
       </div>
     </footer>
   </body>
