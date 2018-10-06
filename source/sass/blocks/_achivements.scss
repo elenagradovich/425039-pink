@@ -1,0 +1,33 @@
+.review__wrapper {
+  padding-top: 36px;
+  background: $color-2;
+}
+
+.achivements {
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+}
+
+.achivements__title {
+  @include review-title;
+  margin-bottom: 42px;
+}
+
+.achivements__list {
+  @include lt-st-reset;
+}
+
+.achivements__item {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 52px;
+}
+
+.achivements__mark {
+
+}
+
+.achivements__label {
+
+}

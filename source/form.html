@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__top">
         <div class="page-header__logo logo">
           <a class="logo__link" href="index.html">
@@ -33,95 +34,101 @@
           </li>
         </ul>
       </nav>
+      <div class="page-header__title">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
     <main class="page-content form-page">
-      <div class="form-page__header">
-        <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
       <p class="form-page__rule">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
       <form class="form-page__review review" action="https://echo.htmlacademy.ru" method="post">
-        <div class="review__wrapper">
           <fieldset  class="review__personal-info personal-info">
-            <legend class="visually-hidden">Персональные данные</legend>
-            <div class="personal-info__surname surname">
-              <label class="surname__label" for="user-surname">Фамилия</label>
-              <input class="surname__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
+            <legend class="personal-info__title visually-hidden">Персональные данные</legend>
+            <div class="personal-info__block">
+              <label class="personal-info__label" for="user-surname">Фамилия</label>
+              <input class="personal-info__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
             </div>
-            <div class="personal-info__name name">
-              <label class="name__label" for="user-name">Имя</label>
-              <input class="name__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
+            <div class="personal-info__block">
+              <label class="personal-info__label" for="user-name">Имя</label>
+              <input class="personal-info__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
             </div>
-            <div class="personal-info__patronymic patronymic">
-              <label class="patronymic__label" for="user-patronymic">Отчество</label>
-              <input class="patronymic__field" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
-            </div>
-          </fieldset>
-          <fieldset class="review__achivements achivements">
-            <legend class="achivements__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="achivements__list">
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked>
-                <label class="achivements__label" for="achivements-1">Сделал селфи с акулой</label>
-              </li>
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked>
-                <label class="achivements__label" for="achivements-2">Обгорел на пляже</label>
-              </li>
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-3" type="checkbox" name="achivement-3" value="saw_CNorris">
-                <label class="achivements__label" for="achivements-3">Видел Чака Норриса</label>
-              </li>
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-4" type="checkbox" name="achivement-4" value="bought_souvenirs">
-                <label class="achivements__label" for="achivements-4">Накупил сувениров</label>
-              </li>
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked>
-                <label class="achivements__label" for="achivements-5">Удержал башню</label>
-              </li>
-              <li class="achivements__item">
-                <input class="achivements__mark" id="achivements-6" type="checkbox" name="achivement-6" value="defeated_the_hotel">
-                <label class="achivements__label" for="achivements-6">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__contacts contacts">
-            <legend class="contacts__title">Контактная информация</legend>
-            <div class="contacts__phone phone">
-              <label class="phone__label" for="phone">Номер телефона</label>
-              <input class="phone__field" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="contacts__email email">
-              <label class="email__label" for="email">Адрес почты</label>
-              <input class="email__field" id="email" type="text" name="email" placeholder="Введите почту *">
+            <div class="personal-info__block">
+              <label class="personal-info__label" for="user-patronymic">Отчество</label>
+              <input class="personal-info__field" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="review__app app">
-            <legend class="app__title">С каким приложением путешествовали?</legend>
-            <ul class="app__list">
-              <li class="app__item">
-                <input class="app__mark" id="app-1" type="radio" name="app" value="ios" checked>
-                <label class="app__label" for="app-1">Pink для iOS</label>
-              </li>
-              <li class="app__item">
-                <input class="app__mark" id="app-2" type="radio" name="app" value="android">
-                <label class="app__label" for="app-2">Pink на Android</label>
-              </li>
-              <li class="app__item">
-                <input class="app__mark" id="app-3" type="radio" name="app" value="windows">
-                <label class="app__label" for="app-3">Windows Phone</label>
-              </li>
-            </ul>
+          <div class="review__wrapper">
+            <fieldset class="review__achivements achivements">
+              <legend class="achivements__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="achivements__list">
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked>
+                  <label class="achivements__label" for="achivements-1">Сделал селфи с акулой</label>
+                </li>
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked>
+                  <label class="achivements__label" for="achivements-2">Обгорел на пляже</label>
+                </li>
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-3" type="checkbox" name="achivement-3" value="saw_CNorris">
+                  <label class="achivements__label" for="achivements-3">Видел Чака Норриса</label>
+                </li>
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-4" type="checkbox" name="achivement-4" value="bought_souvenirs">
+                  <label class="achivements__label" for="achivements-4">Накупил сувениров</label>
+                </li>
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked>
+                  <label class="achivements__label" for="achivements-5">Удержал башню</label>
+                </li>
+                <li class="achivements__item">
+                  <input class="achivements__mark" id="achivements-6" type="checkbox" name="achivement-6" value="defeated_the_hotel">
+                  <label class="achivements__label" for="achivements-6">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <fieldset class="review__contacts user-info">
+            <legend class="user-info__title visually-hidden">Контактная информация</legend>
+            <div class="user-info__block">
+              <label class="user-info__label" for="phone">Номер телефона</label>
+              <input class="user-info__field" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="user-info__block">
+              <label class="user-info__label" for="email">Адрес почты</label>
+              <input class="user-info__field" id="email" type="text" name="email" placeholder="Введите почту *">
+            </div>
           </fieldset>
+
+          <div class="review__wrapper">
+            <fieldset class="review__app app">
+              <legend class="app__title">С каким приложением путешествовали?</legend>
+              <ul class="app__list">
+                <li class="app__item">
+                  <input class="app__mark" id="app-1" type="radio" name="app" value="ios" checked>
+                  <label class="app__label" for="app-1">Pink для iOS</label>
+                </li>
+                <li class="app__item">
+                  <input class="app__mark" id="app-2" type="radio" name="app" value="android">
+                  <label class="app__label" for="app-2">Pink на Android</label>
+                </li>
+                <li class="app__item">
+                  <input class="app__mark" id="app-3" type="radio" name="app" value="windows">
+                  <label class="app__label" for="app-3">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
           <fieldset class="review__comment comment">
             <legend class="comment__title">Опишите свои эмоции</legend>
-            <textarea class="comment__content" cols="40" rows="5" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="comment__content" cols="31" rows="11" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-        </div>
-        <input class="review__submit" type="submit" value="Отправить форму">
-        <span class="review__required">* - обязательные поля</span>
+
+        <input class="review__submit btn-2" type="submit" value="Отправить форму">
+        <span class="review__required"><span class="review__note">*</span> - обязательные поля</span>
       </form>
     </main>
     <footer class="footer footer--form">
@@ -153,5 +160,15 @@
         </a>
       </div>
     </footer>
+    <div class="modal modal--error">
+      <header class="modal__header">Что-то пошло не так!</header>
+      <p class="modal__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__btn btn-2" type="button">ОК</button>
+    </div>
+    <div class="modal modal--send ">
+      <header class="modal__header">Ваша заявка отправлена</header>
+      <p class="modal__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="modal__btn btn-2" type="button">Закрыть окно</button>
+    </div>
   </body>
 </html>

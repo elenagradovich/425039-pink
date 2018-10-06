@@ -1,0 +1,27 @@
+.navigation {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.navigation__list {
+  @include lt-st-reset;
+}
+
+.navigation__item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $color-3;
+  border-bottom: 1px solid $color-10;
+  border-top: 1px solid $color-4;
+}
+
+.navigation__link {
+  color: $color-1;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}

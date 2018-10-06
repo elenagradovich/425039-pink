@@ -1,0 +1,24 @@
+.gallery {
+  border: 2px solid red;
+  background-color: $color-1;
+  padding: 0 20px 5px;
+}
+
+.gallery__slogan {
+  text-align: center;
+  margin: 0;
+  padding: 48px 40px;
+  line-height: 30px;
+}
+
+.gallery__list {
+  @include lt-st-reset;
+  margin-bottom: 40px;
+}
+
+.gallery__footer {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 30px;
+}

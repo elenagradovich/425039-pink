@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__top">
         <div class="page-header__logo logo">
           <a class="logo__link">
-            <svg class="logo__name logo__name--header"></svg>
+            <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
           </a>
+          </div>
+          <button class="page-header__trigger trigger">
+            <svg class="trigger__cross"></svg>
+            <svg class="trigger__burger visually-hidden"></svg>
+          </button>
         </div>
-        <button class="page-header__trigger trigger">
-          <svg class="trigger__cross"></svg>
-          <svg class="trigger__burger visually-hidden"></svg>
-        </button>
       </div>
       <nav class="page-header__navigation navigation">
         <ul class="navigation__list">
@@ -33,40 +35,45 @@
           </li>
         </ul>
       </nav>
+      <h1 class="visually-hidden">Приложение ПИНК</h1>
     </header>
 
     <main class="page-content index-content">
       <div class="index-content__inner">
-        <section class="index-content__downloads downloads">
-          <h1 class="visually-hidden">Приложение ПИНК</h1>
-          <h2 class="visually-hidden">Где можно скачать приложение</h2>
-          <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
-          <ul class="downloads__list">
-            <li class="downloads__item">
-              <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
-                <svg class="downloads__image"></svg>
-                <span class="visually-hidden">Логотип Apple</span>
-              </a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
-                <svg class="downloads__image"></svg>
-                <span class="visually-hidden">Логотип Android</span>
-              </a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
-                <svg class="downloads__image"></svg>
-                <span class="visually-hidden">Логотип Microsoft</span>
-              </a>
-            </li>
-          </ul>
-          <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
-        <div class="index-content__slogan slogan">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
+        <div class="index-content__back">
+          <section class="index-content__downloads downloads">
+            <h2 class="visually-hidden">Где можно скачать приложение</h2>
+            <div class="downloads__btn-wrapper">
+              <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+            </div>
+            <ul class="downloads__list">
+              <li class="downloads__item">
+                <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
+                  <svg class="downloads__image"></svg>
+                  <span class="visually-hidden">Логотип Apple</span>
+                </a>
+              </li>
+              <li class="downloads__item">
+                <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
+                  <svg class="downloads__image"></svg>
+                  <span class="visually-hidden">Логотип Android</span>
+                </a>
+              </li>
+              <li class="downloads__item">
+                <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
+                  <svg class="downloads__image"></svg>
+                  <span class="visually-hidden">Логотип Microsoft</span>
+                </a>
+              </li>
+            </ul>
+            <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
+          <div class="index-content__slogan slogan">
+            <p class="slogan__text">Устали от серости мегаполиса?</p>
+            <p class="slogan__text">Нам есть, что вам предложить!</p>
+          </div>
         </div>
+
         <section class="index-content__advantages advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
@@ -83,17 +90,18 @@
               <p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <div class="advantages__image"></div>
         </section>
         <section class="index-content__comments comments">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
-          <ul class="comments__list slider-list">
-            <li class="slider-list__item">
-              <h3 class="slider-list__title">Николай Петров</h3>
-              <p class="slider-list__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <ul class="comments__list">
+            <li class="comments__item">
+              <h3 class="comments__title">Николай Петров</h3>
+              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
           <p class="comments__toggles slider-toggles">
-            <button class="slider-toggles__toggle  active-toggle" type="button"></button>
+            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
             <button class="slider-toggles__toggle" type="button"></button>
             <button class="slider-toggles__toggle" type="button"></button>
           </p>
@@ -108,57 +116,57 @@
                     <span class="plan__price">1.99 USD</span>
                   </th>
                 </tr>
-                <tr class="plan__row plans__row--pink">
-                  <td class="plans__pink incl">Розовый фильтр</td>
+                <tr class="plan__row plan__row--pink">
+                  <td class="plan__comment incl">Розовый фильтр</td>
                 </tr>
-                <tr class="plans__row plans__row--smile">
-                  <td class="plans__smile not-incl">Смайлики</td>
+                <tr class="plan__row plan__row--smile">
+                  <td class="plan__comment not-incl">Смайлики</td>
                 </tr>
-                <tr class="plans__row plans__row--comment">
-                  <td class="plans__comment not-incl">Комментарии</td>
-                </tr>
-              </table>
-            </li>
-            <li class="plans__item plans__item--standart">
-              <table class="plans__table">
-                <tr class="plans__header">
-                  <th class="plans__title">Стандарт<br>
-                    <span class="plans__price">3.99 USD</span>
-                  </th>
-                </tr>
-                <tr class="plans__row plans__row--pink">
-                  <td class="plans__pink incl">Розовый фильтр</td>
-                </tr>
-                <tr class="plans__row plans__row--smile">
-                  <td class="plans__smile incl">Смайлики</td>
-                </tr>
-                <tr class="plans__row plans__row--comment">
-                  <td class="plans__comment not-incl">Комментарии</td>
+                <tr class="plan__row plans__row--comment">
+                  <td class="plan__comment not-incl">Комментарии</td>
                 </tr>
               </table>
             </li>
-            <li class="plans__item plans__item--unlim">
-              <table class="plans__table">
-                <tr class="plans__header">
-                  <th class="plans__title">Анлим<br>
-                    <span class="plans__price">9.99 USD</span>
+            <li class="plans__item plan">
+              <table class="plan__table">
+                <tr class="plan__header">
+                  <th class="plan__title">Стандарт<br>
+                    <span class="plan__price">3.99 USD</span>
                   </th>
                 </tr>
-                <tr class="plans__row plans__row--pink">
-                  <td class="plans__pink incl">Розовый фильтр</td>
+                <tr class="plan__row plan__row--pink">
+                  <td class="plan__comment incl">Розовый фильтр</td>
                 </tr>
-                <tr class="plans__row plans__row--smile">
-                  <td class="plans__smile incl">Смайлики</td>
+                <tr class="plan__row plan__row--smile">
+                  <td class="plan__comment incl">Смайлики</td>
                 </tr>
-                <tr class="plans__row plans__row--comment">
-                  <td class="plans__comment incl">Комментарии</td>
+                <tr class="plan__row plan__row--comment">
+                  <td class="plan__comment not-incl">Комментарии</td>
+                </tr>
+              </table>
+            </li>
+            <li class="plans__item plan">
+              <table class="plan__table">
+                <tr class="plan__header">
+                  <th class="plan__title">Анлим<br>
+                    <span class="plan__price">9.99 USD</span>
+                  </th>
+                </tr>
+                <tr class="plan__row plan__row--pink">
+                  <td class="plan__comment incl">Розовый фильтр</td>
+                </tr>
+                <tr class="plan__row plan__row--smile">
+                  <td class="plan__comment incl">Смайлики</td>
+                </tr>
+                <tr class="plan__row plan__row--comment">
+                  <td class="plan__comment incl">Комментарии</td>
                 </tr>
               </table>
             </li>
           </ul>
-          <p class="plans__toggles slider-toggles">
+          <p class="plan__toggles slider-toggles">
             <button class="slider-toggles__toggle" type="button"></button>
-            <button class="slider-toggles__toggle active-toggle" type="button"></button>
+            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
             <button class="slider-toggles__toggle" type="button"></button>
           </p>
         </section>
@@ -168,23 +176,26 @@
       <h2 class="footer-index__title">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="footer-index__contacts contacts">
         <li class="contacts__item">
-          <span class="contacts__comment">Звоните:</span>
+          <span class="contacts__title">Звоните:</span>
           <a class="contacts__info contacts__info--link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
-          <span class="contacts__comment">Пишите:</span>
+          <span class="contacts__title">Пишите:</span>
           <a class="contacts__info contacts__info--link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
-          <span class="contacts__comment">Приезжайте в гости:</span>
-          <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__title">Приезжайте в гости:</span>
+          <span class="contacts__info contacts__info--address">ул. Большая <br>Конюшенная, 19/8</span>
         </li>
       </ul>
       <div class="footer-index__map map">
         <h3 class="visually-hidden">Мы на карте</h3>
-        <iframe class="map__position" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1538124081605" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        <div class="map__img ">
+        </div>
+        <iframe class="map__position" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1538124081605" style="border:0" height="220" allowfullscreen></iframe>
         <svg class="map__marker"></svg>
       </div>
     </footer>
+  </div>
   </body>
 </html>

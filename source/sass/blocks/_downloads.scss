@@ -1,0 +1,27 @@
+.downloads {
+  width: auto;
+  background-color: $color-8;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.downloads__list {
+  @include lt-st-reset;
+}
+
+
+.downloads__info {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  color: $color-1;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.downloads__button {
+  display: block;
+  width: 281px;
+}

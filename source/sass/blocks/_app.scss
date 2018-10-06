@@ -1,0 +1,22 @@
+.app {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+}
+
+.app__title {
+  @include review-title;
+  margin-bottom: 35px;
+}
+
+.app__list {
+  @include lt-st-reset;
+}
+
+.app__item {
+  padding-left: 65px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 45px;
+}

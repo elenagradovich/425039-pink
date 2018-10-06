@@ -1,0 +1,63 @@
+.plans {
+  background: $color-2;
+  border: 2px solid red;
+  padding-bottom: 70px;
+}
+
+.plans__list {
+  @include lt-st-reset;
+}
+
+.plan__table {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.plans__row {
+  display: block;
+  color: $color-3;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.plan__header {
+  background: $color-3;
+}
+
+.plan__title {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  color: $color-1;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan__price {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.plan__comment {
+  padding: 20px 48px 18px 22px;
+  background: $color-1;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid $color-11;
+}
+
+.plan__toggles {
+  margin: 0 auto;
+}
+/*
+
+
+
+
+
+
+*/

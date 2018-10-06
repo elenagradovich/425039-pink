@@ -1,0 +1,19 @@
+@mixin lt-st-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+@mixin review-title {
+  color: $color-6;
+  text-transform: uppercase;
+  text-align: center;
+}
