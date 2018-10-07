@@ -1,6 +1,6 @@
 .advantages {
-  background: $color-2;
-  border: 2px solid red;
+  background: darken($color-primary, 5.10);
+  border: $temporary;
 }
 
 .advantages__list {
@@ -13,11 +13,11 @@
 .advantages__title {
   font-size: 18px;
   font-weight: 700;
-  color: $color-4;
+  color: $color-dark;
 }
 
 .advantages__content {
-  color: $color-3;
+  color: $color-secondary;
   margin-bottom: 35px;
   line-height: 25px;
 

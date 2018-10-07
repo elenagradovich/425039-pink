@@ -1,7 +1,7 @@
 .contacts {
   padding: 0;
   margin: 0;
-  border: 2px solid red;
+  border: $temporary;
 }
 
 .contacts__item {
@@ -12,7 +12,6 @@
   text-align: center;
   padding-left: 45px;
   padding-right: 45px;
-  box-sizing: border-box;
 }
 
 .contacts__item:not(:last-child) {
@@ -27,5 +26,5 @@
 .contacts__info {
   font-size: 24px;
   font-weight: 300;
-  color: $color-6;
+  color: $color-font-accent;
 }

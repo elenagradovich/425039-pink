@@ -9,14 +9,13 @@
 
 .comment__content {
   padding: 16px 20px 18px;
-  border: 2px solid $color-11;
-  box-sizing: border-box;
+  border: 2px solid $color-input-border;
 
   @include placeholder {
-    color: $color-3;
+    color: $color-secondary;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    font-family: $font-family, "Helvetica", "Arial", "Verdana", "Tahoma", sans-serif;
+    font-family: $font-family;
   }
 }

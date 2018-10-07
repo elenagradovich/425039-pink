@@ -1,8 +1,7 @@
 .downloads {
   width: auto;
-  background-color: $color-8;
-  border: 2px solid red;
-  box-sizing: border-box;
+  background-color: $color-bg-download;
+  border: $temporary;
 }
 
 .downloads__list {
@@ -15,7 +14,7 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 30px;
-  color: $color-1;
+  color: $color-primary;
   font-weight: 300;
   line-height: 24px;
   text-align: center;

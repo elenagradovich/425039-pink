@@ -2,7 +2,7 @@
   margin: 0;
   padding: 18px 20px 18px;
   border: none;
-  background: $color-1;
+  background: $color-primary;
 }
 
 .personal-info__block:not(:last-child) {
@@ -10,17 +10,16 @@
 }
 
 .personal-info__label {
-  color: $color-6;
+  color: $color-font-accent;
   text-transform: uppercase;
 }
 
 .personal-info__field {
   padding: 24px 20px 18px;
-  border: 2px solid $color-11;
-  box-sizing: border-box;
+  border: 2px solid $color-input-border;
 
   @include placeholder {
-    color: $color-3;
+    color: $color-secondary;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;

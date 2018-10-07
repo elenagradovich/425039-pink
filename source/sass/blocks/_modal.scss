@@ -1,9 +1,8 @@
 .modal {
   width: 460px;
   padding: 41px 78px;
-  background: $color-1;
+  background: $color-primary;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -12,14 +11,14 @@
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
-  color: $color-4;
+  color: $color-dark;
 }
 
 .modal__content {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: $color-3;
+  color: $color-secondary;
 }
 
 .modal__btn {

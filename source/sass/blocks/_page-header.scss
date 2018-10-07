@@ -1,18 +1,18 @@
 .page-header {
   width: 100%;
   min-height: 462px;
-  background-color: $color-9;
+  background-color: $color-bg-download;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 100%, 50%;
   background-size: 0.75 * 314px 0.75 * 320px, 2 * 320px auto;
-  border: 2px solid red;
+  border: $temporary;
 }
 
 .page-header__top {
   width: auto;
   height: 66px;
-  background-color: $color-5;
+  background-color: $color-header;
 }
 
 .page-header__logo {
@@ -35,7 +35,7 @@
 
 .page-header__title h1 {
   text-align: center;
-  color: $color-1;
+  color: $color-primary;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;

@@ -1,17 +1,17 @@
 .upload-photo-form {
   padding: 20px 20px 41px 18px;
-  background: $color-2;
-  border: 2px solid red;
+  background: darken($color-primary, 5.10);
+  border: $temporary;
 }
 
 .controls__submit {
   width: 280px;
-  border: 3px solid $color-6;
-  color: $color-6;
+  border: 3px solid $color-font-accent;
+  color: $color-font-accent;
 }
 
 .controls__cancel {
   width: 280px;
-  border: 3px solid $color-13;
-  color: $color-13;
+  border: 3px solid $color-btn-reset;
+  color: $color-btn-reset;
 }

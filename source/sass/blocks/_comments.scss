@@ -1,5 +1,5 @@
 .comments {
-  border: 2px solid red;
+  border: $temporary;
 }
 
 .comments__list {
@@ -16,7 +16,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: $color-4;
+  color: $color-dark;
 }
 
 .comments__content {
