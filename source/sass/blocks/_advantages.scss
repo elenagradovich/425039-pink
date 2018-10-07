@@ -1,0 +1,33 @@
+.advantages {
+  background: darken($color-primary, 5.1);
+  border: $temporary;
+}
+
+.advantages__list {
+  @include lt-st-reset;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-dark;
+}
+
+.advantages__content {
+  color: $color-secondary;
+  margin-bottom: 35px;
+  line-height: 25px;
+
+  &:last-child {
+    margin-bottom: 45px;
+  }
+}
+
+.advantages__image {
+  height: 320px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: center 50px;
+}

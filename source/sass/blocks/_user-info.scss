@@ -1,0 +1,31 @@
+.user-info {
+  margin: 0;
+  padding: 18px 20px 18px;
+  border: none;
+  background: $color-primary;
+}
+
+.user-info__block:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.user-info__label {
+  color: $color-font-accent;
+  text-transform: uppercase;
+}
+
+.user-info__field {
+  padding: 24px 20px 18px;
+  border: 2px solid $color-input-border;
+
+  @include placeholder {
+    color: $color-secondary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.user-info__title {
+  @include review-title;
+}

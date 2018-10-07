@@ -1,0 +1,21 @@
+.comment {
+  padding: 33px 20px;
+  border: none;
+}
+
+.comment__title {
+  @include review-title;
+}
+
+.comment__content {
+  padding: 16px 20px 18px;
+  border: 2px solid $color-input-border;
+
+  @include placeholder {
+    color: $color-secondary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $font-family;
+  }
+}

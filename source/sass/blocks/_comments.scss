@@ -1,0 +1,30 @@
+.comments {
+  border: $temporary;
+}
+
+.comments__list {
+  @include lt-st-reset;
+  text-align: center;
+}
+
+.comments__item {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.comments__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-dark;
+}
+
+.comments__content {
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.comments__toggles {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}

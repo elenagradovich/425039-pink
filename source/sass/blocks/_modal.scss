@@ -1,0 +1,26 @@
+.modal {
+  width: 460px;
+  padding: 41px 78px;
+  background: $color-primary;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  text-align: center;
+}
+
+
+.modal__header {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $color-dark;
+}
+
+.modal__content {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-secondary;
+}
+
+.modal__btn {
+  width: 100%;
+}
