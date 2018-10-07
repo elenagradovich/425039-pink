@@ -2,7 +2,6 @@
   margin: 0 auto;
   margin-bottom: 20px;
   border: 2px solid red;
-
 }
 
 .gallery-card:not(:first-child) {
@@ -10,11 +9,10 @@
 }
 
 .gallery-card__wrapper {
-  padding: 0;
+  padding: 18px 18px 22px;
   margin: 0;
   text-align: left;
   background-color: $color-2;
-  padding: 18px 18px 22px;
 }
 
 .gallery-card__author {

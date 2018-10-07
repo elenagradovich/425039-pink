@@ -15,9 +15,10 @@
   box-sizing: border-box;
 }
 
-.contacts__item:not(last-child) {
+.contacts__item:not(:last-child) {
   padding-bottom: 28px;
 }
+
 .contacts__title {
   font-size: 18px;
   font-weight: 700;
