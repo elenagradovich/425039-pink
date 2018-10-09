@@ -1,3 +1,5 @@
+@import "normalize";
+
 @import "abstracts/_variables.scss";
 @import "abstracts/_dif.scss";
 @import "abstracts/_mixins.scss";
@@ -5,6 +7,7 @@
 @import "components/_trigger.scss";
 @import "components/_slider-toggles.scss";
 @import "components/_buttons.scss";
+@import "components/_logo.scss";
 
 body {
   margin: 0;
@@ -41,7 +44,6 @@ img {
 @import "blocks/_slogan.scss";
 @import "blocks/_comments.scss";
 @import "blocks/_plans.scss";
-@import "blocks/_footer-index.scss";
 @import "blocks/_contacts.scss";
 @import "blocks/_map.scss";
 @import "blocks/_form-page.scss";

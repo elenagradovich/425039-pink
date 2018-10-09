@@ -11,37 +11,39 @@
   <body>
     <header class="page-header page-header--form">
       <div class="page-header__top">
-        <div class="page-header__logo logo">
-          <a class="logo__link" href="index.html">
-            <svg class="logo__name logo__name--header"></svg>
-          </a>
+        <div class="page-header__wrapper">
+          <div class="page-header__logo logo">
+            <a class="logo__link" href="index.html">
+              <svg class="logo__name logo__name--header"></svg>
+            </a>
+          </div>
+          <button class="page-header__trigger trigger">
+            <svg class="trigger__cross"></svg>
+            <svg class="trigger__burger visually-hidden"></svg>
+          </button>
         </div>
-        <button class="page-header__trigger trigger">
-          <svg class="trigger__cross"></svg>
-          <svg class="trigger__burger visually-hidden"></svg>
-        </button>
-      </div>
-      <nav class="page-header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__title">
-        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="page-content form-page">
+      <div class="page-content__title">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
       <p class="form-page__rule">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
@@ -134,33 +136,33 @@
         <span class="review__required"><span class="review__note">*</span> - обязательные поля</span>
       </form>
     </main>
-    <footer class="footer footer--form">
-      <div class="footer__logo logo">
-        <a class="logo__link" href="index.html">
-          <svg class="logo__image logo__image--footer"></svg>
-          <svg class="logo__name logo__name--footer"></svg>
-        </a>
-      </div>
-      <div class="footer__social social">
-        <a class="social__twitter" href="#" target="-blank">
-          <span class="visually-hidden">Мы в twitter</span>
-          <svg class="social__image social__image--twitter"></svg>
-        </a>
-        <a class="social__facebook" href="#" target="-blank">
-          <span class="visually-hidden">Мы в facebook</span>
-          <svg class="social__image social__image--facebook"></svg>
-        </a>
-        <a class="social__youtube" href="#" target="-blank">
-          <span class="visually-hidden">Мы в youtube</span>
-          <svg class="social__image social__image--youtube"></svg>
-        </a>
-      </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__comment">Разработано</p>
-          <span class="visually-hidden">html academy</span>
-          <svg class="copyright__image"></svg>
-        </a>
+    <footer class="footer footer-form">
+      <div class="footer__wrapper-bottom">
+        <div class="footer__item logo">
+          <a class="logo__link" href="index.html">
+            <svg class="logo__img logo__img--footer"></svg>
+          </a>
+        </div>
+        <div class="footer__item social">
+          <a class="social__icon social__icon--twitter" href="#" target="-blank">
+            <span class="visually-hidden">Мы в twitter</span>
+            <svg class="social__image social__image--twitter"></svg>
+          </a>
+          <a class="social__icon social__icon--facebook" href="#" target="-blank">
+            <span class="visually-hidden">Мы в facebook</span>
+            <svg class="social__image social__image--facebook"></svg>
+          </a>
+          <a class="social__icon social__icon--youtube" href="#" target="-blank">
+            <span class="visually-hidden">Мы в youtube</span>
+            <svg class="social__image social__image--youtube"></svg>
+          </a>
+        </div>
+        <div class="footer__item copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__comment">Разработано</p>
+            <span class="visually-hidden">html academy</span>
+          </a>
+        </div>
       </div>
     </footer>
     <div class="modal modal--error">

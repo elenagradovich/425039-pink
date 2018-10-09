@@ -1,4 +1,6 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   border: $temporary;
@@ -27,4 +29,23 @@
   font-size: 24px;
   font-weight: 300;
   color: $color-font-accent;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 996px) {
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
 }

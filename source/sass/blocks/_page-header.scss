@@ -1,28 +1,130 @@
 .page-header {
-  width: 100%;
-  min-height: 462px;
-  background-color: $color-bg-download;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 100%, 50%;
-  background-size: 0.75 * 314px 0.75 * 320px, 2 * 320px auto;
+  display: flex;
+  flex-direction: column;
   border: $temporary;
-}
-
-.page-header__top {
-  width: auto;
-  height: 66px;
+  width: 100%;
   background-color: $color-header;
 }
 
+.page-header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  min-height: $height-top-mobile;
+  z-index: 1;
+}
+
 .page-header__logo {
-  padding: 22px 20px 20px;
-  margin: 0 auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__top {
+    min-height: $height-top;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__trigger {
+    display: none;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__top {
+    width: 277px;
+    padding-left: 130px;
+  }
+}
+
+/*.page-header {
+  display: flex;
+  flex-direction: column;
+  border: $temporary;
+  width: 100%;
+  background-color: red;
+  z-index: 2;
+}
+
+.page-header__back {
+  width: 100%;
+  margin-top: -$height-top-mobile;
+  min-height: 462px;
+  background-color: $color-bg-download;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.page-header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+  width: auto;
+  min-height: $height-top-mobile;
+
+  z-index: 1;
+}
+
+.page-header__logo {
+  margin-right: auto;
 }
 
 .page-header__navigation {
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__top {
+    min-height: $height-top;
+  }
+
+  .page-header__back {
+    min-height: 759px;
+    margin-top: -$height-top;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1200px;
+    padding-right: 130px;
+    padding-left: 130px;
+    background-color: $color-header;
+    z-index: 1;
+  }
+
+  .page-header__top {
+    display: flex;
+    width: 277px;
+    padding-left: 130px;
+    background: transparent;
+  }
+
+  .page-header__trigger {
+    display: none;
+  }
+
+  .page-header__back {
+    min-height: 853px;
+  }
 }
 
 .page-header--photo,
@@ -32,11 +134,4 @@
   background-size: 320px auto;
   background-position: 50% 0;
 }
-
-.page-header__title h1 {
-  text-align: center;
-  color: $color-primary;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 30px;
-}
+*/

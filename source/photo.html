@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--photo">
+    <header class="page-header page-header--photo ">
       <div class="page-header__top">
         <div class="page-header__logo logo">
           <a class="logo__link" href="index.html">
@@ -37,11 +37,11 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__title">
-        <h1>Фотографии <br>пользователей</h1>
-      </div>
     </header>
     <main class="page-content photo-content">
+      <div class="page-content__title">
+        <h1>Фотографии <br>пользователей</h1>
+      </div>
       <section class="photo-content__gallery gallery">
         <h2 class="visually-hidden">Галерея</h2>
         <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
@@ -170,32 +170,32 @@
       </form>
     </main>
     <footer class="footer footer--photo">
-      <div class="footer__logo logo">
-        <a class="logo__link" href="index.html">
-          <svg class="logo__image logo__image--footer"></svg>
-          <svg class="logo__name logo__name--footer"></svg>
-        </a>
-      </div>
-      <div class="footer__social social">
-        <a class="social__twitter" href="#" target="-blank">
-          <span class="visually-hidden">Мы в twitter</span>
-          <svg class="social__image social__image--twitter"></svg>
-        </a>
-        <a class="social__facebook" href="#" target="-blank">
-          <span class="visually-hidden">Мы в facebook</span>
-          <svg class="social__image social__image--facebook"></svg>
-        </a>
-        <a class="social__youtube" href="#" target="-blank">
-          <span class="visually-hidden">Мы в youtube</span>
-          <svg class="social__image social__image--youtube"></svg>
-        </a>
-      </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__comment">Разработано</p>
-          <span class="visually-hidden">html academy</span>
-          <svg class="copyright__image"></svg>
-        </a>
+      <div class="footer__wrapper-bottom">
+        <div class="footer__item logo">
+          <a class="logo__link" href="index.html">
+            <svg class="logo__img logo__img--footer"></svg>
+          </a>
+        </div>
+        <div class="footer__item social">
+          <a class="social__icon social__icon--twitter" href="#" target="-blank">
+            <span class="visually-hidden">Мы в twitter</span>
+            <svg class="social__image social__image--twitter"></svg>
+          </a>
+          <a class="social__icon social__icon--facebook" href="#" target="-blank">
+            <span class="visually-hidden">Мы в facebook</span>
+            <svg class="social__image social__image--facebook"></svg>
+          </a>
+          <a class="social__icon social__icon--youtube" href="#" target="-blank">
+            <span class="visually-hidden">Мы в youtube</span>
+            <svg class="social__image social__image--youtube"></svg>
+          </a>
+        </div>
+        <div class="footer__item copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__comment">Разработано</p>
+            <span class="visually-hidden">html academy</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

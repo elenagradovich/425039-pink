@@ -1,12 +1,16 @@
 .navigation {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: auto;
   border: $temporary;
+  z-index: 1;
 }
 
 .navigation__list {
+  display: flex;
+  flex-direction: column;
   @include lt-st-reset;
+  z-index: 1;
 }
 
 .navigation__item {
@@ -25,3 +29,23 @@
   font-weight: 700;
   line-height: 32px;
 }
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: justify-content;
+    align-items: center;
+    flex-grow: 1;
+    width: 620px;
+    padding-left: 173px;
+    padding-right: 129px;
+  }
+
+  .navigation__item {
+    margin-left: 80px;
+    background: transparent;
+    border: none;
+  }
+}
+
