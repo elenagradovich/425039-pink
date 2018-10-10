@@ -27,6 +27,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    max-width: $desktop-width;
+  }
+
   .page-header__trigger {
     display: none;
   }
