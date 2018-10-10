@@ -11,3 +11,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    border: $temporary;
+  }
+
+}
+

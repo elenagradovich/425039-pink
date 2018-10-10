@@ -10,37 +10,40 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__top">
-          <div class="page-header__logo logo">
-            <a class="logo__link">
-              <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-            </a>
+      <div class="page-header__back">
+        <div class="page-header__wrapper">
+          <div class="page-header__top page-header__top--nav">
+            <div class="page-header__logo logo">
+              <a class="logo__link">
+                <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+              </a>
+            </div>
             <button class="page-header__trigger trigger">
               <svg class="trigger__cross"></svg>
               <svg class="trigger__burger visually-hidden"></svg>
             </button>
           </div>
+          <nav class="page-header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-header__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-      <h1 class="visually-hidden">Приложение ПИНК</h1>
-      <div class="page-header__back"></div>
+      <div class="page-header__title">
+        <h1 class="visually-hidden">Приложение ПИНК</h1>
+      </div>
     </header>
 
     <main class="page-content index-content">

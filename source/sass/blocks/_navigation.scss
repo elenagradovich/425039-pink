@@ -1,8 +1,7 @@
 .navigation {
   padding: 0;
   margin: 0;
-  width: auto;
-  border: $temporary;
+  width: 100%;
   z-index: 1;
 }
 
@@ -10,6 +9,7 @@
   display: flex;
   flex-direction: column;
   @include lt-st-reset;
+  flex-wrap: wrap;
   z-index: 1;
 }
 
@@ -27,23 +27,25 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 18px;
 }
 
 @media (min-width: $desktop-width) {
+  .navigation {
+    max-width: 620px;
+  }
+
   .navigation__list {
     display: flex;
     flex-direction: row;
-    justify-content: justify-content;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    width: 620px;
-    padding-left: 173px;
-    padding-right: 129px;
+
   }
 
   .navigation__item {
-    margin-left: 80px;
+    padding-top: 48px;
+    padding-bottom: 44px;
     background: transparent;
     border: none;
   }
