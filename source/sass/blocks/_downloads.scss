@@ -69,8 +69,7 @@
   }
 
   .downloads__wrapper-top {
-    position: absolute;
-    top:-600px;
+    margin-top: -600px;
     max-width: $tablet-width;
   }
 
@@ -103,38 +102,3 @@
   }
 
 }
-/*
-
-
-
-
-
-@media (min-width: $tablet-width) {
-  .downloads {
-    width: 100%;
-    max-width: $tablet-width;
-  }
-
-  .downloads__wrapper-top {
-    flex-direction: row;
-    position: absolute;
-    background-color: transparent;
-    top: -600px;
-  }
-
-  .downloads__wrapper {
-    width: 280px;
-    order: -1;
-  }
-
-
-
-}
-
-@media (min-width: $desktop-width) {
-  .downloads {
-    max-width: $desktop-width;
-  }
-
-}*/
-
