@@ -4,18 +4,30 @@
 }
 
 .index-content__downloads {
-  padding-bottom: 35px;
+  width: 100%;
+}
+
+.index-content__advantages {
+  margin: 0 auto;
 }
 
 .index-content {
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .index-content__downloads {
+    position: relative;
+    max-width: $tablet-width;
+    padding: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .page-header__wrapper {
-    display: flex;
-    flex-direction: row;
-    border: $temporary;
+  .index-content__downloads {
+    max-width: $desktop-width;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
 }

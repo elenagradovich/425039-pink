@@ -48,10 +48,9 @@
 
     <main class="page-content index-content">
       <div class="index-content__inner">
-        <div class="index-content__back">
-          <section class="index-content__downloads downloads">
-            <div class="downloads__img"></div>
-            <div class="downloads__wrapper">
+        <section class="index-content__downloads downloads">
+          <div class="downloads__wrapper-top">
+            <div class="downloads__wrapper-inner">
               <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
               <div class="downloads__btn-wrapper">
                 <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
@@ -78,44 +77,57 @@
               </ul>
               <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
-          </section>
-          <div class="index-content__slogan slogan">
+          </div>
+        </section>
+        <div class="index-content__slogan slogan">
+          <div class="slogan__wrapper">
             <p class="slogan__text">Устали от серости мегаполиса?</p>
-            <p class="slogan__text">Нам есть, что вам предложить!</p>
+            <p class="slogan__text">Нам есть, что вам <br>предложить!</p>
           </div>
         </div>
 
         <section class="index-content__advantages advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__content">Cделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="advantages__image"></div>
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__content">Cделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="index-content__effect effect">
+          <div class="effect__wrapper">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </section>
         <section class="index-content__comments comments">
-          <h2 class="visually-hidden">Отзывы пользователей</h2>
-          <ul class="comments__list">
-            <li class="comments__item">
-              <h3 class="comments__title">Николай Петров</h3>
-              <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
-          <p class="comments__toggles slider-toggles">
-            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
-            <button class="slider-toggles__toggle" type="button"></button>
-            <button class="slider-toggles__toggle" type="button"></button>
-          </p>
+          <div class="comments__wrapper">
+            <h2 class="visually-hidden">Отзывы пользователей</h2>
+            <ul class="comments__list">
+              <li class="comments__item">
+                <h3 class="comments__title">Николай Петров</h3>
+                <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <span class="comments__info">25 лет, водитель трамвая</span>
+            </ul>
+            <p class="comments__toggles slider-toggles">
+              <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
+              <button class="slider-toggles__toggle" type="button"></button>
+              <button class="slider-toggles__toggle" type="button"></button>
+            </p>
+          </div>
         </section>
         <section class="index-content__plans plans">
           <h2 class="visually-hidden">Тарифные планы</h2>

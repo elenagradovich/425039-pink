@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
-
 }
 
 .page-header--photo {
@@ -15,19 +14,22 @@
 
 .page-header__top {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 20px;
+  width: 100%;
+  min-height: $height-top-mobile;
+  padding-right: 22px;
+  padding-left: 22px;
   background-color: $color-header;
-  z-index: 1;
+  z-index: 3;
 }
 .page-header__navigation {
-
+  z-index: 3;
 }
 
 .page-header__top--nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  min-height: 63px;
   background-color: $color-secondary;
   border-bottom: 1px solid $color-nav-border;
 } /*Находим и отключаем в js*/
@@ -57,6 +59,12 @@
     background-position: 50% 50%;
   }
 
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: $temporary;
+  }
+
   .page-header--photo {
     min-height: 440px;
   }
@@ -70,7 +78,12 @@
   }
 
   .page-header__top {
+    min-height: $height-top;
   }
+
+  .page-header__top--nav {
+    min-height: 63px;
+  } /*Находим и отключаем в js*/
 }
 
 @media (min-width: $desktop-width) {
@@ -90,6 +103,7 @@
   }
 
   .page-header__wrapper{
+    display: flex;
     flex-direction: row;
     width: 100%;
   }

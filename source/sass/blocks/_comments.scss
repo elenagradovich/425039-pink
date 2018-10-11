@@ -1,5 +1,13 @@
 .comments {
-  border: $temporary;
+  width: 100%;
+}
+
+.comments__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px 22px;
 }
 
 .comments__list {
@@ -24,7 +32,40 @@
   margin-bottom: 40px;
 }
 
+.comments__info {
+  display: none;
+}
+
 .comments__toggles {
   margin: 0 auto;
   margin-bottom: 60px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .comments__info {
+    display: block;
+  }
+
+  .comments__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .comments__content {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

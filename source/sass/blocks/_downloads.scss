@@ -1,15 +1,23 @@
 .downloads {
+  border: $temporary;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-bg-download;
+}
+
+.downloads__wrapper-top {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.downloads__wrapper-inner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: $color-bg-download;
-  border: $temporary;
+  width: auto;
 }
-
-.downloads__list {
-  @include lt-st-reset;
-}
-
 
 .downloads__info {
   margin: 0;
@@ -17,19 +25,16 @@
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .downloads__btn-wrapper {
   padding-top: 30px;
+  margin-bottom: 46px;
 }
 
 .downloads__button {
   display: block;
-  width: 280px;
-}
-
-.downloads__wrapper {
-  margin: 0 auto;
   width: 280px;
 }
 
@@ -43,7 +48,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  @include lt-st-reset;
+  margin-bottom: 29px;
 }
 
 .downloads__link-store {
@@ -57,15 +63,19 @@
   margin-right: 35px;
 }
 
-.downloads__btn-wrapper {
-  margin-bottom: 46px;
-}
-
 @media (min-width: $tablet-width) {
   .downloads {
+    background-color: transparent;
+  }
+
+  .downloads__wrapper-top {
+    position: absolute;
+    top:-600px;
+    max-width: $tablet-width;
+  }
+
+  .downloads__wrapper-inner {
     width: 280px;
-    background: transparent;
-    z-index: 1;
   }
 
   .downloads__title {
@@ -81,5 +91,50 @@
 }
 
 @media (min-width: $desktop-width) {
+  .downloads__wrapper-top {
+    max-width: $desktop-width;
+  }
+
+  .downloads__wrapper-inner {
+  }
+
+  .downloads__info {
+    margin-bottom: 125px;
+  }
 
 }
+/*
+
+
+
+
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    width: 100%;
+    max-width: $tablet-width;
+  }
+
+  .downloads__wrapper-top {
+    flex-direction: row;
+    position: absolute;
+    background-color: transparent;
+    top: -600px;
+  }
+
+  .downloads__wrapper {
+    width: 280px;
+    order: -1;
+  }
+
+
+
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    max-width: $desktop-width;
+  }
+
+}*/
+
