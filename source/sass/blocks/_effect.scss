@@ -1,60 +1,60 @@
-.effect {
-  width: 100%;
+.effects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include lt-st-reset;
+}
+
+.effects__img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: red;
+}
+
+.effects__filter {
   display: none;
-  background: $color-primary;
 }
 
 @media (min-width: $tablet-width) {
-  .effect {
-    display: flex;
+  .effects {
     flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    max-width: $tablet-width;
-    margin: 0 auto;
-    padding-left: 330px;
-    padding-right: 20px;
   }
 
-  .effect__wrapper {
-    width: 100%;
+  .effects__filter {
+    display: flex;
   }
 
-  .effect__link {
-    font-size: 18px;
-    line-height: 30px;
-    color: $color-font-accent;
-    text-decoration: underline;
+  .effects__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 275px;
+    height: 70px;
+    padding-right: 18px;
+    border-bottom: 1px solid $color-btn-reset;
   }
 
-  .effect__content {
-    line-height: 24px;
+  .effects__img {
+    display: block;
+    width: 22px;
+    height: 22px;
   }
-
-  .effect__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-   }
 }
 
 @media (min-width: $desktop-width) {
-  .effect {
-    max-width: $desktop-width;
-    padding: 114px 180px 118px 496px;
+  .effects__img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: red;
   }
 
-  .effect__wrapper {
-    width: 100%;
-  }
-
-  .effect__title {
-    font-size: 30px;
-    line-height: 30px;
-   }
-
- .effect__content {
-    font-size: 18px;
-    line-height: 30px;
+  .effects__item {
+    width: 410px;
+    padding-right: 30px;
   }
 }
+

@@ -148,33 +148,49 @@
         </div>
         <p class="gallery__footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </section>
-      <form class="photo-content__form upload-photo-form" method="post" action="#" enctype="multipart/form-data">
-        <div class="upload-photo-form__wrapper">
+      <div class="photo-content__form upload-photo">
+        <form class="upload-photo__form" method="post" action="#" enctype="multipart/form-data">
           <h2 class="visually-hidden">Форма редактирования фото</h2>
-          <img class="upload-photo-form__preview" src="http://placehold.it/280x374" width="280" height="374">
-          <div class="upload-photo-form__effects effects">
-            <div class="effects__item effects__item--crop">
-              <input class="visually-hidden" type="radio" name="effect" id="effect-crop" value="crop" checked>
-              <label class="upload-effect upload-effect--crop" for="effect-crop"></label>
+          <div class="upload-photo__preview">
+            <img class="upload-photo__img" src="http://placehold.it/280x374">
+          </div>
+          <div class="upload-photo__wrapper">
+            <div class="upload-photo__wrapper-effect">
+              <ul class="upload-photo__effects effects">
+                <li class="effects__item effects__item--crop">
+                  <input class="visually-hidden" type="radio" name="effect" id="effect-crop" value="crop" checked>
+                  <label class="effects__img effects__img--crop" for="effect-crop"></label>
+                  <div class="effects__filter filter">
+                    <div class="filter__pin"></div>
+                  </div>
+                </li>
+                <li class="effects__item effects__item--fill">
+                  <input class="visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
+                  <label class="effects__img effects__img--fill" for="effect-fill"></label>
+                  <div class="effects__filter filter">
+                    <div class="filter__pin"></div>
+                  </div>
+                </li>
+                <li class="effects__item effects__item--contrast">
+                  <input class="visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
+                  <label class="effects__img effects__img--contrast" for="effect-contrast"></label>
+                  <div class="effects__filter filter">
+                    <div class="filter__pin"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="upload-photo__filter filter">
+                <div class="filter__pin"></div>
+              </div>
             </div>
-            <div class="effects__item effects__item--fill">
-              <input class="visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
-              <label class="upload-effect upload-effect--fill" for="effect-fill"></label>
-            </div>
-            <div class="effects__item effects__item--contrast">
-              <input class="visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
-              <label class="upload-effect upload-effect--contrast" for="effect-contrast"></label>
+            <div class="upload-photo__controls">
+              <button class="btn upload-photo__submit" type="submit">Запостить</button>
+              <button class="btn upload-photo__cancel" type="reset">Отмена</button>
             </div>
           </div>
-          <div class="upload-photo-form__filter filter">
-            <div class="filter__pin"></div>
-          </div>
-          <div class="upload-photo-form__controls controls">
-            <button class="btn controls__submit" type="submit">Запостить</button>
-            <button class="btn controls__cancel" type="button">Отмена</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
+
     </main>
     <footer class="footer footer--photo">
       <div class="footer__wrapper-bottom">

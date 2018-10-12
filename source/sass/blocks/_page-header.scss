@@ -1,6 +1,7 @@
 .page-header {
   width: 100%;
   min-height: 462px;
+  min-width: $mobile-width;
   padding-bottom: 20px;
   background: $color-secondary url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;

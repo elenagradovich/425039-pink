@@ -26,7 +26,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -61,4 +60,5 @@ img {
 @import "blocks/_gallery.scss";
 @import "blocks/_gallery-card.scss";
 @import "blocks/_upload-photo-form.scss";
+@import "blocks/_filter.scss";
 @import "blocks/_modal.scss";

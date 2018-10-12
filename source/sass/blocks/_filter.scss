@@ -1,0 +1,17 @@
+.filter {
+  width: 100%;
+  height: 2px;
+  background: $color-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    width: 202px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    width: 288px;
+  }
+}

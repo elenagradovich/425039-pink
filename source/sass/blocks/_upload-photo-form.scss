@@ -1,17 +1,134 @@
-.upload-photo-form {
-  padding: 20px 20px 41px 18px;
-  background: darken($color-primary, 5.1);
-  border: $temporary;
+.upload-photo {
+  width: 100%;
+  background-color: darken($color-primary, 5.1);
 }
 
-.controls__submit {
+.upload-photo__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.upload-photo__preview {
+  margin-bottom: 42px;
+}
+
+.upload-photo__img {
+  width: 100%;
+  height: auto;
+}
+
+.upload-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.upload-photo__wrapper-effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid $color-btn-reset;
+  margin-bottom: 38px;
+}
+
+.upload-photo__filter {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.upload-photo__controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upload-photo__submit {
   width: 280px;
   border: 3px solid $color-font-accent;
   color: $color-font-accent;
+  margin-bottom: 12px;
 }
 
-.controls__cancel {
+.upload-photo__cancel {
   width: 280px;
   border: 3px solid $color-btn-reset;
   color: $color-btn-reset;
 }
+
+@media (min-width: $tablet-width) {
+  .upload-photo__form {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 57px 20px 54px;
+    width: 100%;
+    max-width: $tablet-width;
+  }
+
+  .upload-photo__preview {
+    margin-bottom: 0;
+  }
+
+  .upload-photo__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload-photo__wrapper {
+    width: 49%;
+    justify-content: space-between;
+  }
+
+  .upload-photo__wrapper-effect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 275px;
+    height: 200px;
+    margin: 0 0 67px;
+    border-bottom: none;
+  }
+
+  .upload-photo__filter {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .upload-photo {
+    background: $color-primary;
+  }
+
+  .upload-photo__wrapper {
+    width: 51%;
+  }
+
+  .upload-photo__form {
+    width: 100%;
+    max-width: $desktop-width - 2 * $padding-side-desktop;
+    padding: 57px 60px 57px 80px;
+    background-color: darken($color-primary, 5.1);
+  }
+
+  .upload-photo__controls {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .upload-photo__submit {
+    width: 183px;
+    margin-bottom: 0;
+  }
+
+  .upload-photo__cancel {
+    width: 183px;
+  }
+}
+
