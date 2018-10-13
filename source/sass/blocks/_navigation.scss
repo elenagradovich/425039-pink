@@ -8,6 +8,7 @@
 .navigation__list {
   display: flex;
   flex-direction: column;
+
   @include lt-st-reset;
   flex-wrap: wrap;
   z-index: 2;
@@ -40,7 +41,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .navigation__item {
@@ -50,4 +50,3 @@
     border: none;
   }
 }
-

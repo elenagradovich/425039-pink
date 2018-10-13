@@ -1,5 +1,4 @@
 @import "normalize";
-
 @import "abstracts/_variables.scss";
 @import "abstracts/_dif.scss";
 @import "abstracts/_mixins.scss";
@@ -46,13 +45,9 @@ img {
 @import "blocks/_plans.scss";
 @import "blocks/_contacts.scss";
 @import "blocks/_map.scss";
-@import "blocks/_form-page.scss";
+@import "blocks/_page-content.scss";
 @import "blocks/_review.scss";
-@import "blocks/_personal-info.scss";
-@import "blocks/_achivements.scss";
-@import "blocks/_comment.scss";
 @import "blocks/_user-info.scss";
-@import "blocks/_app.scss";
 @import "blocks/_footer.scss";
 @import "blocks/_social.scss";
 @import "blocks/_copyright.scss";

@@ -48,6 +48,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   @include lt-st-reset;
   margin-bottom: 29px;
 }
@@ -94,11 +95,7 @@
     max-width: $desktop-width;
   }
 
-  .downloads__wrapper-inner {
-  }
-
   .downloads__info {
     margin-bottom: 125px;
   }
-
 }

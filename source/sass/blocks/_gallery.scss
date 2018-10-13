@@ -36,6 +36,7 @@
   align-items: center;
   width: 100%;
   margin: 0 auto 40px;
+
   @include lt-st-reset;
 }
 
@@ -51,7 +52,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .gallery__wrapper {
     max-width: $tablet-width;
   }
@@ -118,4 +118,3 @@
     height: 506px;
   }
 }
-

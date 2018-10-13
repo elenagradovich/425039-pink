@@ -16,6 +16,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+
   @include lt-st-reset;
   padding: 20px;
   padding-bottom: 325px;
@@ -78,11 +79,10 @@
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
-   }
+  }
 
- .advantages__content {
+  .advantages__content {
     font-size: 18px;
     line-height: 30px;
   }
 }
-
