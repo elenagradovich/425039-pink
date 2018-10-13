@@ -1,3 +1,4 @@
+@import "~normalize.css";
 @import "abstracts/_variables.scss";
 @import "abstracts/_dif.scss";
 @import "abstracts/_mixins.scss";
@@ -16,7 +17,8 @@ body {
   font-weight: 400;
   color: $color-secondary;
   background-color: $color-primary;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -30,7 +32,8 @@ img {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 @import "blocks/_page-header.scss";
