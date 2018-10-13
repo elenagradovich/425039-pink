@@ -43,6 +43,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .comments__wrapper {
+    max-width: $tablet-width;
+  }
+
   .comments__info {
     display: block;
   }
@@ -63,8 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .comments__wrapper {
-    width: 80%;
-    margin: 0 auto;
+    max-width: $desktop-width;
     padding-left: 120px;
     padding-right: 120px;
   }
