@@ -7,7 +7,8 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 45px 22px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .comments__list {
@@ -16,11 +17,11 @@
 }
 
 .comments__item {
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .comments__title {
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -28,8 +29,8 @@
 }
 
 .comments__content {
+  margin: 0 0 25px;
   line-height: 30px;
-  margin-bottom: 40px;
 }
 
 .comments__info {
@@ -38,7 +39,6 @@
 
 .comments__toggles {
   margin: 0 auto;
-  margin-bottom: 60px;
 }
 
 

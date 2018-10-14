@@ -16,13 +16,11 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-
   @include lt-st-reset;
-  padding: 20px;
-  padding-bottom: 325px;
 }
 
 .advantages__title {
+  margin-bottom: 0px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -31,7 +29,6 @@
 
 .advantages__content {
   color: $color-secondary;
-  margin-bottom: 35px;
   line-height: 24px;
 }
 

@@ -1,14 +1,20 @@
+.index-content__downloads {
+  padding: 28px 20px 29px;
+}
+
 .index-content__slogan {
-  padding: 46px 58px 60px;
+  padding: 40px 58px 63px;
   background: $color-primary;
 }
 
-.index-content__downloads {
-  width: 100%;
+.index-content__advantages {
+  padding: 30px 20px 305px;
+  margin: 0 auto;
 }
 
-.index-content__advantages {
-  margin: 0 auto;
+.index-content__comments {
+  padding-top: 45px;
+  padding-bottom: 60px;
 }
 
 .index-content {
@@ -17,6 +23,8 @@
 
 .index-content__plans {
   overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 45px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +38,7 @@
 @media (min-width: $desktop-width) {
   .index-content__downloads {
     max-width: $desktop-width;
+    margin-top: -680px;
     padding-left: 130px;
     padding-right: 130px;
   }

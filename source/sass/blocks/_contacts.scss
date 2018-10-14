@@ -3,21 +3,17 @@
   flex-direction: column;
   padding: 0;
   margin: 0 auto;
-  border: $temporary;
 }
 
 .contacts__item {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  min-width: 320px;
+  align-items: center;
   text-align: center;
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 .contacts__item:not(:last-child) {
-  padding-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .contacts__title {
