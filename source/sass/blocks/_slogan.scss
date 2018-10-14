@@ -4,6 +4,8 @@
 
 .slogan__wrapper {
   margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
   text-align: center;
 }
 
@@ -16,14 +18,28 @@
   line-height: 30px;
 }
 
-.slogan__text br {
-  display: none;
-}
-
 .slogan__text:not(:last-child) {
   margin-bottom: 26px;
 }
 
+@media (min-width: $tablet-width) {
+  .slogan__wrapper {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .slogan__text {
+    font-size: 40px;
+    line-height: 0;
+  }
+
+  .slogan__text:nth-child(2) {
+    padding-right: 60px;
+    padding-left: 60px;
+    line-height: 48px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .slogan__text {

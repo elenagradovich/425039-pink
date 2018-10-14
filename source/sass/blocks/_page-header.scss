@@ -55,15 +55,10 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 730px;
+    min-height: 729px;
     background: $color-secondary url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-  }
-
-  .page-header__wrapper {
-    display: flex;
-    flex-direction: column;
   }
 
   .page-header--photo {
@@ -83,7 +78,7 @@
   }
 
   .page-header__top--nav {
-    min-height: 63px;
+    min-height: $height-top;
   } /*Находим и отключаем в js*/
 }
 
@@ -104,7 +99,6 @@
   }
 
   .page-header__back {
-    width: 100%;
     background: $color-header;
   }
 

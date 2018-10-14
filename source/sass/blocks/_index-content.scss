@@ -3,13 +3,12 @@
 }
 
 .index-content__slogan {
-  padding: 40px 58px 63px;
+  padding: 40px 20px 63px;
   background: $color-primary;
 }
 
 .index-content__advantages {
-  padding: 30px 20px 305px;
-  margin: 0 auto;
+  padding: 50px 45px 285px 60px;
 }
 
 .index-content__comments {
@@ -31,14 +30,27 @@
   .index-content__downloads {
     position: relative;
     max-width: $tablet-width;
-    padding: 0;
+    padding: 0 20px;
+  }
+
+  .index-content__slogan {
+    padding-top: 70px;
+    padding-right: 0;
+    padding-left: 20px;
+    padding-bottom: 95px;
+    background: $color-primary;
+  }
+
+  .index-content__advantages {
+    padding-top: 26px;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .index-content__downloads {
     max-width: $desktop-width;
-    margin-top: -680px;
     padding-left: 130px;
     padding-right: 130px;
   }

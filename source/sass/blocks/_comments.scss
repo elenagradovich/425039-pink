@@ -16,9 +16,6 @@
   text-align: center;
 }
 
-.comments__item {
-}
-
 .comments__title {
   margin: 0;
   margin-bottom: 12px;
@@ -45,10 +42,7 @@
 @media (min-width: $tablet-width) {
   .comments__wrapper {
     max-width: $tablet-width;
-  }
-
-  .comments__info {
-    display: block;
+    padding: 0;
   }
 
   .comments__item {
@@ -60,8 +54,19 @@
     line-height: 30px;
   }
 
+  .comments__title {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
   .comments__content {
     order: -1;
+    margin-bottom: 35px;
+  }
+
+  .comments__info {
+    display: block;
+    margin-bottom: 33px;
   }
 }
 
