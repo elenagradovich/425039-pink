@@ -46,6 +46,15 @@
     padding-bottom: 0;
     padding-right: 0;
   }
+
+  .index-content__comments {
+    padding-bottom: 70px;
+  }
+
+  .index-content__plans {
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
 }
 
 @media (min-width: $desktop-width) {
