@@ -6,14 +6,15 @@
 .upload-photo__form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .upload-photo__preview {
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 }
 
 .upload-photo__img {
@@ -34,13 +35,14 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  border-bottom: 1px solid $color-btn-reset;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $color-form-border;
 }
 
 .upload-photo__filter {
   max-width: 240px;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .upload-photo__controls {
