@@ -1,5 +1,5 @@
 .index-content__downloads {
-  padding: 28px 20px 29px;
+  padding: 27px 20px 30px;
 }
 
 .index-content__slogan {
@@ -31,7 +31,7 @@
     position: relative;
     max-width: ($tablet-width - $extra-indent);
     padding: 0 20px;
-    margin: 0auto;
+    margin: 0 auto;
   }
 
   .index-content__slogan {
@@ -63,6 +63,7 @@
     max-width: ($desktop-width - $extra-indent);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
+    margin: 0 auto;
   }
 
   .index-content__slogan {

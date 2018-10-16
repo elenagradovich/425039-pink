@@ -1,15 +1,21 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__back {
+  margin-top: -$height-top-mobile;
   width: 100%;
   min-height: 462px;
-  min-width: $mobile-width;
-  padding-bottom: 20px;
   background: $color-secondary url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
 }
 
-.page-header--photo {
+.page-header__back--photo,
+.page-header__back--form {
+  padding-top: 80px;
   min-height: 237px;
 }
 
@@ -34,7 +40,7 @@
   min-height: 70px;
   background-color: $color-secondary;
   border-bottom: 1px solid $color-dark;
-} /*Находим и отключаем в js*/
+} /*Находим и отключаем через js*/
 
 .page-header__wrapper {
   display: flex;
@@ -45,33 +51,33 @@
 .page-header__title {
   line-height: 30px;
   text-align: center;
-  padding: 0 45px;
-}
-
-.page-header__title-tag {
   font-size: 24px;
   color: $color-primary;
   font-weight: 300;
 }
 
+
 @media (min-width: $tablet-width) {
-  .page-header {
-    min-height: 729px;
+  .page-header__back {
+    min-height: 730px;
     background: $color-secondary url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-size: cover;
     background-position: 50% 50%;
+    margin-top: -$height-top;
+    z-index: 0;
   }
 
-  .page-header--photo {
+  .page-header__back--photo,
+  .page-header__back--form {
+    padding-top: 145px;
     min-height: 440px;
   }
 
   .page-header__title {
-    padding: 0 85px;
-  }
-
-  .page-header__title-tag {
     font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: $color-primary;
+    font-weight: 300;
   }
 
   .page-header__top {
@@ -80,27 +86,22 @@
 
   .page-header__top--nav {
     min-height: $height-top;
-  } /*Находим и отключаем в js*/
+  } /*Находим и отключаем через js*/
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__back {
     min-height: 853px;
     background: $color-secondary url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    background-size: cover;
     background-position: 50% 50%;
+    margin-top: -$height-top;
+    z-index: 0;
   }
 
-  .page-header__title {
-    padding: 0 185px;
-  }
-
-  .page-header--photo {
+  .page-header__back--photo,
+  .page-header__back--form {
+    padding-top: 140px;
     min-height: 395px;
-  }
-
-  .page-header__back {
-    background: $color-header;
   }
 
   .page-header__top {
@@ -113,6 +114,11 @@
 
   .page-header__trigger {
     display: none;
+  }
+
+ .page-header__wrapper-top {
+    background-color: $color-header;
+    z-index: 2;
   }
 
   .page-header__wrapper {

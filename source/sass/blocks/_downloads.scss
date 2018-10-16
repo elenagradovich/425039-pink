@@ -26,7 +26,7 @@
   flex-wrap: wrap;
 
   @include lt-st-reset;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .downloads__link-store {
@@ -66,7 +66,7 @@
 
   .downloads__wrapper-top {
     position: absolute;
-    margin-top: -565px;
+    margin-top: -562px;
   }
 
   .downloads__wrapper-inner {
@@ -75,7 +75,7 @@
 
   .downloads__title {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding-left: 55px;
     padding-right: 45px;
     font-size: 40px;
@@ -127,5 +127,11 @@
 
   .downloads__info {
     margin-bottom: 0;
+  }
+
+  .downloads__button {
+    font-size: 21px;
+    padding-top: 10px;
+    padding-bottom: 12px;
   }
 }
