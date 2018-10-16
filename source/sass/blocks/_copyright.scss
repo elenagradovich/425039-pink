@@ -1,6 +1,6 @@
 .copyright {
   margin: 0;
-  width: 128px;
+  padding-right: 40px;
   line-height: 18px;
   color: $color-secondary;
 }
@@ -8,4 +8,11 @@
 .copyright__comment {
   color: $color-secondary;
   line-height: 18px;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__comment {
+    font-size: 18px;
+  }
 }

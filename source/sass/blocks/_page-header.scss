@@ -18,10 +18,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  min-height: $height-top-mobile;
   padding-right: 22px;
   padding-left: 22px;
+  width: 100%;
+  min-height: $height-top-mobile;
   background-color: $color-header;
   z-index: 3;
 }
@@ -118,11 +118,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: $padding-side-desktop;
+    padding-left: $padding-side-desktop;
     width: 100%;
     margin: 0 auto;
-    max-width: $desktop-width;
+    max-width: ($desktop-width - $extra-indent);
     z-index: 1;
   }
 }

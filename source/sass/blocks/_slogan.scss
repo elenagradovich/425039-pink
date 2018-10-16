@@ -18,10 +18,6 @@
   line-height: 30px;
 }
 
-.slogan__text:not(:last-child) {
-  margin-bottom: 26px;
-}
-
 @media (min-width: $tablet-width) {
   .slogan__wrapper {
     margin: 0 auto;
@@ -31,13 +27,12 @@
 
   .slogan__text {
     font-size: 40px;
-    line-height: 0;
+    line-height: 50px;
   }
 
   .slogan__text:nth-child(2) {
     padding-right: 60px;
     padding-left: 60px;
-    line-height: 48px;
   }
 }
 
@@ -47,7 +42,9 @@
     line-height: 60px;
   }
 
-  .slogan__text br {
-    display: inline-block;
+  .slogan__text:nth-child(2) {
+    padding-right: 230px;
+    padding-left: 230px;
   }
+
 }

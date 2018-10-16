@@ -107,20 +107,25 @@
 
 @media (min-width: $desktop-width) {
   .downloads__wrapper-top {
-    padding: 0;
-    max-width: $desktop-width;
-  }
-
-  .downloads__info {
-    margin-bottom: 125px;
+    margin-top: -675px;
   }
 
   .downloads__title {
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 50px;
   }
 
   .downloads__btn-wrapper {
     width: 300px;
+    margin-bottom: 70px;
+  }
+
+  .downloads__list {
+    margin-bottom: 55px;
+  }
+
+  .downloads__info {
+    margin-bottom: 0;
   }
 }

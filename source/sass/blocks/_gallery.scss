@@ -53,7 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .gallery__wrapper {
-    max-width: $tablet-width;
+    max-width: ($tablet-width - $extra-indent);
   }
 
   .gallery__item--top {
@@ -94,8 +94,8 @@
 
 @media (min-width: $desktop-width) {
   .gallery__wrapper {
-    padding: 0 130px;
-    max-width: $desktop-width;
+    padding: 0 $padding-side-desktop;
+    max-width: ($desktop-width - $extra-indent);
   }
 
   .gallery__item--top {

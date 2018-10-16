@@ -90,6 +90,7 @@
   }
 
   .plan__column {
+    width: 155px;
     border: 2px solid $color-input-border;
     border-right: none;
   }
@@ -104,14 +105,6 @@
 
   .plans__item:not(:first-child) .plan__comment {
     display: none;
-  }
-
-  .plans__list {
-    width: 620px;
-  }
-
-  .plan__column {
-    width: 155px;
   }
 
   .plan__cell {
@@ -136,20 +129,24 @@
 
 @media (min-width: $desktop-width) {
   .plan__column {
-    width: 234px;
+    width: 235px;
   }
 
   .plan__cell {
     padding: 0 24px;
-    height: 59px;
+    height: 61px;
   }
 
   .plan__title {
     padding-top: 16px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   .plan__comment {
     font-size: 18px;
+  }
+
+  .plan__price {
+    font-size: 24px;
   }
 }

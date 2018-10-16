@@ -13,8 +13,9 @@ $color-bg-form: #f2f2f2;
 $font-family: "Open Sans", "Helvetica", "Arial", "Verdana", "Tahoma", sans-serif;
 
 $mobile-width: 320px;
-$tablet-width: 660px;
-$desktop-width: 1200px;
+$extra-indent: 18px;
+$tablet-width: (660px + $extra-indent);
+$desktop-width: (1200px + $extra-indent);
 
 $height-top: 110px;
 $height-top-mobile: 66px;

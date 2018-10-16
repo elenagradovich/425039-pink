@@ -64,7 +64,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 36px $padding-side;
-    min-height: 127px;
   }
 
   .footer__item {
@@ -78,8 +77,21 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper-bottom {
-    max-width: $desktop-width;
+    max-width: ($desktop-width - $extra-indent);
     padding: 70px $padding-side-desktop;
-    min-height: 197px;
+  }
+
+  .footer-index__wrapper {
+    padding-top: 65px;
+  }
+
+  .footer-index__title {
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 55px;
+  }
+
+  .footer-index__contacts {
+    margin-bottom: 20px;
   }
 }

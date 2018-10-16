@@ -29,12 +29,12 @@
 @media (min-width: $tablet-width) {
   .index-content__downloads {
     position: relative;
-    max-width: $tablet-width;
+    max-width: ($tablet-width - $extra-indent);
     padding: 0 20px;
   }
 
   .index-content__slogan {
-    padding-top: 70px;
+    padding-top: 45px;
     padding-right: 0;
     padding-left: 20px;
     padding-bottom: 95px;
@@ -59,8 +59,22 @@
 
 @media (min-width: $desktop-width) {
   .index-content__downloads {
-    max-width: $desktop-width;
-    padding-left: 130px;
-    padding-right: 130px;
+    max-width: ($desktop-width - $extra-indent);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+
+  .index-content__slogan {
+    padding: 65px $padding-side-desktop 175px;
+    width: 100%;
+  }
+
+  .index-content__advantages {
+    padding: 0;
+  }
+
+  .index-content__plans {
+    padding-top: 60px;
+    padding-bottom: 65px;
   }
 }
