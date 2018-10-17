@@ -92,9 +92,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .gallery__slogan {
+    max-width: $desktop-width;
+    padding: 75px 290px 70px;
+  }
+
   .gallery__wrapper {
     padding: 0 $padding-side-desktop;
     max-width: ($desktop-width - $extra-indent);
+  }
+
+  .gallery__item {
+    margin-bottom: 51px;
   }
 
   .gallery__item--top {
@@ -115,5 +124,9 @@
 
   .gallery__image-top {
     height: 506px;
+  }
+
+  .gallery__footer {
+    padding: 10px 30px 65px;
   }
 }

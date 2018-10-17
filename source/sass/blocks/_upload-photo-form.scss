@@ -128,8 +128,8 @@
 
   .upload-photo__form {
     width: 100%;
-    max-width: $desktop-width - 2 * $padding-side-desktop;
-    padding: 57px 60px 57px 80px;
+    max-width: $desktop-width - $extra-indent - 2 * $padding-side-desktop;
+    padding: 54px 60px 57px 80px;
     background-color: darken($color-primary, 5.1);
   }
 
