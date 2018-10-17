@@ -49,7 +49,7 @@
     <main class="page-content photo-content">
       <section class="photo-content__gallery gallery">
         <h2 class="visually-hidden">Галерея</h2>
-        <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
+        <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <img class="gallery__image-top" src="http://placehold.it/280x180"  alt="Изображение пользователя">
         <div class="gallery__wrapper">
@@ -60,7 +60,7 @@
                   <span class="gallery-card__author">Анна</span>
                   <span class="gallery-card__time">(5 минут назад)</span>
                 </div>
-                <p class="gallery-card__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="gallery-card__comment gallery-card__comment--top">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="gallery-card__likes gallery-card__likes--top">Нравится:
                   <span class="gallery-card__likes-count">215</span>
                 </div>
@@ -157,29 +157,29 @@
           <div class="upload-photo__wrapper">
             <div class="upload-photo__wrapper-effect">
               <ul class="upload-photo__effects effects">
-                <li class="effects__item effects__item--crop">
+                <li class="effects__item effects__item--top effects__item--crop">
                   <input class="visually-hidden" type="radio" name="effect" id="effect-crop" value="crop" checked>
                   <label class="effects__img effects__img--crop" for="effect-crop"></label>
-                  <div class="effects__filter filter">
+                  <div class="effects__filter filter filter--right">
                     <div class="filter__pin"></div>
                   </div>
                 </li>
                 <li class="effects__item effects__item--fill">
                   <input class="visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
                   <label class="effects__img effects__img--fill" for="effect-fill"></label>
-                  <div class="effects__filter filter">
+                  <div class="effects__filter filter filter--right">
                     <div class="filter__pin"></div>
                   </div>
                 </li>
-                <li class="effects__item effects__item--contrast">
+                <li class="effects__item effects__item--last effects__item--contrast">
                   <input class="visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
                   <label class="effects__img effects__img--contrast" for="effect-contrast"></label>
-                  <div class="effects__filter filter">
+                  <div class="effects__filter filter filter--right">
                     <div class="filter__pin"></div>
                   </div>
                 </li>
               </ul>
-              <div class="upload-photo__filter filter">
+              <div class="upload-photo__filter filter filter--bottom">
                 <div class="filter__pin"></div>
               </div>
             </div>

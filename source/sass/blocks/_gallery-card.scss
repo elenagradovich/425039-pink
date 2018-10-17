@@ -66,19 +66,38 @@
     width: 100%;
   }
 
+  .gallery-card__wrapper {
+    min-height: 155px;
+    padding: 25px 27px 22px;
+  }
+
   .gallery-card__wrapper--top {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: auto;
     justify-content: space-between;
+    padding: 23px 27px 15px;
   }
 
   .gallery-card__info--top {
     order: -2;
   }
 
-  .gallery-card__likes--top {
+  .gallery-card__comment {
+    margin-bottom: 12px;
+  }
+
+  .gallery-card__comment--top {
+    margin-bottom: 10px;
+  }
+
+  .gallery-card__likes {
     padding-left: 0;
+    bpadding-right: 0;
+  }
+
+  .gallery-card__likes--top {
     padding-right: 32px;
     order: -1;
   }
