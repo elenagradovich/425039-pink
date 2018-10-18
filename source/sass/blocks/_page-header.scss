@@ -56,6 +56,12 @@
   font-weight: 300;
 }
 
+.page-header__title--form {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header__back {
