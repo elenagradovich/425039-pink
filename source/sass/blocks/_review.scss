@@ -285,7 +285,6 @@
 
   .review__title--achivements {
     padding-top: 0;
-
   }
 
   .review__title--comment {
@@ -338,10 +337,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review__header {
-
-  }
-
   .review__form {
     display: flex;
     flex-direction: row;
