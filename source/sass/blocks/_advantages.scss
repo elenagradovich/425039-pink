@@ -38,7 +38,7 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     align-items: flex-end;
-    max-width: ($tablet-width - $extra-indent);
+    max-width: $tablet-width;
   }
 
   .advantages__list {
@@ -68,7 +68,7 @@
   .advantages__wrapper {
     padding: 260px $padding-side-desktop 0;
     margin: 0 auto;
-    max-width: ($desktop-width - $extra-indent);
+    max-width: $desktop-width;
   }
 
   .advantages__list {

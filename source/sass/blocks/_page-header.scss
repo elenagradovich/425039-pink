@@ -24,8 +24,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 100%;
   min-height: $height-top-mobile;
   background-color: $color-header;
@@ -62,7 +62,6 @@
   padding-right: 40px;
 }
 
-
 @media (min-width: $tablet-width) {
   .page-header__back {
     min-height: 730px;
@@ -92,7 +91,7 @@
 
   .page-header__top--nav {
     min-height: $height-top;
-  } /*Находим и отключаем через js*/
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,6 +126,16 @@
     z-index: 2;
   }
 
+  .page-header__title--form {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .review__header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .page-header__wrapper {
     display: flex;
     flex-direction: row;
@@ -135,7 +144,7 @@
     padding-left: $padding-side-desktop;
     width: 100%;
     margin: 0 auto;
-    max-width: ($desktop-width - $extra-indent);
+    max-width: $desktop-width;
     z-index: 1;
   }
 }

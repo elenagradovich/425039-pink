@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .index-content__downloads {
     position: relative;
-    max-width: ($tablet-width - $extra-indent);
+    max-width: $tablet-width;
     padding: 0 20px;
     margin: 0 auto;
   }
@@ -60,7 +60,7 @@
 
 @media (min-width: $desktop-width) {
   .index-content__downloads {
-    max-width: ($desktop-width - $extra-indent);
+    max-width: $desktop-width;
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
     margin: 0 auto;

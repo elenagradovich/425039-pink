@@ -7,13 +7,16 @@
 
 @media (min-width: $tablet-width) {
   .page-content__wrapper {
-    max-width: ($tablet-width - $extra-indent);
-    padding: 100px 20px 0;
+    max-width: $tablet-width;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-content__wrapper {
-    max-width: ($desktop-width - $extra-indent);
+    max-width: $desktop-width;
+    padding: 0 130px;
   }
 }

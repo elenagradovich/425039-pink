@@ -77,7 +77,7 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper-bottom {
-    max-width: ($desktop-width - $extra-indent);
+    max-width: $desktop-width;
     padding: 100px $padding-side-desktop;
   }
 

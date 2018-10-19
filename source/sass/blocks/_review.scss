@@ -1,3 +1,8 @@
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
 .review__header {
   padding: 45px 20px 20px;
   margin: 0;
@@ -42,6 +47,7 @@
   padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
   width: 100%;
   border: none;
 }
@@ -51,7 +57,7 @@
 }
 
 .review__set--achivements {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 .review__set--contacts {
@@ -86,8 +92,20 @@
   @include lt-st-reset;
 }
 
+.review__item {
+  position: relative;
+}
+
+.review__item:not(:last-child) {
+  margin-bottom: 57px;
+}
+
 .review__item-app:not(:last-child) {
   margin-bottom: 50px;
+}
+
+.review__item-app {
+  width: 100%;
 }
 
 .review__menu-item {
@@ -108,7 +126,6 @@
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 5px;
-  /*margin-right: 22px;*/
 }
 
 .review__field,
@@ -131,20 +148,8 @@
   padding: 20px 20px;
 }
 
-.review__item {
-  position: relative;
-}
-
-.review__item:not(:last-child) {
-  margin-bottom: 58px;
-}
-
 .review__mark {
   display: none;
-}
-
-.review__item-app {
-  width: 100%;
 }
 
 .review__wrapper:nth-child(even) {
@@ -177,46 +182,6 @@
     background: $color-primary;
   }
 
-  .review__header {
-    padding-right: 87px;
-    padding-left: 87px;
-  }
-
-  .review__set:not(.review__set--personal-info) {
-    border: 2px solid $color-input-border;
-  }
-
-  .review__set--personal-info {
-    padding: 0;
-  }
-
-  .review__block {
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .review__contact {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .review__field--contacts {
-    order: -1;
-  }
-
-  .review__field {
-    flex-grow: 1;
-  }
-
-  .review__title--contacts {
-    display: flex;
-  }
-
-
-  .review__submit {
-    width: 298px;
-  }
-
   .review__wrapper:nth-child(1) {
     order: 1;
   }
@@ -237,10 +202,136 @@
     order: 5;
   }
 
+  .review__header {
+    padding: 95px 50px 73px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .review__form-title {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .review__set:not(.review__set--personal-info) {
+    border: 2px solid $color-input-border;
+  }
+
+  .review__set {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .review__set--personal-info {
+    padding: 0;
+    margin-bottom: 55px;
+  }
+
+  .review__set--app {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 58px;
+  }
+
+  .review__set--contacts {
+    padding-top: 37px;
+    padding-bottom: 25px;
+    margin-bottom: 56px;
+  }
+
+  .review__set--achivements {
+    padding-top: 53px;
+    margin-bottom: 55px;
+  }
+
+  .review__set--comment {
+    padding: 35px 57px 50px;
+    margin-bottom: 70px;
+  }
+
+  .review__menu-item {
+    padding-left: 115px;
+  }
+
+  .review__block {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .review__block:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  .review__label {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .review__label--contacts {
+    padding-left: 20px;
+  }
+
+  .review__title {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .review__title--app {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .review__title--achivements {
+    padding-top: 0;
+
+  }
+
+  .review__title--comment {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  .review__title--contacts {
+    display: flex;
+  }
+
+  .review__contact {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 55px;
+  }
+
+  .review__contact:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .review__field--contacts {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .review__field {
+    flex-grow: 1;
+    padding-top: 23px;
+  }
+
+  .review__submit {
+    width: 298px;
+    margin-bottom: 0;
+  }
+
+  .review__required {
+    margin-bottom: 0;
+  }
+
   .review__footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 0;
     width: 100%;
     order: 6;
   }
@@ -248,8 +339,7 @@
 
 @media (min-width: $desktop-width) {
   .review__header {
-    padding-right: 224px;
-    padding-left: 224px;
+
   }
 
   .review__form {
