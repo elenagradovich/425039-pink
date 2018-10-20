@@ -69,19 +69,24 @@
   padding-bottom: 50px;
 }
 
-
-.review__contact:not(:last-child) {
-  padding-bottom: 15px;
-}
-
 .review__set--comment {
   padding-bottom: 55px;
 }
 
-.review__block,
+.review__block {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .review__contact {
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.review__contact:last-child {
+  padding-bottom: 0;
 }
 
 .review__block:not(:last-child) {
@@ -175,6 +180,10 @@
 
 .review__note {
   color: $color-font-accent;
+}
+
+.review__note-desktop {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -300,11 +309,11 @@
   .review__contact {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 55px;
+    padding: 0 55px 30px;
   }
 
-  .review__contact:not(:last-child) {
-    padding-bottom: 30px;
+  .review__contact:last-child {
+    padding-bottom: 0;
   }
 
   .review__field--contacts {
@@ -341,11 +350,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .review__header {
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-bottom: 68px;
   }
 
   .review__wrapper:nth-child(1),
   .review__wrapper:nth-child(4) {
-    width: 50%;
+    width: 46.2%;
   }
 
   .review__wrapper:nth-child(2),
@@ -360,6 +377,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .review__set--app {
+    padding-top: 53px;
+    padding-bottom: 60px;
+    margin-bottom: 58px;
+  }
+
+  .review__set--contacts {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .review__set--achivements {
+    padding-top: 50px;
+    padding-bottom: 5px;
+  }
+
+  .review__set--comment {
+    padding-bottom: 40px;
+    margin-bottom: 65px;
   }
 
   .review__wrapper-contacts {
@@ -371,10 +411,60 @@
   }
 
   .review__contact {
-    width: 40%;
+    padding-bottom: 0;
+    width: 46.5%;
   }
 
-  .review__item {
-    width: 30%;
+  .review__contact:first-child {
+    padding-right: 0;
+  }
+
+  .review__contact:last-child {
+    padding-left: 0;
+  }
+
+  .review__field--contacts {
+    padding-top: 26px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .review__item--achivements {
+    width: 33%;
+  }
+
+  /*
+  .review__item--achivements:nth-child(3n +1) {
+    width: 38%;
+  }
+
+  .review__item--achivements:nth-child(3n +2) {
+    width: 33%;
+  }
+
+  .review__item--achivements:nth-child(3n +3) {
+    width: 27%;
+  }
+  */
+
+  .review__item--achivements:last-child {
+    margin-bottom: 57px;
+  }
+
+  .review__menu-item {
+    padding-left: 56px;
+  }
+
+  .review__menu-item--app {
+    padding-left: 135px;
+  }
+
+  .review__content {
+    height: 130px;
+  }
+
+  .review__note-desktop {
+    display: inline-block;
   }
 }

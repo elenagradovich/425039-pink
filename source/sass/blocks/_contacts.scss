@@ -66,12 +66,17 @@
   }
 
   .contacts__title {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 0 102px;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .contacts__item {
+    width: 32%;
   }
 }

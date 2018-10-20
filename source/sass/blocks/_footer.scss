@@ -20,6 +20,7 @@
   font-size: 24px;
   color: $color-secondary;
   line-height: 30px;
+  text-align: center;
 }
 
 .footer__wrapper-bottom {
@@ -85,6 +86,11 @@
     padding-top: 70px;
   }
 
+  .footer__wrapper-bottom--form {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
   .footer-index__wrapper {
     padding-top: 65px;
   }
@@ -92,11 +98,12 @@
   .footer-index__title {
     font-size: 50px;
     line-height: 58px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .footer-index__contacts {
-
+    padding-left: 130px;
+    padding-right: 130px;
     margin-bottom: 20px;
   }
 }
