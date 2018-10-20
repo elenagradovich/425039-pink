@@ -1,3 +1,15 @@
 .social {
-  border: $temporary;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social__icon {
+  width: 52px;
+  height: 52px;
+  background: blue;
+}
+
+.social__icon:not(:last-child) {
+  margin-right: 11px;
 }

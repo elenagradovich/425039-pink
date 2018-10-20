@@ -1,0 +1,23 @@
+.page-content__wrapper {
+  min-width: $mobile-width;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-primary;
+}
+
+@media (min-width: $tablet-width) {
+  .page-content__wrapper {
+    max-width: $tablet-width;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__wrapper {
+    max-width: $desktop-width;
+    padding: 0 130px;
+    margin-bottom: 0;
+  }
+}

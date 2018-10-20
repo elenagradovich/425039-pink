@@ -1,24 +1,132 @@
 .gallery {
-  border: $temporary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: $color-primary;
-  padding: 0 20px 5px;
+}
+
+.gallery__image-top {
+  display: block;
+  width: 100%;
+  height: 137px;
+  background: $color-secondary no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .gallery__slogan {
   text-align: center;
   margin: 0;
-  padding: 48px 40px;
+  padding: 45px 30px 50px;
   line-height: 30px;
 }
 
+.gallery__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .gallery__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 40px;
+
   @include lt-st-reset;
-  margin-bottom: 40px;
 }
 
 .gallery__footer {
   margin: 0;
   text-align: center;
-  margin-bottom: 40px;
+  padding: 22px 30px 43px;
   line-height: 30px;
+}
+
+.gallery__item {
+  margin: 0 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    max-width: $tablet-width;
+  }
+
+  .gallery__item--top {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .gallery__image-top {
+    height: 509px;
+  }
+
+  .gallery__slogan {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    padding: 77px 45px 57px;
+    line-height: 30px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .gallery__item:nth-child(n+2):nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .gallery__footer {
+    font-size: 18px;
+    padding: 45px 30px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__slogan {
+    max-width: $desktop-width;
+    padding: 75px 290px 70px;
+  }
+
+  .gallery__wrapper {
+    padding: 0 $padding-side-desktop;
+    max-width: $desktop-width;
+  }
+
+  .gallery__item {
+    margin-bottom: 51px;
+  }
+
+  .gallery__item--top {
+    width: 100%;
+  }
+
+  .gallery__item:nth-child(n+2):nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .gallery__item:nth-child(n+2):nth-child(3n) {
+    margin-right: 20px;
+  }
+
+  .gallery__item:nth-child(n+2):nth-child(3n-1) {
+    margin-right: 20px;
+  }
+
+  .gallery__image-top {
+    height: 506px;
+  }
+
+  .gallery__footer {
+    padding: 10px 30px 65px;
+  }
 }

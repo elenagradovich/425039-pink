@@ -1,21 +1,32 @@
 .plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: darken($color-primary, 5.1);
-  border: $temporary;
-  padding-bottom: 70px;
 }
 
 .plans__list {
   @include lt-st-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 32px;
 }
 
-.plan__table {
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 43px;
+.plans__item--extra {
+  display: none;
+}
+
+.plan__column {
+  width: 272px;
+  border-collapse: collapse;
 }
 
 .plans__row {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: $color-secondary;
   font-size: 14px;
   line-height: 30px;
@@ -27,14 +38,27 @@
 }
 
 .plan__title {
-  padding-top: 16px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   color: $color-primary;
   text-transform: uppercase;
   font-size: 18px;
+  border: 2px solid $color-secondary;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+}
+
+.plan__title--first {
+  border-right: 2px solid $color-input-border;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.plan__title--last {
+  border-left: 2px solid $color-input-border;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .plan__price {
@@ -42,14 +66,88 @@
   font-size: 24px;
 }
 
-.plan__comment {
-  padding: 20px 48px 18px 22px;
+.plan__cell {
+  padding: 0 22px;
+  width: 276px;
+  height: 59px;
   background: $color-primary;
   text-align: left;
-  text-transform: uppercase;
   border-bottom: 2px solid $color-input-border;
+}
+
+.plan__comment {
+  text-transform: uppercase;
 }
 
 .plan__toggles {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .plans__item--extra {
+    display: flex;
+    margin-top: auto;
+  }
+
+  .plan__column {
+    width: 155px;
+    border: 2px solid $color-input-border;
+    border-right: none;
+  }
+
+  .plan__column--last {
+    border-right: 2px solid $color-input-border;
+  }
+
+  .plan__toggles {
+    display: none;
+  }
+
+  .plans__item:not(:first-child) .plan__comment {
+    display: none;
+  }
+
+  .plan__cell {
+    padding: 0 15px;
+    height: 47px;
+  }
+
+  .plan__title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .plan__price {
+    font-size: 18px;
+  }
+
+  .plan__comment {
+    text-transform: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan__column {
+    width: 235px;
+  }
+
+  .plan__cell {
+    padding: 0 20px;
+    height: 61px;
+  }
+
+  .plan__title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .plan__comment {
+    font-size: 18px;
+  }
+
+  .plan__price {
+    font-size: 24px;
+  }
 }

@@ -1,16 +1,33 @@
 .map {
+  position: relative;
   padding: 0;
   margin: 0;
-  border: $temporary;
+  width: 100%;
 }
 
-.map__img {
+.map__inner {
+  height: 220px;
   width: 100%;
-  background: url("../img/bg-map-mobile@1x.png") 100% 100% no-repeat;
   z-index: 0;
 }
 
-.map__position {
-  width: 100%;
-  z-index: 1;
+.map__marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background: yellow;
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner {
+    height: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__inner {
+    height: 502px;
+  }
 }
