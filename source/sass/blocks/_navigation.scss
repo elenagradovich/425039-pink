@@ -1,8 +1,7 @@
 .navigation {
   padding: 0;
   margin: 0;
-  width: 100%;
-  z-index: 10;
+  z-index: 5;
 }
 
 .navigation__list {
@@ -33,7 +32,7 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    max-width: 620px;
+    width: 625px;
   }
 
   .navigation__list {

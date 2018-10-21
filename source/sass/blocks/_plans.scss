@@ -1,11 +1,3 @@
-.plans {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: darken($color-primary, 5.1);
-}
-
 .plans__list {
   @include lt-st-reset;
   display: flex;

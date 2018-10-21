@@ -8,45 +8,43 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <div class="page-header__wrapper-top">
-        <div class="page-header__wrapper">
-          <div class="page-header__top page-header__top--nav">
-            <div class="page-header__logo logo">
-              <a class="logo__link" href="index.html">
-                <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </a>
-            </div>
-            <button class="page-header__trigger trigger">
-              <svg class="trigger__cross"></svg>
-              <svg class="trigger__burger visually-hidden"></svg>
-            </button>
+      <div class="page-header__wrapper">
+        <div class="page-header__top page-header__top--nav">
+          <div class="page-header__logo logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+            </a>
           </div>
-          <nav class="page-header__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link">Фотографии</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          <button class="page-header__trigger trigger">
+            <svg width="50" height="10"  class="trigger__cross"></svg>
+            <svg width="50" height="10"  class="trigger__burger visually-hidden"></svg>
+          </button>
         </div>
-      </div>
-      <div class="page-header__back  page-header__back--photo">
-        <h1 class="page-header__title">Фотографии <br> пользователей</h1>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <main class="page-content photo-content">
+    <main class="page-content">
+      <div class="page-content__back  page-content__back--photo">
+        <h1 class="page-content__title page-content__title--photo">Фотографии пользователей</h1>
+      </div>
       <section class="photo-content__gallery gallery">
         <h2 class="visually-hidden">Галерея</h2>
         <div class="gallery__slogan">
@@ -62,7 +60,7 @@
                   <span class="gallery-card__author">Анна</span>
                   <span class="gallery-card__time">(5 минут назад)</span>
                 </div>
-                <p class="gallery-card__comment gallery-card__comment--top">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="gallery-card__comment gallery-card__comment--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="gallery-card__likes gallery-card__likes--top">Нравится:
                   <span class="gallery-card__likes-count">215</span>
                 </div>
@@ -198,21 +196,21 @@
       <div class="footer__wrapper-bottom">
         <div class="footer__item logo">
           <a class="logo__link" href="index.html">
-            <svg class="logo__img logo__img--footer"></svg>
+            <svg width="50" height="10"  class="logo__img logo__img--footer"></svg>
           </a>
         </div>
         <div class="footer__item social">
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
-            <svg class="social__image social__image--twitter"></svg>
+            <svg width="50" height="10"  class="social__image social__image--twitter"></svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
-            <svg class="social__image social__image--facebook"></svg>
+            <svg width="50" height="10"  class="social__image social__image--facebook"></svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
-            <svg class="social__image social__image--youtube"></svg>
+            <svg width="50" height="10"  class="social__image social__image--youtube"></svg>
           </a>
         </div>
         <div class="footer__item copyright">

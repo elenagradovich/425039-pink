@@ -8,85 +8,82 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__wrapper-top">
-        <div class="page-header__wrapper">
-          <div class="page-header__top page-header__top--nav">
-            <div class="page-header__logo logo">
-              <a class="logo__link" href="index.html">
-                <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </a>
-            </div>
-            <button class="page-header__trigger trigger">
-              <svg class="trigger__cross"></svg>
-              <svg class="trigger__burger visually-hidden"></svg>
-            </button>
+  <body class="page">
+    <header class="page-header page-header--index">
+      <div class="page-header__wrapper">
+        <div class="page-header__top page-header__top--nav">
+          <div class="page-header__logo logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+            </a>
           </div>
-          <nav class="page-header__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link">Главная</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          <button class="page-header__trigger trigger">
+            <svg width="50" height="10"  class="trigger__cross"></svg>
+            <svg width="50" height="10"  class="trigger__burger visually-hidden"></svg>
+          </button>
         </div>
-      </div>
-      <div class="page-header__back">
-        <h1 class="page-header__title"><h1 class="visually-hidden">Приложение ПИНК</h1></h1>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <main class="page-content index-content">
-      <div class="index-content__inner">
-        <section class="index-content__downloads downloads">
-          <div class="downloads__wrapper-top">
-            <div class="downloads__wrapper-inner">
-              <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
-              <div class="downloads__btn-wrapper">
-                <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+    <main class="page-content">
+      <div class="page-content__wrapper">
+        <div class="page-content__back page-content__back--index">
+          <h1 class="page-content__title visually-hidden">Приложение ПИНК</h1>
+          <section class="page-content__downloads downloads">
+              <div class="downloads__wrapper-inner">
+                <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
+                <div class="downloads__btn-wrapper">
+                  <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+                </div>
+                <ul class="downloads__list">
+                  <li class="downloads__item">
+                    <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
+                      <svg width="50" height="10"  class="downloads__image"></svg>
+                      <span class="visually-hidden">Логотип Apple</span>
+                    </a>
+                  </li>
+                  <li class="downloads__item">
+                    <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
+                      <svg width="50" height="10"  class="downloads__image"></svg>
+                      <span class="visually-hidden">Логотип Android</span>
+                    </a>
+                  </li>
+                  <li class="downloads__item">
+                    <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
+                      <svg width="50" height="10"  class="downloads__image"></svg>
+                      <span class="visually-hidden">Логотип Microsoft</span>
+                    </a>
+                  </li>
+                </ul>
+                <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
               </div>
-              <ul class="downloads__list">
-                <li class="downloads__item">
-                  <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
-                    <svg class="downloads__image"></svg>
-                    <span class="visually-hidden">Логотип Apple</span>
-                  </a>
-                </li>
-                <li class="downloads__item">
-                  <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
-                    <svg class="downloads__image"></svg>
-                    <span class="visually-hidden">Логотип Android</span>
-                  </a>
-                </li>
-                <li class="downloads__item">
-                  <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
-                    <svg class="downloads__image"></svg>
-                    <span class="visually-hidden">Логотип Microsoft</span>
-                  </a>
-                </li>
-              </ul>
-              <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
-          </div>
-        </section>
-        <div class="index-content__slogan slogan">
+          </section>
+        </div>
+
+        <div class="page-content__slogan slogan">
           <div class="slogan__wrapper">
             <p class="slogan__text">Устали от серости мегаполиса?</p>
             <p class="slogan__text">Нам есть, что вам предложить!</p>
           </div>
         </div>
 
-        <section class="index-content__advantages advantages">
+        <section class="page-content__advantages advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="advantages__wrapper">
             <ul class="advantages__list">
@@ -105,22 +102,23 @@
             </ul>
           </div>
         </section>
-        <section class="index-content__action action">
+        <section class="page-content__action action">
           <div class="action__wrapper">
             <h3 class="action__title">Эффект на 24 часа!</h3>
             <p class="action__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="action__link" href="#">Узнать больше об исследовании</a>
           </div>
         </section>
-        <section class="index-content__comments comments">
+
+        <section class="page-content__comments comments">
           <div class="comments__wrapper">
             <h2 class="visually-hidden">Отзывы пользователей</h2>
             <ul class="comments__list">
               <li class="comments__item">
                 <h3 class="comments__title">Николай Петров</h3>
                 <p class="comments__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <span class="comments__info">25 лет, водитель трамвая</span>
               </li>
-              <span class="comments__info">25 лет, водитель трамвая</span>
             </ul>
             <p class="comments__toggles slider-toggles">
               <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
@@ -133,108 +131,112 @@
             </p>
           </div>
         </section>
-        <section class="index-content__plans plans">
-          <h2 class="visually-hidden">Тарифные планы</h2>
-          <ul class="plans__list">
-            <li class="plans__item plans__item--extra  plan">
-              <table class="plan__column">
-                <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Розовый фильтр</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell not-incl">
-                    <span class="plan__comment">Смайлики</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plans__row--comment">
-                  <td class="plan__cell not-incl">
-                    <span class="plan__comment">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
-            </li>
-            <li class="plans__item plan">
-              <table class="plan__column">
-                <tr class="plan__header">
-                  <th class="plan__title plan__title--first">База<br>
-                    <span class="plan__price">1.99 USD</span>
-                  </th>
-                </tr>
-                <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Розовый фильтр</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell not-incl">
-                    <span class="plan__comment">Смайлики фильтр</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plans__row--comment">
-                  <td class="plan__cell not-incl">
-                    <span class="plan__comment">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
-            </li>
-            <li class="plans__item plan">
-              <table class="plan__column">
-                <tr class="plan__header">
-                  <th class="plan__title">Стандарт<br>
-                    <span class="plan__price">3.99 USD</span>
-                  </th>
-                </tr>
-                <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Розовый фильтр</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Смайлики</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plans__row--comment">
-                  <td class="plan__cell not-incl">
-                    <span class="plan__comment">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
-            </li>
-            <li class="plans__item plan">
-              <table class="plan__column plan__column--last">
-                <tr class="plan__header">
-                  <th class="plan__title plan__title--last">Анлим<br>
-                    <span class="plan__price">9.99 USD</span>
-                  </th>
-                </tr>
-                <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Розовый фильтр</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Смайлики</span>
-                  </td>
-                </tr>
-                <tr class="plan__row plan__row--comment">
-                  <td class="plan__cell incl">
-                    <span class="plan__comment">Комментарии</span></td>
-                </tr>
-              </table>
-            </li>
-          </ul>
-          <p class="plan__toggles slider-toggles">
-            <button class="slider-toggles__toggle" type="button"></button>
-            <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
-            <button class="slider-toggles__toggle" type="button"></button>
-          </p>
+
+        <section class="page-content__plans">
+          <div class="page-content__wrapper plans">
+            <h2 class="visually-hidden">Тарифные планы</h2>
+            <ul class="plans__list">
+              <li class="plans__item plans__item--extra  plan">
+                <table class="plan__column">
+                  <tr class="plan__row plan__row--pink">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Розовый фильтр</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plan__row--smile">
+                    <td class="plan__cell not-incl">
+                      <span class="plan__comment">Смайлики</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plans__row--comment">
+                    <td class="plan__cell not-incl">
+                      <span class="plan__comment">Комментарии</span>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+              <li class="plans__item plan">
+                <table class="plan__column">
+                  <tr class="plan__header">
+                    <th class="plan__title plan__title--first">База<br>
+                      <span class="plan__price">1.99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="plan__row plan__row--pink">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Розовый фильтр</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plan__row--smile">
+                    <td class="plan__cell not-incl">
+                      <span class="plan__comment">Смайлики фильтр</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plans__row--comment">
+                    <td class="plan__cell not-incl">
+                      <span class="plan__comment">Комментарии</span>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+              <li class="plans__item plan">
+                <table class="plan__column">
+                  <tr class="plan__header">
+                    <th class="plan__title">Стандарт<br>
+                      <span class="plan__price">3.99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="plan__row plan__row--pink">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Розовый фильтр</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plan__row--smile">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Смайлики</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plans__row--comment">
+                    <td class="plan__cell not-incl">
+                      <span class="plan__comment">Комментарии</span>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+              <li class="plans__item plan">
+                <table class="plan__column plan__column--last">
+                  <tr class="plan__header">
+                    <th class="plan__title plan__title--last">Анлим<br>
+                      <span class="plan__price">9.99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="plan__row plan__row--pink">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Розовый фильтр</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plan__row--smile">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Смайлики</span>
+                    </td>
+                  </tr>
+                  <tr class="plan__row plan__row--comment">
+                    <td class="plan__cell incl">
+                      <span class="plan__comment">Комментарии</span></td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <p class="plan__toggles slider-toggles">
+              <button class="slider-toggles__toggle" type="button"></button>
+              <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button"></button>
+              <button class="slider-toggles__toggle" type="button"></button>
+            </p>
+          </div>
         </section>
       </div>
     </main>
+
     <footer class="footer footer-index">
       <div class="footer-index__wrapper">
         <h2 class="footer-index__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
@@ -267,15 +269,15 @@
         <div class="footer__item social">
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
-            <svg class="social__image social__image--twitter"></svg>
+            <svg width="50" height="10"  class="social__image social__image--twitter"></svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
-            <svg class="social__image social__image--facebook"></svg>
+            <svg width="50" height="10"  class="social__image social__image--facebook"></svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
-            <svg class="social__image social__image--youtube"></svg>
+            <svg width="50" height="10"  class="social__image social__image--youtube"></svg>
           </a>
         </div>
         <div class="footer__item footer__item--last copyright">
@@ -286,6 +288,5 @@
         </div>
       </div>
     </footer>
-  </div>
   </body>
 </html>

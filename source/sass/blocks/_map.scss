@@ -2,12 +2,11 @@
   position: relative;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
 
 .map__inner {
+  width: $mobile-width;
   height: 220px;
-  width: 100%;
   z-index: 0;
 }
 
@@ -22,12 +21,14 @@
 
 @media (min-width: $tablet-width) {
   .map__inner {
+    width: $tablet-width;
     height: 375px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__inner {
+    width: $desktop-width;
     height: 502px;
   }
 }

@@ -2,16 +2,11 @@
   background-color: $color-bg-download;
 }
 
-.downloads__wrapper-top {
-  width: 100%;
-}
-
 .downloads__wrapper-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
 }
 
 .downloads__title {
@@ -64,11 +59,6 @@
     background-color: transparent;
   }
 
-  .downloads__wrapper-top {
-    position: absolute;
-    margin-top: -562px;
-  }
-
   .downloads__wrapper-inner {
     width: 300px;
   }
@@ -106,10 +96,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .downloads__wrapper-top {
-    margin-top: -675px;
-  }
-
   .downloads__title {
     font-size: 50px;
     line-height: 60px;
