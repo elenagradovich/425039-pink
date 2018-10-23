@@ -1,7 +1,15 @@
-.upload-photo__form {
+.upload-photo {
   @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+}
+
+.upload-photo__form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 20px $padding-side 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .upload-photo__preview {
@@ -9,7 +17,7 @@
 }
 
 .upload-photo__img {
-  width: 100%;
+  width: 280px;
   height: auto;
 }
 
@@ -56,13 +64,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .upload-photo {
+    @include wrapper($tablet-width);
+    background: $color-bg-form;
+  }
+
   .upload-photo__form {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 55px 20px 50px;
-    width: 100%;
-    max-width: $tablet-width;
+    padding-top: 55px;
+    padding-bottom: 50px;
   }
 
   .upload-photo__preview {
@@ -76,7 +87,7 @@
 
   .upload-photo__wrapper {
     height: 400px;
-    width: 44%;
+    width: 275px;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -106,24 +117,25 @@
 
 @media (min-width: $desktop-width) {
   .upload-photo {
-    background: $color-primary;
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+    background: none;
   }
 
   .upload-photo__wrapper {
-    width: 51%;
+    width: 410px;
   }
 
   .upload-photo__form {
-    width: 100%;
-    max-width: $desktop-width  - 2 * $padding-side-desktop;
     padding: 54px 60px 57px 80px;
-    background-color: darken($color-primary, 5.1);
+    background: $color-bg-form;
   }
 
   .upload-photo__controls {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 410px;
   }
 
   .upload-photo__submit {
