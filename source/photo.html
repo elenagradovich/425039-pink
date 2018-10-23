@@ -42,17 +42,19 @@
     </header>
 
     <main class="page-content">
-      <div class="page-content__back  page-content__back--photo">
-        <h1 class="page-content__title page-content__title--photo">Фотографии пользователей</h1>
-      </div>
-      <section class="photo-content__gallery gallery">
-        <h2 class="visually-hidden">Галерея</h2>
-        <div class="gallery__slogan">
-          <p >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-          </p>
+      <div class="page-content__wrapper page-content__back page-content__back--photo">
+        <div class="page-content__title">
+          <h1 class="page-content__title-tag">Фотографии пользователей</h1>
         </div>
-        <img class="gallery__image-top" src="http://placehold.it/280x180"  alt="Изображение пользователя">
-        <div class="gallery__wrapper">
+      </div>
+      <div class="page-content__wrapper page-content__wrapper--gallery">
+        <section class="gallery"> <!--photo-content__gallery-->
+          <h2 class="visually-hidden">Галерея</h2>
+          <div class="gallery__slogan">
+            <p >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+            </p>
+          </div>
+          <img class="gallery__image-top" src="http://placehold.it/280x180"  alt="Изображение пользователя">
           <ul class="gallery__list">
             <li class="gallery__item gallery-card gallery__item--top">
               <div class="gallery-card__wrapper gallery-card__wrapper--top">
@@ -145,10 +147,11 @@
               </div>
             </li>
           </ul>
-        </div>
-        <p class="gallery__footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-      </section>
-      <div class="photo-content__form upload-photo">
+          <p class="gallery__footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        </section>
+      </div>
+
+      <div class="page-content__wrapper page-content__wrapper--upload-photo">
         <form class="upload-photo__form" method="post" action="#" enctype="multipart/form-data">
           <h2 class="visually-hidden">Форма редактирования фото</h2>
           <div class="upload-photo__preview">
@@ -189,11 +192,11 @@
             </div>
           </div>
         </form>
-      </div>
-
+      <div>
     </main>
+
     <footer class="footer footer--photo">
-      <div class="footer__wrapper-bottom">
+      <div class="footer__wrapper-bottom footer__wrapper-bottom--photo">
         <div class="footer__item logo">
           <a class="logo__link" href="index.html">
             <svg width="50" height="10"  class="logo__img logo__img--footer"></svg>

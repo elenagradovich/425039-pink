@@ -1,16 +1,7 @@
-.upload-photo {
-  width: 100%;
-  background-color: darken($color-primary, 5.1);
-}
-
 .upload-photo__form {
-  display: flex;
-  flex-direction: column;
+  @include wrapper($mobile-width);
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px $padding-side 40px;
 }
 
 .upload-photo__preview {
@@ -37,10 +28,6 @@
   width: 100%;
   margin-bottom: 40px;
   border-bottom: 1px solid $color-form-border;
-}
-
-.upload-photo__effects {
-  margin-bottom: 40px;
 }
 
 .upload-photo__filter {

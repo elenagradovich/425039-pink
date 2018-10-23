@@ -1,6 +1,9 @@
+.page-content {
+  min-width: $mobile-width;
+}
+
 .page-content__wrapper {
   width: 100%;
-  min-width: $mobile-width;
 }
 
 .page-content__wrapper--downloads {
@@ -9,7 +12,8 @@
 }
 
 .page-content__wrapper--advantages,
-.page-content__wrapper--plans {
+.page-content__wrapper--plans,
+.page-content__wrapper--upload-photo {
   background-color: $color-bg-form;
 }
 
@@ -23,8 +27,9 @@
 
 .page-content__back--photo,
 .page-content__back--form {
-  padding-top: 80px;
-  min-height: 237px;
+  margin-top: -$height-top-mobile;
+  padding-top: 100px;
+  min-height: 238px;
 }
 
 .page-content__slogan {
@@ -32,18 +37,20 @@
 }
 
 .page-content__title {
+  @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+}
+
+.page-content__title-tag {
+  margin: 0;
   padding-left: 45px;
   padding-right: 45px;
   line-height: 30px;
-  text-align: center;
   font-size: 24px;
   color: $color-primary;
   font-weight: 300;
-}
-
-.page-content__title--form {
-  padding-left: 40px;
-  padding-right: 40px;
+  text-align: center;
 }
 
 .page-content__plans {
@@ -69,11 +76,15 @@
   }
 
   .page-content__title {
+    @include wrapper($tablet-width);
+  }
+
+  .page-content__title-tag {
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
     font-size: 50px;
     line-height: 60px;
-    text-align: center;
-    color: $color-primary;
-    font-weight: 300;
   }
 }
 
@@ -94,13 +105,15 @@
     min-height: 393px;
   }
 
-  .page-content__title--photo {
-    padding-left: 400px;
-    padding-right: 400px;
-  }
-
-  .page-content__title--form {
+  .page-content__title {
+    @include wrapper($desktop-width);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
+  }
+
+  .page-content__title-tag {
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
 }
