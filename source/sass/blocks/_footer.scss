@@ -4,13 +4,14 @@
 
 .footer-index__wrapper {
   @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
   align-items: center;
-  padding-top: 44px;
 }
 
 .footer-index__title {
-  margin: 0 0 30px;
-  padding: 0;
+  margin: 0 0 20px;
+  padding-top: 44px;
   font-weight: 300;
   font-size: 24px;
   color: $color-secondary;
@@ -19,11 +20,9 @@
 }
 
 .footer__wrapper-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 45px;
-  padding-bottom: 30px;
+  padding: 45px $padding-side 30px;
+  @include wrapper($mobile-width);
+  align-items: center
 }
 
 .footer__wrapper-bottom--index {
@@ -39,20 +38,25 @@
 }
 
 .footer-index__contacts {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .footer-index__wrapper {
     @include wrapper($tablet-width);
-    padding-top: 45px;
   }
 
   .footer__wrapper-bottom {
-    display: flex;
+    @include wrapper($tablet-width);
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px $padding-side;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .footer__wrapper-bottom--index {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .footer-index__title {
@@ -60,6 +64,7 @@
     font-weight: 300;
     line-height: 50px;
     margin-bottom: 40px;
+    padding-top: 45px;
   }
 
   .footer__item {
@@ -73,7 +78,9 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper-bottom {
-    max-width: $desktop-width;
+    @include wrapper($desktop-width);
+    flex-direction: row;
+    justify-content: space-between;
     padding: 100px $padding-side-desktop;
   }
 
@@ -88,18 +95,18 @@
 
   .footer-index__wrapper {
     @include wrapper($desktop-width);
-    padding-top: 65px;
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
   }
 
   .footer-index__title {
     font-size: 50px;
     line-height: 58px;
+    padding-top: 65px;
     margin-bottom: 60px;
   }
 
   .footer-index__contacts {
-    padding-left: $padding-side-desktop;
-    padding-right: $padding-side-desktop;
     margin-bottom: 20px;
   }
 }

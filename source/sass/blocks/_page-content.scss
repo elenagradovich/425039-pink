@@ -1,23 +1,24 @@
-.page-content {
-  margin-top: -$height-top-mobile;
+.page-content__wrapper {
   width: 100%;
+  min-width: $mobile-width;
 }
 
-.page-content__wrapper {
-  @include wrapper($mobile-width);
-  overflow: hidden;
+.page-content__wrapper--downloads {
+  display: flex;
+  margin-top: -$height-top-mobile;
+}
+
+.page-content__wrapper--advantages,
+.page-content__wrapper--plans {
+  background-color: $color-bg-form;
 }
 
 .page-content__back {
-  min-height: 462px;
+  min-height: 733px;
   background: $color-secondary url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
-}
-
-.page-content__back--index {
-  position: relative;
 }
 
 .page-content__back--photo,
@@ -26,10 +27,8 @@
   min-height: 237px;
 }
 
-.page-content__downloads {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.page-content__slogan {
+  @include wrapper($mobile-width);
 }
 
 .page-content__title {
@@ -57,16 +56,6 @@
     margin-top: -$height-top;
   }
 
-  .page-content__wrapper {
-    @include wrapper($tablet-width);
-    margin-bottom: 50px;
-  }
-
-  .page-content__wrapper--form {
-    padding-left: $padding-side;
-    padding-right: $padding-side;
-  }
-
   .page-content__back {
     min-height: 730px;
     background: $color-secondary url("../img/bg-back-tablet@1x.jpg") no-repeat;
@@ -86,21 +75,11 @@
     color: $color-primary;
     font-weight: 300;
   }
-
-  .page-content__downloads {
-    left: $padding-side;
-    bottom: 110px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .page-content__wrapper {
-    @include wrapper($desktop-width);
-  }
-
-  .page-content__wrapper--form {
-    padding-left: $padding-side-desktop;
-    padding-right: $padding-side-desktop;
+  .page-content__wrapper--action {
+    background-color: $color-bg-form;
   }
 
   .page-content__back {
@@ -123,10 +102,5 @@
   .page-content__title--form {
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
-  }
-
-  .page-content__downloads {
-    left: $padding-side-desktop;
-    bottom: 125px;
   }
 }

@@ -1,12 +1,16 @@
 .downloads {
-  background-color: $color-bg-download;
-}
-
-.downloads__wrapper-inner {
-  display: flex;
-  flex-direction: column;
+  @include wrapper($mobile-width);
   justify-content: center;
   align-items: center;
+  margin-top: auto;
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+}
+
+.downloads__wrapper {
+  background: $color-bg-download;
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 .downloads__title {
@@ -56,11 +60,18 @@
 
 @media (min-width: $tablet-width) {
   .downloads {
-    background-color: transparent;
+    @include wrapper($tablet-width);
+    padding-left: $padding-side;
+    padding-right: $padding-side;
+    position: relative;
   }
 
-  .downloads__wrapper-inner {
+  .downloads__wrapper {
+    position: absolute;
     width: 300px;
+    left: $padding-side;
+    bottom: 80px;
+    background: transparent;
   }
 
   .downloads__title {
@@ -96,6 +107,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .downloads {
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+
+  .downloads__wrapper {
+    left: $padding-side-desktop;
+    bottom: 95px;
+  }
+
   .downloads__title {
     font-size: 50px;
     line-height: 60px;

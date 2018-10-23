@@ -1,12 +1,7 @@
 .advantages {
-  width: 100%;
-  background: darken($color-primary, 5.1);
-}
-
-.advantages__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
 }
 
 .advantages__item {
@@ -19,6 +14,8 @@
   flex-direction: column;
 
   @include lt-st-reset;
+  padding-top: 50px;
+  padding-bottom: 285px;
 }
 
 .advantages__title {
@@ -36,27 +33,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__wrapper {
-    align-items: flex-end;
-    max-width: $tablet-width;
+  .advantages {
+    @include wrapper($tablet-width);
   }
 
   .advantages__list {
-    width: 54%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 25px 0 45px;
+    margin-left: auto;
+    width: 310px;
   }
 
   .advantages__item {
     text-align: left;
+    margin-bottom: 36px;
   }
 
   .advantages__item:last-child {
-    margin-bottom: 42px;
+    margin-bottom: 0;
   }
 
   .advantages__title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -65,18 +62,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__wrapper {
-    padding: 260px $padding-side-desktop 0;
-    margin: 0 auto;
-    max-width: $desktop-width;
+  .advantages {
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
   }
 
   .advantages__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 30px;
+    padding: 260px 30px 30px;
+    margin: 0;
+    width: auto;
   }
 
   .advantages__item {
