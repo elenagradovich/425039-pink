@@ -21,8 +21,9 @@
 
 .footer__wrapper-bottom {
   padding: 45px $padding-side 30px;
+
   @include wrapper($mobile-width);
-  align-items: center
+  align-items: center;
 }
 
 .footer__wrapper-bottom--index {
