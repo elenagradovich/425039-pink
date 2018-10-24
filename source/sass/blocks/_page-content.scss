@@ -52,6 +52,11 @@
   text-align: center;
 }
 
+.page-content__title-tag--form {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .page-content__plans {
   width: 100%;
   background: darken($color-primary, 5.1);
@@ -85,6 +90,11 @@
     font-size: 50px;
     line-height: 60px;
   }
+
+  .page-content__title-tag--form {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -114,5 +124,10 @@
     padding-top: 30px;
     padding-left: 250px;
     padding-right: 250px;
+  }
+
+  .page-content__title-tag--form {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

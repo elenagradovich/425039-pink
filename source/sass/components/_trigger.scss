@@ -7,3 +7,19 @@
   width: 24px;
   height: 23px;
 }
+
+.trigger__burger--hidden {
+  display: none;
+}
+
+.trigger__burger--active {
+  display: flex;
+}
+
+.trigger__cross--hidden {
+  display: none;
+}
+
+.trigger__cross--active {
+  display: flex;
+}
