@@ -60,10 +60,11 @@
 
 @media (min-width: $tablet-width) {
   .downloads {
+    position: relative;
     @include wrapper($tablet-width);
     padding-left: $padding-side;
     padding-right: $padding-side;
-    position: relative;
+    background: transparent;
   }
 
   .downloads__wrapper {
@@ -71,7 +72,6 @@
     width: 300px;
     left: $padding-side;
     bottom: 80px;
-    background: transparent;
   }
 
   .downloads__title {

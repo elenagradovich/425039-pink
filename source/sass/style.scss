@@ -33,6 +33,10 @@ img {
   box-sizing: inherit;
 }
 
+.active {
+  pointer-events: none;
+}
+
 @import "blocks/_page-header.scss";
 @import "blocks/_navigation.scss";
 @import "blocks/_downloads.scss";

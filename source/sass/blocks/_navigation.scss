@@ -32,27 +32,28 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    width: 625px;
+    display: flex;
+    width: 645px;
   }
 
   .navigation__list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 37px;
+    width: 100%;
   }
 
   .navigation__item {
-    padding-top: 0;
-    padding-bottom: 9px;
     background: transparent;
     border: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .navigation__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: none;
     font-weight: 400;
   }
