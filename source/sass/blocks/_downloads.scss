@@ -61,6 +61,7 @@
 @media (min-width: $tablet-width) {
   .downloads {
     position: relative;
+
     @include wrapper($tablet-width);
     padding-left: $padding-side;
     padding-right: $padding-side;

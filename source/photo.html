@@ -47,16 +47,17 @@
           <h1 class="page-content__title-tag">Фотографии пользователей</h1>
         </div>
       </div>
-      <div class="page-content__wrapper page-content__wrapper--gallery">
-        <section class="gallery"> <!--photo-content__gallery-->
-          <h2 class="visually-hidden">Галерея</h2>
-          <div class="gallery__slogan">
-            <p >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-            </p>
-          </div>
-          <img class="gallery__image-top" src="http://placehold.it/280x180"  alt="Изображение пользователя">
+
+      <section class="page-content__wrapper page-content__wrapper--gallery gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="gallery__wrapper">
+          <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+        </div>
+        <img class="gallery__image-top" src="img/panorama-desktop@1x.jpg"  alt="Изображение пользователя">
+        <div class="gallery__wrapper">
           <ul class="gallery__list">
-            <li class="gallery__item gallery-card gallery__item--top">
+            <li class="gallery__item gallery-card  gallery-card--top gallery__item--top">
               <div class="gallery-card__wrapper gallery-card__wrapper--top">
                 <div class="gallery-card__info gallery-card__info--top">
                   <span class="gallery-card__author">Анна</span>
@@ -147,9 +148,11 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="gallery__wrapper">
           <p class="gallery__footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <div class="page-content__wrapper page-content__wrapper--upload-photo">
         <div class="upload-photo">

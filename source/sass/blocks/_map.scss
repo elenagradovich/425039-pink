@@ -5,7 +5,8 @@
 }
 
 .map__inner {
-  width: $mobile-width;
+  width: 100%;
+  min-width: $mobile-width;
   height: 220px;
   z-index: 0;
 }
@@ -21,14 +22,12 @@
 
 @media (min-width: $tablet-width) {
   .map__inner {
-    width: $tablet-width;
     height: 375px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__inner {
-    width: $desktop-width;
     height: 502px;
   }
 }

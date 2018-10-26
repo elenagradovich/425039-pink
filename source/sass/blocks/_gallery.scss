@@ -1,4 +1,4 @@
-.gallery {
+.gallery__wrapper {
   @include wrapper($mobile-width);
   padding-left: $padding-side;
   padding-right: $padding-side;
@@ -9,10 +9,7 @@
 
 .gallery__image-top {
   display: block;
-  margin-left: -$padding-side;
-  margin-right: -$padding-side;
-  height: 137px;
-  width: $mobile-width;
+  width: 100%;
   background: $color-secondary no-repeat;
   background-size: cover;
   background-position: 50% 0;
@@ -28,7 +25,7 @@
 .gallery__list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
 
@@ -48,7 +45,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .gallery {
+  .gallery__wrapper {
     @include wrapper($tablet-width);
   }
 
@@ -58,8 +55,6 @@
 
   .gallery__image-top {
     height: 509px;
-    width: $tablet-width;
-    background-image: url("../img/panorama-tablet@1x.jpg");
   }
 
   .gallery__slogan {
@@ -88,7 +83,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .gallery {
+  .gallery__wrapper {
     @include wrapper($desktop-width);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
@@ -104,10 +99,6 @@
 
   .gallery__image-top {
     height: 506px;
-    width: $desktop-width;
-    margin-left: -$padding-side-desktop;
-    margin-right: -$padding-side-desktop;
-    background-image: url("../img/panorama-desktop@1x.jpg");
   }
 
   .gallery__item:nth-child(n+2):nth-child(2n) {
