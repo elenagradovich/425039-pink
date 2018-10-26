@@ -7,7 +7,7 @@
 @import "components/_buttons.scss";
 @import "components/_logo.scss";
 
-body {
+.page {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -33,12 +33,15 @@ img {
   box-sizing: inherit;
 }
 
+.active {
+  pointer-events: none;
+}
+
 @import "blocks/_page-header.scss";
 @import "blocks/_navigation.scss";
 @import "blocks/_downloads.scss";
 @import "blocks/_advantages.scss";
 @import "blocks/_action.scss";
-@import "blocks/_index-content.scss";
 @import "blocks/_slogan.scss";
 @import "blocks/_comments.scss";
 @import "blocks/_plans.scss";
@@ -50,7 +53,6 @@ img {
 @import "blocks/_footer.scss";
 @import "blocks/_social.scss";
 @import "blocks/_copyright.scss";
-@import "blocks/_photo-content.scss";
 @import "blocks/_gallery.scss";
 @import "blocks/_gallery-card.scss";
 @import "blocks/_upload-photo-form.scss";

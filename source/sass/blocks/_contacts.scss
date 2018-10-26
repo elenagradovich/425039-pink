@@ -52,8 +52,10 @@
   }
 }
 
-@media (min-width: 310px * 3) {
+@media (min-width: $desktop-width) {
   .contacts {
+    justify-content: space-between;
+    padding: 0;
     max-width: $desktop-width;
   }
 
@@ -67,16 +69,5 @@
 
   .contacts__title {
     margin-bottom: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .contacts__item {
-    width: 32%;
   }
 }

@@ -1,9 +1,8 @@
 .plans {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: darken($color-primary, 5.1);
+  @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+  overflow: hidden;
 }
 
 .plans__list {
@@ -13,6 +12,7 @@
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 32px;
+  padding-top: 70px;
 }
 
 .plans__item--extra {
@@ -20,7 +20,7 @@
 }
 
 .plan__column {
-  width: 272px;
+  width: 275px;
   border-collapse: collapse;
 }
 
@@ -69,7 +69,7 @@
 .plan__cell {
   padding: 0 22px;
   width: 276px;
-  height: 59px;
+  height: 61px;
   background: $color-primary;
   text-align: left;
   border-bottom: 2px solid $color-input-border;
@@ -79,11 +79,22 @@
   text-transform: uppercase;
 }
 
-.plan__toggles {
+.plans__toggles {
   margin: 0 auto;
+  padding-bottom: 45px;
 }
 
 @media (min-width: $tablet-width) {
+  .plans {
+    @include wrapper($tablet-width);
+  }
+
+  .plans__list {
+    margin-bottom: 0;
+    padding-top: 38px;
+    padding-bottom: 70px;
+  }
+
   .plans__item--extra {
     display: flex;
     margin-top: auto;
@@ -99,7 +110,7 @@
     border-right: 2px solid $color-input-border;
   }
 
-  .plan__toggles {
+  .plans__toggles {
     display: none;
   }
 
@@ -128,6 +139,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .plans {
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+
+  .plans__list {
+    padding-top: 70px;
+    padding-bottom: 95px;
+  }
+
   .plan__column {
     width: 235px;
   }

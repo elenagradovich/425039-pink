@@ -1,11 +1,6 @@
 .slogan {
-  width: 100%;
-}
-
-.slogan__wrapper {
-  margin: 0 auto;
-  padding-right: 50px;
-  padding-left: 50px;
+  @include wrapper($mobile-width);
+  padding: 40px 50px 63px;
   text-align: center;
 }
 
@@ -18,11 +13,11 @@
   line-height: 30px;
 }
 
+
 @media (min-width: $tablet-width) {
-  .slogan__wrapper {
-    margin: 0 auto;
-    padding-right: 0;
-    padding-left: 0;
+  .slogan {
+    @include wrapper($tablet-width);
+    padding: 47px $padding-side 95px;
   }
 
   .slogan__text {
@@ -37,6 +32,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slogan {
+    @include wrapper($desktop-width);
+    padding: 65px $padding-side-desktop 175px;
+  }
+
   .slogan__text {
     font-size: 50px;
     line-height: 60px;

@@ -1,24 +1,19 @@
 .comments {
-  width: 100%;
-}
-
-.comments__wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  @include wrapper($mobile-width);
+  padding-left: $padding-side;
+  padding-right: $padding-side;
 }
 
 .comments__list {
+  position: relative;
+
   @include lt-st-reset;
+  padding-top: 45px;
   text-align: center;
 }
 
 .comments__title {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 0 0 15px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -26,7 +21,7 @@
 }
 
 .comments__content {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
   line-height: 30px;
 }
 
@@ -36,6 +31,7 @@
 
 .comments__toggles {
   margin: 0 auto;
+  padding-bottom: 65px;
 }
 
 .comments__buttons {
@@ -43,9 +39,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .comments__wrapper {
-    max-width: $tablet-width;
-    padding: 0;
+  .comments {
+    @include wrapper($tablet-width);
+  }
+
+  .comments__list {
+    padding-top: 75px;
   }
 
   .comments__item {
@@ -59,24 +58,35 @@
 
   .comments__title {
     font-size: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 0;
   }
 
   .comments__content {
     order: -1;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .comments__info {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .comments__toggles {
+    padding-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .comments__wrapper {
-    max-width: $desktop-width;
-    padding: 140px 205px 55px;
+  .comments {
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+
+  .comments__list {
+    padding-top: 185px;
+    padding-bottom: 120px;
   }
 
   .comments__title {
@@ -85,7 +95,14 @@
   }
 
   .comments__content {
+    font-size: 18px;
     margin-bottom: 36px;
+  }
+
+  .comments__item {
+    position: relative;
+    padding-left: 125px;
+    padding-right: 125px;
   }
 
   .comments__info {

@@ -4,19 +4,25 @@
   width: 280px;
 }
 
+.gallery-card--top {
+  width: 100%;
+}
+
 .gallery-card__wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  flex-grow: 1;
-  padding: 18px 18px 20px;
+  padding: 17px 17px 21px;
   margin: 0;
   text-align: left;
   background-color: darken($color-primary, 5.1);
 }
 
+.gallery-card__wrapper--top {
+  padding-right: 10px;
+}
+
 .gallery-card__image {
-  width: 100%;
+  width: 280px;
   height: 180px;
 }
 
@@ -32,12 +38,10 @@
 }
 
 .gallery-card__comment {
-  width: 100%;
   margin: 0;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
-  flex-grow: 1;
 }
 
 .gallery-card__likes {
@@ -49,30 +53,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .gallery-card__image {
-    height: 300px;
-  }
-
-  .gallery-card__image--top {
-    height: 509px;
-    background-image: url("../img/panorama-tablet@1x.jpg");
-  }
-
-  .gallery-card:not(:first-child) {
+  .gallery-card {
     width: 300px;
   }
 
-  .gallery-card:first-child {
+  .gallery-card--top {
     width: 100%;
   }
 
+  .gallery-card__image {
+    width: 100%;
+    height: 300px;
+  }
+
   .gallery-card__wrapper {
+    flex-grow: 1;
     min-height: 155px;
     padding: 25px 27px 22px;
   }
 
   .gallery-card__wrapper--top {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: auto;
@@ -85,6 +85,7 @@
   }
 
   .gallery-card__comment {
+    flex-grow: 1;
     margin-bottom: 12px;
   }
 
@@ -94,7 +95,7 @@
 
   .gallery-card__likes {
     padding-left: 0;
-    bpadding-right: 0;
+    padding-right: 0;
   }
 
   .gallery-card__likes--top {
@@ -104,12 +105,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .gallery-card__image {
-    height: 400px;
+  .gallery-card--top {
+    width: 100%;
   }
 
-  .gallery-card__image--top {
-    height: 506px;
-    background-image: url("../img/panorama-desktop@1x.jpg");
+  .gallery-card__image {
+    height: 400px;
   }
 }

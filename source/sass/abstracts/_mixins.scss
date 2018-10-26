@@ -24,3 +24,10 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@mixin wrapper($width-value) {
+  display: flex;
+  flex-direction: column;
+  width: $width-value;
+  margin: 0 auto;
+}

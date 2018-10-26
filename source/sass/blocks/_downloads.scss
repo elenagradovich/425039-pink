@@ -1,17 +1,16 @@
 .downloads {
-  background-color: $color-bg-download;
-}
-
-.downloads__wrapper-top {
-  width: 100%;
-}
-
-.downloads__wrapper-inner {
-  display: flex;
-  flex-direction: column;
+  @include wrapper($mobile-width);
   justify-content: center;
   align-items: center;
-  width: auto;
+  margin-top: auto;
+  padding-left: $padding-side;
+  padding-right: $padding-side;
+  background: $color-bg-download;
+}
+
+.downloads__wrapper {
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 .downloads__title {
@@ -61,16 +60,19 @@
 
 @media (min-width: $tablet-width) {
   .downloads {
-    background-color: transparent;
+    position: relative;
+
+    @include wrapper($tablet-width);
+    padding-left: $padding-side;
+    padding-right: $padding-side;
+    background: transparent;
   }
 
-  .downloads__wrapper-top {
+  .downloads__wrapper {
     position: absolute;
-    margin-top: -562px;
-  }
-
-  .downloads__wrapper-inner {
     width: 300px;
+    left: $padding-side;
+    bottom: 80px;
   }
 
   .downloads__title {
@@ -106,8 +108,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .downloads__wrapper-top {
-    margin-top: -675px;
+  .downloads {
+    @include wrapper($desktop-width);
+    padding-left: $padding-side-desktop;
+    padding-right: $padding-side-desktop;
+  }
+
+  .downloads__wrapper {
+    left: $padding-side-desktop;
+    bottom: 95px;
   }
 
   .downloads__title {
