@@ -76,6 +76,10 @@
   .page-content__back {
     min-height: 730px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
     background-position: 50% 50%;
   }
 
@@ -111,6 +115,10 @@
   .page-content__back {
     min-height: 853px;
     background: $color-secondary url("../img/bg-back-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
     background-position: 50% 50%;
   }
 
