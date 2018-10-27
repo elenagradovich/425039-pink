@@ -1,4 +1,6 @@
 .downloads {
+  position: relative;
+
   @include wrapper($mobile-width);
   justify-content: center;
   align-items: center;
@@ -6,9 +8,27 @@
   padding-left: $padding-side;
   padding-right: $padding-side;
   background: $color-bg-download;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    bottom: 270px;
+    left: 0;
+    width: 260px;
+    height: 290px;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+    }
+  }
 }
 
 .downloads__wrapper {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 30px;
 }
@@ -60,12 +80,24 @@
 
 @media (min-width: $tablet-width) {
   .downloads {
-    position: relative;
-
     @include wrapper($tablet-width);
     padding-left: $padding-side;
     padding-right: $padding-side;
     background: transparent;
+    z-index: 3;
+
+    &::before {
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      bottom: 0;
+      left: 0;
+      width: 660px;
+      height: 545px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+      }
+      z-index: 0;
+    }
   }
 
   .downloads__wrapper {
@@ -112,6 +144,19 @@
     @include wrapper($desktop-width);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
+
+    &::before {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      bottom: 0;
+      left: 350px;
+      width: 595px;
+      height: 650px;
+      background-position: 70% 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+      }
+    }
   }
 
   .downloads__wrapper {

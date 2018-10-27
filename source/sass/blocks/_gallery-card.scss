@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-}
 
-.gallery-card--top {
-  width: 100%;
+  &--top {
+    width: 100%;
+  }
 }
 
 .gallery-card__wrapper {
@@ -14,12 +14,13 @@
   padding: 17px 17px 21px;
   margin: 0;
   text-align: left;
-  background-color: darken($color-primary, 5.1);
+  background-color: $color-bg-form;
+
+  &--top {
+    padding-right: 10px;
+  }
 }
 
-.gallery-card__wrapper--top {
-  padding-right: 10px;
-}
 
 .gallery-card__image-wrapper {
   padding: 0;
@@ -61,10 +62,10 @@
 @media (min-width: $tablet-width) {
   .gallery-card {
     width: 300px;
-  }
 
-  .gallery-card--top {
-    width: 100%;
+    &--top {
+      width: 100%;
+    }
   }
 
   .gallery-card__image-wrapper {
@@ -75,14 +76,14 @@
     flex-grow: 1;
     min-height: 155px;
     padding: 25px 27px 22px;
-  }
 
-  .gallery-card__wrapper--top {
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: auto;
-    justify-content: space-between;
-    padding: 23px 27px 15px;
+    &--top {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: auto;
+      justify-content: space-between;
+      padding: 23px 27px 15px;
+    }
   }
 
   .gallery-card__info--top {
@@ -92,20 +93,20 @@
   .gallery-card__comment {
     flex-grow: 1;
     margin-bottom: 12px;
-  }
 
-  .gallery-card__comment--top {
-    margin-bottom: 10px;
+    &--top {
+      margin-bottom: 10px;
+    }
   }
 
   .gallery-card__likes {
     padding-left: 0;
     padding-right: 0;
-  }
 
-  .gallery-card__likes--top {
-    padding-right: 32px;
-    order: -1;
+    &--top {
+      padding-right: 32px;
+      order: -1;
+    }
   }
 }
 

@@ -2,23 +2,23 @@
   width: 100%;
   height: 2px;
   background: $color-dark;
-}
 
-.filter--right {
-  display: none;
+  &--right {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .filter {
     width: 80%;
-  }
 
-  .filter--right {
-    display: flex;
-  }
+    &--right {
+      display: flex;
+    }
 
-  .filter--bottom {
-    display: none;
+    &--bottom {
+      display: none;
+    }
   }
 }
 

@@ -11,6 +11,10 @@
   color: $color-secondary;
   font-size: 24px;
   line-height: 30px;
+
+  &:nth-child(1) {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -23,11 +27,15 @@
   .slogan__text {
     font-size: 40px;
     line-height: 50px;
-  }
 
-  .slogan__text:nth-child(2) {
-    padding-right: 60px;
-    padding-left: 60px;
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
   }
 }
 
@@ -40,10 +48,10 @@
   .slogan__text {
     font-size: 50px;
     line-height: 60px;
-  }
 
-  .slogan__text:nth-child(2) {
-    padding-right: 230px;
-    padding-left: 230px;
+    &:nth-child(2) {
+      padding-right: 230px;
+      padding-left: 230px;
+    }
   }
 }

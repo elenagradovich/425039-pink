@@ -29,14 +29,14 @@
   width: 100%;
   padding-top: 48px;
   padding-bottom: 50px;
-}
 
-.modal__wrapper-btn--error {
-  padding-top: 0;
-}
+  &--error {
+    padding-top: 0;
+  }
 
-.modal__wrapper-btn--success {
-  background-color: $color-bg-form;
+  &--success {
+    background-color: $color-bg-form;
+  }
 }
 
 .modal__btn {
@@ -63,10 +63,10 @@
     padding-bottom: 30px;
     font-size: 18px;
     line-height: 24px;
-  }
 
-  .modal__content--error {
-    padding-bottom: 35px;
+    &--error {
+      padding-bottom: 35px;
+    }
   }
 
   .modal__btn {
@@ -83,31 +83,33 @@
     padding-right: 200px;
     padding-left: 200px;
     padding-bottom: 40px;
+
+    &--error {
+      padding-bottom: 60px;
+    }
   }
 
   .modal__header {
     padding-top: 45px;
   }
 
-  .modal__content--error {
-    padding-bottom: 60px;
-  }
-
   .modal__wrapper-btn {
     width: 100%;
+
+    &--error {
+      padding-top: 48px;
+      padding-bottom: 50px;
+      background-color: $color-bg-form;
+    }
   }
 
-  .modal__wrapper-btn--error {
-    padding-top: 48px;
-    padding-bottom: 50px;
-    background-color: $color-bg-form;
-  }
+  .modal__btn {
+    &--error {
+      width: 300px;
+    }
 
-  .modal__btn--error {
-    width: 300px;
-  }
-
-  .modal__btn--success {
-    width: 460px;
+    &--success {
+      width: 460px;
+    }
   }
 }

@@ -20,13 +20,13 @@
   padding-left: $padding-side;
   min-height: $height-top-mobile;
   background-color: $color-header;
-}
 
-.page-header__top--nav {
-  background-color: $color-secondary;
-  min-height: 70px;
-  border-bottom: 1px solid $color-dark;
-} /*Находим и отключаем через js*/
+  &--nav {
+    background-color: $color-secondary;
+    min-height: 70px;
+    border-bottom: 1px solid $color-dark;
+  } /*Находим и отключаем через js*/
+}
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -35,10 +35,10 @@
 
   .page-header__top {
     min-height: $height-top;
-  }
 
-  .page-header__top--nav {
-    min-height: $height-top;
+    &--nav {
+      min-height: $height-top;
+    }
   }
 }
 

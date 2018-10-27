@@ -59,12 +59,12 @@
     max-width: $desktop-width;
   }
 
-  .contacts__item:nth-child(2) {
-    order: 2;
-  }
-
   .contacts__item {
     margin-bottom: 0;
+
+    &:nth-child(2) {
+      order: 2;
+    }
   }
 
   .contacts__title {
