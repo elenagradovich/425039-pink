@@ -7,14 +7,6 @@
   background-color: $color-primary;
 }
 
-.gallery__image-top {
-  display: block;
-  width: 100%;
-  background: $color-secondary no-repeat;
-  background-size: cover;
-  background-position: 50% 0;
-}
-
 .gallery__slogan {
   text-align: center;
   margin: 0;
@@ -30,6 +22,18 @@
   width: 100%;
 
   @include lt-st-reset;
+}
+
+.gallery__image-top-wrapper {
+  padding: 0;
+  margin: 0;
+  height: 137px;
+  overflow-y: hidden;
+}
+
+.gallery__image-top {
+  width: 100%;
+  height: auto;
 }
 
 .gallery__footer {
@@ -53,7 +57,7 @@
     margin-bottom: 50px;
   }
 
-  .gallery__image-top {
+  .gallery__image-top-wrapper {
     height: 509px;
   }
 
@@ -97,7 +101,7 @@
     margin-bottom: 55px;
   }
 
-  .gallery__image-top {
+  .gallery__image-top-wrapper {
     height: 506px;
   }
 

@@ -18,7 +18,13 @@
 
 .page-content__back {
   min-height: 733px;
-  background: $color-secondary url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $color-secondary;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
@@ -69,7 +75,7 @@
 
   .page-content__back {
     min-height: 730px;
-    background: $color-secondary url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 50%;
   }
 

@@ -21,9 +21,15 @@
   padding-right: 10px;
 }
 
-.gallery-card__image {
-  width: 280px;
+.gallery-card__image-wrapper {
+  padding: 0;
+  margin: 0;
   height: 180px;
+}
+
+.gallery-card__image {
+  width: 100%;
+  height: auto;
 }
 
 .gallery-card__author {
@@ -61,8 +67,7 @@
     width: 100%;
   }
 
-  .gallery-card__image {
-    width: 100%;
+  .gallery-card__image-wrapper {
     height: 300px;
   }
 
@@ -109,7 +114,7 @@
     width: 100%;
   }
 
-  .gallery-card__image {
+  .gallery-card__image-wrapper {
     height: 400px;
   }
 }
