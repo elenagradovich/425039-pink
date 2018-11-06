@@ -28,6 +28,15 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+
+  &:hover {
+    color: $color-font-accent;
+  }
+
+  &:active {
+    color: $color-primary;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

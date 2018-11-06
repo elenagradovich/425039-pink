@@ -1,5 +1,75 @@
-.logo {
-  width: 147px;
-  height: 40px;
-  background: yellow;
+.logo-header__img {
+  fill: $color-primary;
+
+  &--middle {
+    display: none;
+  }
+
+  &--big {
+    display: none;
+  }
+}
+
+.logo-footer__img {
+  fill: $color-secondary;
+
+  &--star {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo-header__img {
+    &--small {
+      display: none;
+    }
+
+    &--middle {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-header__img {
+    &--big {
+      display: flex;
+    }
+
+    &--middle {
+      display: none;
+    }
+  }
+
+  .logo-footer__img {
+    &--star {
+      display: flex;
+    }
+
+    &--simple {
+      display: none;
+    }
+  }
+}
+
+.logo-header__link {
+  &:hover .logo-header__img {
+    fill: $color-font-accent;
+  }
+
+  &:active .logo-header__img {
+    fill: $color-primary;
+    opacity: 0.3;
+  }
+}
+
+.logo-footer__link {
+  &:hover .logo-footer__img {
+    fill: $color-font-accent;
+  }
+
+  &:active .logo-footer__img {
+    fill: $color-secondary;
+    opacity: 0.3;
+  }
 }

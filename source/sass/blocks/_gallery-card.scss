@@ -52,6 +52,7 @@
 }
 
 .gallery-card__likes {
+  position: relative;
   padding: 0 32px;
   color: $color-font-accent;
   text-transform: uppercase;
@@ -106,6 +107,10 @@
     &--top {
       padding-right: 32px;
       order: -1;
+    }
+
+    &::before {
+      left: 95%;
     }
   }
 }

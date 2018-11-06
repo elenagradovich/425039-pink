@@ -1,5 +1,6 @@
 .comments {
   @include wrapper($mobile-width);
+  align-items: center;
   padding-left: $padding-side;
   padding-right: $padding-side;
 }
@@ -31,7 +32,7 @@
 
 .comments__toggles {
   margin: 0 auto;
-  padding-bottom: 65px;
+  padding-bottom: 40px;
 }
 
 .comments__buttons {

@@ -1,6 +1,6 @@
 .slogan {
   @include wrapper($mobile-width);
-  padding: 40px 50px 63px;
+  padding: 40px 50px 35px;
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   line-height: 30px;
 
   &:nth-child(1) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 

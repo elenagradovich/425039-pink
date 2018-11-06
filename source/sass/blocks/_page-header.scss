@@ -28,6 +28,11 @@
   } /*Находим и отключаем через js*/
 }
 
+.page-header__trigger {
+  background-color: transparent;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     @include wrapper($tablet-width);
@@ -35,10 +40,8 @@
 
   .page-header__top {
     min-height: $height-top;
-
-    &--nav {
-      min-height: $height-top;
-    }
+    align-items: flex-end;
+    padding-bottom: 40px;
   }
 }
 

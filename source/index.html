@@ -7,19 +7,32 @@
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/svgxuse.js"></script>
   </head>
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
-          <div class="page-header__logo logo">
-            <a class="logo__link">
-              <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+          <div class="page-header__logo logo-header">
+            <a class="logo-header__link" tabindex="1">
+              <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+              </svg>
             </a>
           </div>
-          <button class="page-header__trigger trigger trigger__no-js">
-              <svg width="10" height="10"  class="trigger__burger trigger__burger--hidden"></svg>
-              <svg width="10" height="10"  class="trigger__cross trigger__cross--hidden"></svg>
+          <button class="page-header__trigger trigger">
+            <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
+              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+            </svg>
+            <svg class="trigger__cross trigger__cross--active" width="23.867" height="23.867">
+              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+            </svg>
           </button>
         </div>
         <nav class="page-header__navigation navigation">
@@ -43,42 +56,44 @@
     <main class="page-content">
       <h1 class="page-content__title-index visually-hidden">Приложение ПИНК</h1>
       <div class="page-content__wrapper page-content__wrapper--downloads page-content__back">
-        <section class="downloads">
-          <div class="downloads__wrapper">
-            <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
-            <div class="downloads__btn-wrapper">
-              <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
-            </div>
-            <ul class="downloads__list">
-              <li class="downloads__item">
-                <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
-                  <svg class="downloads__image-apple" width="46.21" height="56.753">
-                    <use xlink:href="img/sprite.svg#logo-apple"></use>
-                  </svg>
-                  <span class="visually-hidden">Логотип Apple</span>
-                </a>
-              </li>
-              <li class="downloads__item">
-                <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
-                  <svg class="downloads__image-android" width="42.084" height="47.041">
-                    <use xlink:href="img/sprite.svg#logo-android"></use>
-                  </svg>
-                  <span class="visually-hidden">Логотип Android</span>
-                </a>
-              </li>
-              <li class="downloads__item">
-                <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
-                  <svg class="downloads__image-microsoft" width="43.922" height="41.992">
-                    <use xlink:href="img/sprite.svg#logo-microsoft"></use>
-                  </svg>
-                  <span class="visually-hidden">Логотип Microsoft</span>
-                </a>
-              </li>
-            </ul>
-            <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </section>
       </div>
+      <section class="downloads">
+        <div class="downloads__wrapper">
+          <h2 class="downloads__title">Взгляните на жизнь иначе!</h2>
+          <div class="downloads__btn-wrapper">
+            <a class="btn downloads__button" href="https://www.apple.com/ru/itunes/" target="_blank">
+              <span class="downloads__button-name">Скачать приложение</span>
+            </a>
+          </div>
+          <ul class="downloads__list">
+            <li class="downloads__item">
+              <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
+                <svg class="downloads__image-apple" width="46.21" height="56.753">
+                  <use xlink:href="img/sprite.svg#logo-apple"></use>
+                </svg>
+                <span class="visually-hidden">Логотип Apple</span>
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
+                <svg class="downloads__image-android" width="42.084" height="47.041">
+                  <use xlink:href="img/sprite.svg#logo-android"></use>
+                </svg>
+                <span class="visually-hidden">Логотип Android</span>
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
+                <svg class="downloads__image-microsoft" width="43.922" height="41.992">
+                  <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+                </svg>
+                <span class="visually-hidden">Логотип Microsoft</span>
+              </a>
+            </li>
+          </ul>
+          <p class="downloads__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
       <div class="page-content__wrapper page-content__wrapper--slogan">
         <div class="slogan">
           <p class="slogan__text">Устали от серости мегаполиса?</p>
@@ -145,17 +160,17 @@
             <li class="plans__item plans__item--extra  plan">
               <table class="plan__column">
                 <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Розовый фильтр</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell not-incl">
+                  <td class="plan__cell plan__cell--not-incl">
                     <span class="plan__comment">Смайлики</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--comment">
-                  <td class="plan__cell not-incl">
+                  <td class="plan__cell plan__cell--not-incl">
                     <span class="plan__comment">Комментарии</span>
                   </td>
                 </tr>
@@ -169,23 +184,23 @@
                   </th>
                 </tr>
                 <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Розовый фильтр</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell not-incl">
+                  <td class="plan__cell plan__cell--not-incl">
                     <span class="plan__comment">Смайлики фильтр</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--comment">
-                  <td class="plan__cell not-incl">
+                  <td class="plan__cell plan__cell--not-incl">
                     <span class="plan__comment">Комментарии</span>
                   </td>
                 </tr>
               </table>
             </li>
-            <li class="plans__item plan">
+            <li class="plans__item plans__item--hit plan ">
               <table class="plan__column">
                 <tr class="plan__header">
                   <th class="plan__title">Стандарт<br>
@@ -193,17 +208,17 @@
                   </th>
                 </tr>
                 <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Розовый фильтр</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Смайлики</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--comment">
-                  <td class="plan__cell not-incl">
+                  <td class="plan__cell plan__cell--not-incl">
                     <span class="plan__comment">Комментарии</span>
                   </td>
                 </tr>
@@ -217,17 +232,17 @@
                   </th>
                 </tr>
                 <tr class="plan__row plan__row--pink">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Розовый фильтр</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--smile">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Смайлики</span>
                   </td>
                 </tr>
                 <tr class="plan__row plan__row--comment">
-                  <td class="plan__cell incl">
+                  <td class="plan__cell plan__cell--incl">
                     <span class="plan__comment">Комментарии</span></td>
                 </tr>
               </table>
@@ -266,8 +281,14 @@
         <iframe class="map__inner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1538124081605" style="border:0"></iframe>
       </div>
       <div class="footer__wrapper-bottom footer__wrapper-bottom--index">
-        <div class="footer__item logo">
-          <a class="logo__link">
+        <div class="footer__item logo-footer">
+          <a class="logo-footer__link">
+            <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="logo-footer__img logo-footer__img--star" width="146.3" height="40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+            </svg>
           </a>
         </div>
         <div class="footer__item social">

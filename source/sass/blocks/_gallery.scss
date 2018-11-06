@@ -27,11 +27,11 @@
 .gallery__image-top-wrapper {
   padding: 0;
   margin: 0;
-  height: 137px;
   overflow: hidden;
 }
 
 .gallery__image-top {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -61,10 +61,6 @@
     &:nth-child(n+2):nth-child(2n) {
       margin-right: 20px;
     }
-  }
-
-  .gallery__image-top-wrapper {
-    height: 509px;
   }
 
   .gallery__slogan {
@@ -115,10 +111,6 @@
     &:nth-child(n+2):nth-child(3n-1) {
       margin-right: 20px;
     }
-  }
-
-  .gallery__image-top-wrapper {
-    height: 506px;
   }
 
   .gallery__footer {

@@ -7,15 +7,34 @@
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/svgxuse.js"></script>
   </head>
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
           <div class="page-header__logo logo">
-            <a class="logo__link" href="index.html">
-              <img class="logo__name logo__name--header" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-            </a>
+            <div class="page-header__logo logo-header">
+              <a class="logo-header__link" href="index.html">
+                <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+                </svg>
+                <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+                </svg>
+                <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
+                  <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+                </svg>
+              </a>
+            </div>
+            <button class="page-header__trigger trigger trigger__no-js">
+              <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
+                <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              </svg>
+              <svg class="trigger__cross trigger__cross--hidden" width="23.867" height="23.867">
+                <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              </svg>
+            </button>
           </div>
           <button class="page-header__trigger trigger trigger__no-js">
             <svg width="10" height="10"  class="trigger__burger trigger__burger--hidden"></svg>
@@ -154,9 +173,14 @@
 
     <footer class="footer footer--form">
       <div class="footer__wrapper-bottom footer__wrapper-bottom--form">
-        <div class="footer__item logo">
-          <a class="logo__link" href="index.html">
-            <svg width="10" height="10"  class="logo__img logo__img--footer"></svg>
+        <div class="footer__item logo-footer">
+          <a class="logo-footer__link" href="index.html">
+            <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="logo-footer__img logo-footer__img--star" width="146.3" height="40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+            </svg>
           </a>
         </div>
         <div class="footer__item social">

@@ -1,5 +1,6 @@
 .plans {
-  @include wrapper($mobile-width);
+  @include wrapper(100%);
+  align-items: center;
   padding-left: $padding-side;
   padding-right: $padding-side;
   overflow: hidden;
@@ -11,12 +12,40 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 32px;
-  padding-top: 70px;
+  margin-bottom: 35px;
+  padding-top: 90px;
 }
 
-.plans__item--extra {
-  display: none;
+.plans__item {
+  position: relative;
+
+  &--extra {
+    display: none;
+  }
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") no-repeat;
+    z-index: 2;
+  }
+
+  &--hit::after {
+    position: absolute;
+    content: "хит";
+    left: 10px;
+    top: 20px;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 20px;
+    color: $color-primary;
+    text-transform: uppercase;
+    z-index: 3;
+  }
 }
 
 .plan__column {
@@ -38,7 +67,7 @@
 }
 
 .plan__title {
-  padding-top: 14px;
+  padding-top: 16px;
   padding-bottom: 18px;
   color: $color-primary;
   text-transform: uppercase;
@@ -67,12 +96,33 @@
 }
 
 .plan__cell {
-  padding: 0 22px;
+  position: relative;
+  padding: 0 70px 0 22px;
   width: 276px;
   height: 61px;
   background: $color-primary;
   text-align: left;
   border-bottom: 2px solid $color-input-border;
+
+  &--incl::after {
+    position: absolute;
+    content: "";
+    right: 17px;
+    top: 40%;
+    width: 30px;
+    height: 22px;
+    background: url("../img/icon-yes.svg") no-repeat;
+  }
+
+  &--not-incl::after {
+    position: absolute;
+    content: "";
+    right: 17px;
+    top: 30%;
+    width: 28px;
+    height: 26px;
+    background: url("../img/icon-no.svg") no-repeat;
+  }
 }
 
 .plan__comment {
@@ -103,6 +153,17 @@
 
     &:not(:first-child) .plan__comment {
       display: none;
+    }
+
+    &--hit::before {
+      width: 61px;
+      height: 61px;
+      background: url("../img/bg-hit-tablet.svg") no-repeat;
+    }
+
+    &--hit::after {
+      left: 8px;
+      top: 12px;
     }
   }
 
@@ -145,6 +206,19 @@
     @include wrapper($desktop-width);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
+  }
+
+  .plans__item {
+    &--hit::before {
+      width: 73px;
+      height: 73px;
+      background: url("../img/bg-hit.svg") no-repeat;
+    }
+
+    &--hit::after {
+      left: 10px;
+      top: 20px;
+    }
   }
 
   .plans__list {
