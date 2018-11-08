@@ -63,6 +63,7 @@
   }
 
   .comments__content {
+    width: $tablet-width - 2 * $padding-side;
     order: -1;
     margin-bottom: 34px;
   }
@@ -74,7 +75,7 @@
   }
 
   .comments__toggles {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 }
 

@@ -1,14 +1,37 @@
 .copyright {
   margin: 0;
-  padding-right: 40px;
   line-height: 18px;
   color: $color-secondary;
+}
+
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .copyright__comment {
   color: $color-secondary;
   line-height: 40px;
   margin: 0;
+}
+
+.copyright__image {
+  fill: $color-font-accent;
+
+  &:hover {
+    fill: $color-secondary;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__comment {
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {

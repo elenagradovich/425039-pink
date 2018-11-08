@@ -62,7 +62,12 @@
     color: $color-font-accent;
   }
 
-  &:active .downloads__button-name {
+  &:active {
+    background-color: $color-primary;
+    color: $color-font-accent;
+  }
+
+  &:active span {
     opacity: 0.3;
   }
 }
@@ -130,7 +135,6 @@
   }
 
   .downloads__button {
-    display: block;
     width: 300px;
   }
 

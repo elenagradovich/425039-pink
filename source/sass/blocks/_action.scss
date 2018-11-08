@@ -4,17 +4,49 @@
 
 @media (min-width: $tablet-width) {
   .action {
+
+    position: relative;
     @include wrapper($tablet-width);
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: $padding-side;
     padding-right: $padding-side;
+  }
+
+  .action__image-wrapper {
+    padding-top: 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 205px;
+      height: 205px;
+      top: 116px;
+      left: 37px;
+      background: url("../img/icon-editor-diagram-fill.svg") no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      top: 145px;
+      left: 85px;
+      font-size: 96px;
+      font-weight: bold;
+      color: $color-font-accent;
+    }
+  }
+
+  .action__image {
+    width: 240px;
+    height: 280px;
+    fill: $color-timer;
   }
 
   .action__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: auto;
     padding-top: 95px;
     padding-bottom: 50px;
     width: 310px;
@@ -28,6 +60,7 @@
   }
 
   .action__content {
+    width: 310px;
     margin: 0;
     margin-bottom: 8px;
     line-height: 24px;
@@ -72,5 +105,26 @@
 
   .action__link {
     font-size: 18px;
+  }
+
+  .action__image-wrapper {
+    padding-top: 0;
+
+    &::before {
+      width: 257px;
+      height: 257px;
+      top: 90px;
+      left: 50px;
+    }
+
+    &::after {
+      top: 145px;
+      left: 85px;
+      font-size: 120px;
+    }
+  }
+  .action__image {
+    width: 300px;
+    height: 347px;
   }
 }

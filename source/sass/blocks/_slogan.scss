@@ -21,7 +21,7 @@
 @media (min-width: $tablet-width) {
   .slogan {
     @include wrapper($tablet-width);
-    padding: 47px $padding-side 95px;
+    padding: 45px $padding-side;
   }
 
   .slogan__text {
@@ -42,7 +42,7 @@
 @media (min-width: $desktop-width) {
   .slogan {
     @include wrapper($desktop-width);
-    padding: 65px $padding-side-desktop 175px;
+    padding: 65px $padding-side-desktop 80px;
   }
 
   .slogan__text {

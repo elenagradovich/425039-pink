@@ -5,9 +5,23 @@
 }
 
 .social__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 52px;
   height: 52px;
-  background: blue;
+  fill: $color-font-accent;
+  border: 3px solid $color-social-border;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $color-secondary;
+  }
+
+  &:active {
+    border-color: $color-htmlacademy;
+  }
 }
 
 .social__icon:not(:last-child) {
