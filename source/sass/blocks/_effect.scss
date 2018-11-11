@@ -20,11 +20,12 @@
   fill: $color-toggle;
 }
 
-.effect-crop:checked + .effects__img--crop,
-.effect-fill:checked .effects__img--fill,
-.effect-contrast:checked .effects__img--contrast {
+.effect-crop:checked ~ .effects__img--crop,
+.effect-fill:checked + .effects__img--fill,
+.effect-contrast:checked + .effects__img--contrast {
   fill: $color-font-accent;
 }
+
 
 @media (min-width: $tablet-width) {
   .effects {
@@ -38,7 +39,7 @@
     align-items: center;
     padding-top: 25px;
     padding-right: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     margin: 0;
     width: 100%;
     border-bottom: 1px solid $color-btn-reset;
@@ -52,6 +53,11 @@
     width: 22px;
     height: 22px;
     fill: $color-font-accent;
+
+    &--contrast {
+      width: 17px;
+      height: 17px;
+    }
   }
 }
 
@@ -65,5 +71,16 @@
 
   .effects__item--top {
     padding-top: 0;
+  }
+
+  .effects__img {
+    width: 48px;
+    height: 48px;
+    fill: $color-font-accent;
+
+    &--contrast {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
