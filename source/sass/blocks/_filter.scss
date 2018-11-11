@@ -1,4 +1,5 @@
 .filter {
+  position: relative;
   width: 100%;
   height: 2px;
   background: $color-dark;
@@ -8,9 +9,25 @@
   }
 }
 
+.filter__pin {
+  position: absolute;
+  left: 83%;
+  bottom: 50%;
+  margin-bottom: -7px;
+  width: 14px;
+  height: 14px;
+  background: $color-primary;
+  border: 2px solid $color-font-accent;
+  border-radius: 50%;
+
+  &:active {
+    background: $color-font-accent;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .filter {
-    width: 80%;
+    width: 204px;
 
     &--right {
       display: flex;
@@ -18,6 +35,18 @@
 
     &--bottom {
       display: none;
+    }
+
+    &--crop .filter__pin {
+      left: 75%;
+    }
+
+    &--fill .filter__pin {
+      left: 16%;
+    }
+
+    &--contrast .filter__pin {
+      left: 51%;
     }
   }
 }

@@ -14,6 +14,7 @@
   color: $color-secondary;
   line-height: 40px;
   margin: 0;
+  margin-right: 15px;
 }
 
 .copyright__image {
@@ -25,12 +26,6 @@
 
   &:active {
     opacity: 0.1;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .copyright__comment {
-    padding-right: 15px;
   }
 }
 

@@ -30,10 +30,57 @@
   overflow: hidden;
 }
 
+.gallery__image-label {
+  height: 0;
+  width: $mobile-width - 2 * $padding-side;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    background-color: $color-font-accent;
+  }
+
+  &::after {
+    position: absolute;
+    content: "панорама дня";
+    width: 140px;
+    height: 35px;
+    top: 8px;
+    right: 0;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: center;
+    z-index: 10;
+  }
+}
+
 .gallery__image-top {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.gallery__image-note {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 0;
+    background-color: $color-font-accent;
+  }
 }
 
 .gallery__footer {
@@ -51,6 +98,18 @@
 @media (min-width: $tablet-width) {
   .gallery__wrapper {
     @include wrapper($tablet-width);
+  }
+
+  .gallery__image-label {
+    width: $tablet-width - 2 * $padding-side;
+
+    &::before {
+      top: 58px;
+    }
+
+    &::after {
+      top: 65px;
+    }
   }
 
   .gallery__item {
@@ -89,6 +148,18 @@
     @include wrapper($desktop-width);
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
+  }
+
+  .gallery__image-label {
+    width: $desktop-width - 2 * $padding-side-desktop;
+
+    &::before {
+      top: 55px;
+    }
+
+    &::after {
+      top: 62px;
+    }
   }
 
   .gallery__slogan {

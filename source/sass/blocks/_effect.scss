@@ -20,7 +20,7 @@
   fill: $color-toggle;
 }
 
-.effect-crop:checked .effects__img--crop,
+.effect-crop:checked + .effects__img--crop,
 .effect-fill:checked .effects__img--fill,
 .effect-contrast:checked .effects__img--contrast {
   fill: $color-font-accent;

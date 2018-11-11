@@ -4,8 +4,8 @@
 
 @media (min-width: $tablet-width) {
   .action {
-
     position: relative;
+
     @include wrapper($tablet-width);
     flex-direction: row;
     justify-content: space-between;
@@ -78,6 +78,7 @@
 @media (min-width: $desktop-width) {
   .action {
     @include wrapper($desktop-width);
+    flex-direction: row;
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
   }
@@ -98,6 +99,7 @@
   }
 
   .action__content {
+    width: 570px;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
@@ -111,18 +113,19 @@
     padding-top: 0;
 
     &::before {
-      width: 257px;
-      height: 257px;
-      top: 90px;
-      left: 50px;
+      width: 250px;
+      height: 250px;
+      top: 70px;
+      left: 35px;
     }
 
     &::after {
-      top: 145px;
-      left: 85px;
+      top: 110px;
+      left: 90px;
       font-size: 120px;
     }
   }
+
   .action__image {
     width: 300px;
     height: 347px;

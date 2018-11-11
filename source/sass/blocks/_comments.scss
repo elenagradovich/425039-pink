@@ -39,6 +39,11 @@
   display: none;
 }
 
+.comments__btn-prev,
+.comments__btn-next {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .comments {
     @include wrapper($tablet-width);
@@ -82,13 +87,39 @@
 @media (min-width: $desktop-width) {
   .comments {
     @include wrapper($desktop-width);
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: $padding-side-desktop;
     padding-right: $padding-side-desktop;
   }
 
   .comments__list {
+    position: relative;
     padding-top: 185px;
-    padding-bottom: 120px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .comments__btn-prev,
+  .comments__btn-next {
+    display: flex;
+    margin: auto 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .comments__arrow {
+    width: 21.7px;
+    height: 41.7px;
+    fill: $color-arrow;
+
+    &:hover {
+      fill: $color-arrow-hover;
+    }
+
+    &:active {
+      fill: $color-social-border;
+    }
   }
 
   .comments__title {
@@ -105,6 +136,17 @@
     position: relative;
     padding-left: 125px;
     padding-right: 125px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 78.8px;
+      height: 63.8px;
+      top: -110px;
+      left: 50%;
+      margin-left: -39px;
+      background: url("../img/icon-quotes.svg") no-repeat;
+    }
   }
 
   .comments__info {
@@ -114,25 +156,5 @@
 
   .comments__toggles {
     display: none;
-  }
-
-  .comments__button-left {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 45px;
-    background: red;
-  }
-
-  .comments__button-right {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 45px;
-    background: red;
   }
 }

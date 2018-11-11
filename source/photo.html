@@ -14,7 +14,7 @@
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
           <div class="page-header__logo logo-header">
-            <a class="logo-header__link" href="index.html">
+            <a class="logo-header__link" href="index.html" tabindex="1">
               <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
                 <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
               </svg>
@@ -26,11 +26,11 @@
               </svg>
             </a>
           </div>
-          <button class="page-header__trigger trigger trigger__no-js">
+          <button class="page-header__trigger trigger">
             <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
               <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
             </svg>
-            <svg class="trigger__cross trigger__cross--hidden" width="23.867" height="23.867">
+            <svg class="trigger__cross trigger__cross--active" width="23.867" height="23.867">
               <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
             </svg>
           </button>
@@ -67,13 +67,14 @@
           <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
-        <p class="gallery__image-top-wrapper">
+        <div class="gallery__image-top-wrapper">
+          <div class="gallery__image-label"></div>
           <picture>
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="gallery__image-top" src="img/panorama-mobile@1x.jpg" srcset=img/panorama-mobile@2x.jpg 2x" alt="Изображение пользователя">
           </picture>
-        </p>
+        </div>
         <div class="gallery__wrapper">
           <ul class="gallery__list">
             <li class="gallery__item gallery-card  gallery-card--top gallery__item--top">
@@ -84,7 +85,10 @@
                 </div>
                 <p class="gallery-card__comment gallery-card__comment--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="gallery-card__likes gallery-card__likes--top">
-                  Нравится:
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">215</span>
                 </div>
               </div>
@@ -103,7 +107,11 @@
                   <span class="gallery-card__time">(5 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">356</span>
                 </div>
               </div>
@@ -122,7 +130,11 @@
                   <span class="gallery-card__time">(12 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Соседи будут рады!</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">666</span>
                 </div>
               </div>
@@ -141,7 +153,11 @@
                   <span class="gallery-card__time">(20 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">215</span>
                 </div>
               </div>
@@ -160,7 +176,11 @@
                   <span class="gallery-card__time">(25 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Самая кубанская в мире!</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">4</span>
                 </div>
               </div>
@@ -179,7 +199,11 @@
                   <span class="gallery-card__time">(40 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Где снег-то?</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">150</span>
                 </div>
               </div>
@@ -198,7 +222,11 @@
                   <span class="gallery-card__time">(45 часов назад)</span>
                 </div>
                 <p class="gallery-card__comment">Всем GM и взаимные лайки!</p>
-                <div class="gallery-card__likes">Нравится:
+                <div class="gallery-card__likes">
+                  <svg class="gallery-card__like-img" width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="gallery-card__like-txt">Нравится:</span>
                   <span class="gallery-card__likes-count">2560</span>
                 </div>
               </div>
@@ -228,45 +256,49 @@
                 <ul class="upload-photo__effects effects">
                   <li class="effects__item effects__item--top effects__item--crop">
                     <input class="effect-crop visually-hidden checked" type="radio" name="effect" id="effect-crop" value="crop" checked>
-                    <label class="effects__label" for="effect-crop">
+                    <label class="effects__label" for="effect-crop" tabindex="0">
                       <svg class="effects__img effects__img--crop" width="48" height="48">
                         <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                       </svg>
                     </label>
-                    <div class="effects__filter filter filter--right">
+                    <div class="filter filter--crop filter--right">
                       <div class="filter__pin"></div>
                     </div>
                   </li>
                   <li class="effects__item effects__item--fill">
                     <input class="effect-fill visually-hidden" type="radio" name="effect" id="effect-fill" value="fill">
-                    <label class="effects__label" for="effect-fill">
+                    <label class="effects__label" for="effect-fill" tabindex="0">
                       <svg class="effects__img effects__img--fill" width="48" height="48">
                         <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                       </svg>
                     </label>
-                    <div class="effects__filter filter filter--right">
+                    <div class="filter filter--fill filter--right">
                       <div class="filter__pin"></div>
                     </div>
                   </li>
                   <li class="effects__item effects__item--last effects__item--contrast">
                     <input class="effect-contrast visually-hidden" type="radio" name="effect" id="effect-contrast" value="contrast">
-                    <label class="effects__label" for="effect-contrast">
+                    <label class="effects__label" for="effect-contrast" tabindex="0">
                       <svg class="effects__img effects__img--contrast" width="31.92" height="31.92">
                         <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                       </svg>
                     </label>
-                    <div class="effects__filter filter filter--right">
-                      <div class="filter__pin"></div>
+                    <div class="filter filter--contrast filter--right">
+                      <div class="filter__pin" tabindex="0"></div>
                     </div>
                   </li>
                 </ul>
                 <div class="upload-photo__filter filter filter--bottom">
-                  <div class="filter__pin"></div>
+                  <div class="filter__pin" tabindex="0"></div>
                 </div>
               </div>
               <div class="upload-photo__controls">
-                <button class="btn upload-photo__submit" type="submit">Запостить</button>
-                <button class="btn upload-photo__cancel" type="reset">Отмена</button>
+                <button class="btn upload-photo__submit" type="submit">
+                  <span>Запостить</span>
+                </button>
+                <button class="btn upload-photo__cancel" type="reset">
+                  <span>Отмена</span>
+                </button>
               </div>
             </div>
           </form>
@@ -278,7 +310,7 @@
     <footer class="footer footer--photo">
       <div class="footer__wrapper-bottom footer__wrapper-bottom--photo">
         <div class="footer__item logo-footer">
-          <a class="logo-footer__link" href="index.html">
+          <a class="logo-footer__link">
             <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
               <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
             </svg>
@@ -290,21 +322,30 @@
         <div class="footer__item social">
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
-            <svg width="50" height="10"  class="social__image social__image--twitter"></svg>
+            <svg class="social__image social__image--twitter" width="17.5" height="14.7">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
-            <svg width="50" height="10"  class="social__image social__image--facebook"></svg>
+            <svg class="social__image social__image--facebook" width="8.7" height="18.9">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
-            <svg width="50" height="10"  class="social__image social__image--youtube"></svg>
+            <svg class="social__image social__image--youtube" width="14.6" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
           </a>
         </div>
-        <div class="footer__item copyright">
+        <div class="footer__item footer__item--last copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__comment">Разработано</p>
             <span class="visually-hidden">html academy</span>
+            <svg class="copyright__image" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

@@ -20,7 +20,8 @@
   }
 
   &:active {
-    border-color: $color-htmlacademy;
+    border-color: $color-secondary;
+    opacity: 0.3;
   }
 }
 
