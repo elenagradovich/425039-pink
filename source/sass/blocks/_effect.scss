@@ -17,7 +17,15 @@
 }
 
 .effects__img {
-  fill: $color-toggle;
+  fill: $color-effect;
+
+  &:hover {
+    fill: $color-toggle;
+  }
+
+  &:active {
+    fill: $color-effect;
+  }
 }
 
 .effect-crop:checked ~ .effects__img--crop,

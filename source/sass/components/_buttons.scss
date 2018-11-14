@@ -22,4 +22,16 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $color-primary;
+
+  &:hover {
+    background: $color-bg-button-hover;
+  }
+
+  &:active {
+    color: $color-btn-active-text;
+  }
+}
+
+.btn-2 .disabled {
+  background: $color-input-border;
 }

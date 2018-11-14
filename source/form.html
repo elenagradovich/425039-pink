@@ -14,32 +14,26 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
-          <div class="page-header__logo logo">
-            <div class="page-header__logo logo-header">
-              <a class="logo-header__link" href="index.html">
-                <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
-                  <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
-                </svg>
-                <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
-                  <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
-                </svg>
-                <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
-                  <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
-                </svg>
-              </a>
-            </div>
-            <button class="page-header__trigger trigger trigger__no-js">
-              <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
-                <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+          <div class="page-header__logo logo-header">
+            <a class="logo-header__link" tabindex="1">
+              <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
+                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
               </svg>
-              <svg class="trigger__cross trigger__cross--hidden" width="23.867" height="23.867">
-                <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
               </svg>
-            </button>
+              <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+              </svg>
+            </a>
           </div>
-          <button class="page-header__trigger trigger trigger__no-js">
-            <svg width="10" height="10"  class="trigger__burger trigger__burger--hidden"></svg>
-            <svg width="10" height="10"  class="trigger__cross trigger__cross--hidden"></svg>
+          <button class="page-header__trigger trigger">
+            <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
+              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+            </svg>
+            <svg class="trigger__cross trigger__cross--active" width="23.867" height="23.867">
+              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+            </svg>
           </button>
         </div>
         <nav class="page-header__navigation navigation">
@@ -76,97 +70,96 @@
       <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review__form-wrapper">
           <div class="review__set-wrapper">
-              <fieldset  class="review__set review__set--personal-info">
-                  <legend class="review__title visually-hidden">Персональные данные</legend>
-                  <div class="review__block">
-                    <label class="review__label" for="user-surname">Фамилия:</label>
-                    <input class="review__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
+            <fieldset  class="review__set review__set--personal-info">
+                <legend class="review__title visually-hidden">Персональные данные</legend>
+                <div class="review__block">
+                  <label class="review__label" for="user-surname">Фамилия:</label>
+                  <input class="review__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
+                </div>
+                <div class="review__block">
+                  <label class="review__label" for="user-name">Имя:</label>
+                  <input class="review__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
+                </div>
+                <div class="review__block">
+                  <label class="review__label" for="user-patronymic">Отчество:</label>
+                  <input class="review__field" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+                </div>
+            </fieldset>
+          </div>
+          <div class="review__set-wrapper">
+            <fieldset class="review__set review__set--achivements">
+                <legend class="review__title review__title--achivements">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="review__list review__list--achivement">
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked>
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-1" tabindex="1">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked>
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-2" tabindex="1">Обгорел на пляже</label>
+                  </li>
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-3" type="checkbox" name="achivement-3" value="saw_CNorris">
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-3" tabindex="1">Видел Чака Норриса</label>
+                  </li>
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-4" type="checkbox" name="achivement-4" value="bought_souvenirs">
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-4" tabindex="1">Накупил сувениров</label>
+                  </li>
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked>
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-5" tabindex="1">Удержал башню</label>
+                  </li>
+                  <li class="review__item review__item--achivements">
+                    <input class="review__mark review__mark--ach" id="achivements-6" type="checkbox" name="achivement-6" value="defeated_the_hotel">
+                    <label class="review__menu-item review__menu-item--ach" for="achivements-6" tabindex="1">Разгромил отель</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+          <div class="review__set-wrapper">
+            <fieldset class="review__set review__set--contacts">
+                <legend class="review__title review__title--contacts">Контактная информация</legend>
+                <div class="review__wrapper-contacts">
+                  <div class="review__contact review__contact--phone">
+                    <label class="review__label review__label--contacts" for="phone">Номер телефона</label>
+                    <input class="review__field review__field--contacts" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
                   </div>
-                  <div class="review__block">
-                    <label class="review__label" for="user-name">Имя:</label>
-                    <input class="review__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
+                  <div class="review__contact review__contact--email">
+                    <label class="review__label review__label--contacts" for="email">Адрес почты</label>
+                    <input class="review__field review__field--contacts" id="email" type="text" name="email" placeholder="Введите почту *">
                   </div>
-                  <div class="review__block">
-                    <label class="review__label" for="user-patronymic">Отчество:</label>
-                    <input class="review__field" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
-                  </div>
-              </fieldset>
-            </div>
-            <div class="review__set-wrapper">
-              <fieldset class="review__set review__set--achivements">
-                  <legend class="review__title review__title--achivements">Ваши безбашенные достижения в путешествии</legend>
-                  <ul class="review__list review__list--achivement">
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked>
-                      <label class="review__menu-item" for="achivements-1" tabindex="1">Сделал селфи с акулой</label>
-                    </li>
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked>
-                      <label class="review__menu-item" for="achivements-2" tabindex="1">Обгорел на пляже</label>
-                    </li>
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-3" type="checkbox" name="achivement-3" value="saw_CNorris">
-                      <label class="review__menu-item" for="achivements-3" tabindex="1">Видел Чака Норриса</label>
-                    </li>
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-4" type="checkbox" name="achivement-4" value="bought_souvenirs">
-                      <label class="review__menu-item" for="achivements-4" tabindex="1">Накупил сувениров</label>
-                    </li>
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked>
-                      <label class="review__menu-item" for="achivements-5" tabindex="1">Удержал башню</label>
-                    </li>
-                    <li class="review__item review__item--achivements">
-                      <input class="review__mark" id="achivements-6" type="checkbox" name="achivement-6" value="defeated_the_hotel">
-                      <label class="review__menu-item" for="achivements-6" tabindex="1">Разгромил отель</label>
-                    </li>
-                  </ul>
-              </fieldset>
-            </div>
-            <div class="review__set-wrapper">
-              <fieldset class="review__set review__set--contacts">
-                  <legend class="review__title review__title--contacts">Контактная информация</legend>
-                  <div class="review__wrapper-contacts">
-                    <div class="review__contact">
-                      <label class="review__label review__label--contacts" for="phone">Номер телефона</label>
-                      <input class="review__field review__field--contacts" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
-                    </div>
-                    <div class="review__contact">
-                      <label class="review__label review__label--contacts" for="email">Адрес почты</label>
-                      <input class="review__field review__field--contacts" id="email" type="text" name="email" placeholder="Введите почту *">
-                    </div>
-                  </div>
-              </fieldset>
-            </div>
-            <div class="review__set-wrapper">
-              <fieldset class="review__set review__set--app">
-                  <legend class="review__title review__title--app">С каким приложением путешествовали?</legend>
-                  <ul class="review__list review__list--app">
-                    <li class="review__item-app">
-                      <input class="review__mark" id="app-1" type="radio" name="app" value="ios" checked>
-                      <label class="review__menu-item review__menu-item--app" for="app-1" tabindex="1">Pink для iOS</label>
-                    </li>
-                    <li class="review__item-app">
-                      <input class="review__mark" id="app-2" type="radio" name="app" value="android">
-                      <label class="review__menu-item review__menu-item--app" for="app-2" tabindex="1">Pink на Android</label>
-                    </li>
-                    <li class="review__item-app">
-                      <input class="review__mark" id="app-3" type="radio" name="app" value="windows">
-                      <label class="review__menu-item review__menu-item--app" for="app-3" tabindex="1">Windows Phone</label>
-                    </li>
-                  </ul>
-              </fieldset>
-            </div>
-            <div class="review__set-wrapper">
-              <fieldset class="review__set review__set--comment">
-                <legend class="review__title review__title--comment">Опишите свои эмоции</legend>
-                <textarea class="review__content" cols="31" rows="10" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </fieldset>
-            </div>
-            <div class="review__footer">
-              <input class="review__submit btn-2" type="submit" value="Отправить форму">
-              <span class="review__required"><span class="review__note">*</span>  — обязательные  <span class="review__note-desktop">для заполнения </span> поля</span>
-            </div>
+                </div>
+            </fieldset>
+          </div>
+          <div class="review__set-wrapper">
+            <fieldset class="review__set review__set--app">
+                <legend class="review__title review__title--app">С каким приложением путешествовали?</legend>
+                <ul class="review__list review__list--app">
+                  <li class="review__item-app">
+                    <input class="review__mark review__mark--app" id="app-1" type="radio" name="app" value="ios" checked>
+                    <label class="review__menu-item review__menu-item--app" for="app-1" tabindex="1">Pink для iOS</label>
+                  </li>
+                  <li class="review__item-app">
+                    <input class="review__mark review__mark--app" id="app-2" type="radio" name="app" value="android">
+                    <label class="review__menu-item review__menu-item--app" for="app-2" tabindex="1">Pink на Android</label>
+                  </li>
+                  <li class="review__item-app">
+                    <input class="review__mark review__mark--app" id="app-3" type="radio" name="app" value="windows">
+                    <label class="review__menu-item review__menu-item--app" for="app-3" tabindex="1">Windows Phone</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+          <div class="review__set-wrapper">
+            <fieldset class="review__set review__set--comment">
+              <legend class="review__title review__title--comment">Опишите свои эмоции</legend>
+              <textarea class="review__content" cols="31" rows="7" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
+          <div class="review__footer">
+            <input class="review__submit btn-2" type="submit" value="Отправить форму">
+            <span class="review__required"><span class="review__note">*</span>  — обязательные  <span class="review__note-desktop">для заполнения </span> поля</span>
           </div>
         </div>
       </form>
@@ -175,7 +168,7 @@
     <footer class="footer footer--form">
       <div class="footer__wrapper-bottom footer__wrapper-bottom--form">
         <div class="footer__item logo-footer">
-          <a class="logo-footer__link" href="index.html">
+          <a class="logo-footer__link" href="index.html" tabindex="0">
             <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
               <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
             </svg>
@@ -187,21 +180,30 @@
         <div class="footer__item social">
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
-            <svg width="10" height="10"  class="social__image social__image--twitter"></svg>
+            <svg class="social__image social__image--twitter" width="17.5" height="14.7">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
-            <svg width="10" height="10"  class="social__image social__image--facebook"></svg>
+            <svg class="social__image social__image--facebook" width="8.7" height="18.9">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
-            <svg width="10" height="10"  class="social__image social__image--youtube"></svg>
+            <svg class="social__image social__image--youtube" width="14.6" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
           </a>
         </div>
-        <div class="footer__item copyright">
+        <div class="footer__item footer__item--last copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__comment">Разработано</p>
             <span class="visually-hidden">html academy</span>
+            <svg class="copyright__image" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
