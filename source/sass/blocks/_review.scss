@@ -561,7 +561,7 @@
   }
 
   .review__menu-item {
-    padding-left: 115px;
+    padding-left: 56px;
 
     &--ach::before {
       left: 0;
@@ -569,6 +569,7 @@
 
     &--app::before {
       left: 75px;
+      padding-left: 135px;
     }
   }
 
@@ -642,14 +643,6 @@
     padding-bottom: 20px;
     margin-bottom: 10px;
     width: 375px;
-  }
-
-  .review__menu-item {
-    padding-left: 56px;
-
-    &--app {
-      padding-left: 135px;
-    }
   }
 
   .review__content {
