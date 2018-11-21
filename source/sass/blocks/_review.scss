@@ -344,23 +344,24 @@
   }
 
   .review__menu-item {
-    padding-left: 115px;
+    margin-left: 60px;
+    padding-left: 55px;
 
     &--ach::before {
-      left: 60px;
+      left: 0;
     }
 
     &--app::before {
-      left: 60px;
+      left: 0;
     }
   }
 
   .review__mark--ach:checked + .review__menu-item--ach::after {
-    left: 65px;
+    left: 5px;
   }
 
   .review__mark--app:checked + .review__menu-item--app::after {
-    left: 72px;
+    left: 12px;
   }
 
   .review__block {
@@ -523,7 +524,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
+    padding-left: 55px;
+  }
+
+  .review__menu-item {
+    &--ach {
+      margin-left: 0;
+    }
   }
 
   .review__item {
@@ -558,27 +565,6 @@
     &--achivements:last-child {
       margin-bottom: 57px;
     }
-  }
-
-  .review__menu-item {
-    padding-left: 56px;
-
-    &--ach::before {
-      left: 0;
-    }
-
-    &--app::before {
-      left: 75px;
-      padding-left: 135px;
-    }
-  }
-
-  .review__mark--ach:checked + .review__menu-item--ach::after {
-    left: 5px;
-  }
-
-  .review__mark--app:checked + .review__menu-item--app::after {
-    left: 87px;
   }
 
   .review__set {

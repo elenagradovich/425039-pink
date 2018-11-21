@@ -10,12 +10,10 @@ var server = require("browser-sync").create();
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sass({
-      includePaths: require('node-normalize-scss').includePaths
-    }))
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sass())
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
