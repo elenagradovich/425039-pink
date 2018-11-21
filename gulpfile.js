@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var mincss = require("gulp-csso");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -37,3 +39,21 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("image", function () {
+  return gulp.src("source/img/**/*.{jpg, png, svg}")
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{jpg, png}")
+    .pipe(webp({quality: 50}))
+    .pipe(gulp.dest("source/img"));
+});
+
+
