@@ -38,8 +38,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
-
 gulp.task("image", function () {
   return gulp.src("source/img/**/*.{jpg, png, svg}")
     .pipe(imagemin([
@@ -55,5 +53,8 @@ gulp.task("webp", function () {
     .pipe(webp({quality: 50}))
     .pipe(gulp.dest("source/img"));
 });
+
+gulp.task("build", gulp.series("css"));
+gulp.task("start", gulp.series("build", "server"));
 
 
