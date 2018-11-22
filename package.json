@@ -12,9 +12,12 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
+    "gulp-svgstore": "^7.0.0",
     "gulp-webp": "^3.0.0",
+    "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -42,6 +45,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "del": "^3.0.0",
     "svgxuse": "^1.2.6"
   }
 }

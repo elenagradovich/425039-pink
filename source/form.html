@@ -2,37 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="js/svgxuse.js"></script>
+    <script defer="" src="js/svgxuse.js"></script>
     <script src="js/picturefill.js"></script>
   </head>
   <body class="page">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
           <div class="page-header__logo logo-header">
             <a class="logo-header__link" tabindex="1">
               <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
-                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+                <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
               <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+                <use xlink:href="#logo-pink-white-tablet"></use>
               </svg>
               <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+                <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
             </a>
           </div>
           <button class="page-header__trigger trigger">
             <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
-              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              <use xlink:href="#icon-menu-burger"></use>
             </svg>
             <svg class="trigger__cross trigger__cross--active" width="23.867" height="23.867">
-              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
         </div>
@@ -70,15 +71,15 @@
       <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review__form-wrapper">
           <div class="review__set-wrapper">
-            <fieldset  class="review__set review__set--personal-info">
+            <fieldset class="review__set review__set--personal-info">
                 <legend class="review__title visually-hidden">Персональные данные</legend>
                 <div class="review__block">
                   <label class="review__label" for="user-surname">Фамилия:</label>
-                  <input class="review__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
+                  <input class="review__field" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required="">
                 </div>
                 <div class="review__block">
                   <label class="review__label" for="user-name">Имя:</label>
-                  <input class="review__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
+                  <input class="review__field" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required="">
                 </div>
                 <div class="review__block">
                   <label class="review__label" for="user-patronymic">Отчество:</label>
@@ -91,11 +92,11 @@
                 <legend class="review__title review__title--achivements">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="review__list review__list--achivement">
                   <li class="review__item review__item--achivements">
-                    <input class="review__mark review__mark--ach" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked>
+                    <input class="review__mark review__mark--ach" id="achivements-1" type="checkbox" name="achivement-1" value="selfie_with_shark" checked="">
                     <label class="review__menu-item review__menu-item--ach" for="achivements-1" tabindex="1">Сделал селфи с акулой</label>
                   </li>
                   <li class="review__item review__item--achivements">
-                    <input class="review__mark review__mark--ach" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked>
+                    <input class="review__mark review__mark--ach" id="achivements-2" type="checkbox" name="achivement-2" value="burnt_on_the_beach" checked="">
                     <label class="review__menu-item review__menu-item--ach" for="achivements-2" tabindex="1">Обгорел на пляже</label>
                   </li>
                   <li class="review__item review__item--achivements">
@@ -107,7 +108,7 @@
                     <label class="review__menu-item review__menu-item--ach" for="achivements-4" tabindex="1">Накупил сувениров</label>
                   </li>
                   <li class="review__item review__item--achivements">
-                    <input class="review__mark review__mark--ach" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked>
+                    <input class="review__mark review__mark--ach" id="achivements-5" type="checkbox" name="achivement-5" value="kept_the_tower" checked="">
                     <label class="review__menu-item review__menu-item--ach" for="achivements-5" tabindex="1">Удержал башню</label>
                   </li>
                   <li class="review__item review__item--achivements">
@@ -137,7 +138,7 @@
                 <legend class="review__title review__title--app">С каким приложением путешествовали?</legend>
                 <ul class="review__list review__list--app">
                   <li class="review__item-app">
-                    <input class="review__mark review__mark--app" id="app-1" type="radio" name="app" value="ios" checked>
+                    <input class="review__mark review__mark--app" id="app-1" type="radio" name="app" value="ios" checked="">
                     <label class="review__menu-item review__menu-item--app" for="app-1" tabindex="1">Pink для iOS</label>
                   </li>
                   <li class="review__item-app">
@@ -170,10 +171,10 @@
         <div class="footer__item logo-footer">
           <a class="logo-footer__link" href="index.html" tabindex="0">
             <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+              <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
             <svg class="logo-footer__img logo-footer__img--star" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+              <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>
@@ -181,19 +182,19 @@
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
             <svg class="social__image social__image--twitter" width="17.5" height="14.7">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
             <svg class="social__image social__image--facebook" width="8.7" height="18.9">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
             <svg class="social__image social__image--youtube" width="14.6" height="14">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </div>
@@ -202,7 +203,7 @@
             <p class="copyright__comment">Разработано</p>
             <span class="visually-hidden">html academy</span>
             <svg class="copyright__image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </div>

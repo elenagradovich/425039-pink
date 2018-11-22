@@ -52,6 +52,8 @@
   @include review-title;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
+  background: transparent;
 
   &--contacts {
     display: none;
@@ -387,6 +389,7 @@
     padding-right: 30px;
     padding-left: 30px;
     margin-bottom: 0;
+    width: auto;
 
     &--app {
       padding-top: 0;

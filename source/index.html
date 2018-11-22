@@ -2,37 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="js/svgxuse.js"></script>
+    <script defer="" src="js/svgxuse.js"></script>
     <script src="js/picturefill.js"></script>
   </head>
   <body class="page">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top page-header__top--nav">
           <div class="page-header__logo logo-header">
             <a class="logo-header__link" tabindex="1">
               <svg class="logo-header__img logo-header__img--small" width="74.426" height="22.859">
-                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+                <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
               <svg class="logo-header__img logo-header__img--middle" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+                <use xlink:href="#logo-pink-white-tablet"></use>
               </svg>
               <svg class="logo-header__img logo-header__img--big" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+                <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
             </a>
           </div>
           <button class="page-header__trigger trigger">
             <svg class="trigger__burger trigger__burger--hidden" width="49.945" height="24.007">
-              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+              <use xlink:href="#icon-menu-burger"></use>
             </svg>
             <svg class="trigger__cross trigger__cross--active" width="23.867" height="23.867">
-              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+              <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
         </div>
@@ -70,7 +71,7 @@
             <li class="downloads__item">
               <a class="downloads__link-store downloads__link-store--apple" href="https://www.apple.com/ru/itunes/" target="_blank">
                 <svg class="downloads__image-apple" width="46.21" height="56.753">
-                  <use xlink:href="img/sprite.svg#logo-apple"></use>
+                  <use xlink:href="#logo-apple"></use>
                 </svg>
                 <span class="visually-hidden">Логотип Apple</span>
               </a>
@@ -78,15 +79,15 @@
             <li class="downloads__item">
               <a class="downloads__link-store downloads__link-store--android" href="https://play.google.com/store" target="_blank">
                 <svg class="downloads__image-android" width="42.084" height="47.041">
-                  <use xlink:href="img/sprite.svg#logo-android"></use>
+                  <use xlink:href="#logo-android"></use>
                 </svg>
                 <span class="visually-hidden">Логотип Android</span>
               </a>
             </li>
             <li class="downloads__item">
-              <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" >
+              <a class="downloads__link-store downloads__link-store--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank">
                 <svg class="downloads__image-microsoft" width="43.922" height="41.992">
-                  <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+                  <use xlink:href="#logo-microsoft"></use>
                 </svg>
                 <span class="visually-hidden">Логотип Microsoft</span>
               </a>
@@ -126,7 +127,7 @@
         <section class="action">
           <div class="action__image-wrapper">
             <svg class="action__image">
-              <use xlink:href="img/sprite.svg#icon-timer"></use>
+              <use xlink:href="#icon-timer"></use>
             </svg>
           </div>
           <div class="action__wrapper">
@@ -142,7 +143,7 @@
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <button class="comments__btn-prev">
             <svg class="comments__arrow">
-              <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+              <use xlink:href="#icon-review-arrow-left"></use>
             </svg>
           </button>
           <ul class="comments__list">
@@ -154,7 +155,7 @@
           </ul>
           <button class="comments__btn-next">
             <svg class="comments__arrow">
-              <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+              <use xlink:href="#icon-review-arrow-right"></use>
             </svg>
           </button>
           <p class="comments__toggles slider-toggles">
@@ -283,7 +284,7 @@
           </li>
           <li class="contacts__item">
             <span class="contacts__title">Пишите:</span>
-            <a class="contacts__info contacts__info--link"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__info contacts__info--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <span class="contacts__title">Приезжайте в гости:</span>
@@ -300,10 +301,10 @@
         <div class="footer__item logo-footer">
           <a class="logo-footer__link" tabindex="0">
             <svg class="logo-footer__img logo-footer__img--simple" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+              <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
             <svg class="logo-footer__img logo-footer__img--star" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+              <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>
@@ -311,19 +312,19 @@
           <a class="social__icon social__icon--twitter" href="#" target="-blank">
             <span class="visually-hidden">Мы в twitter</span>
             <svg class="social__image social__image--twitter" width="17.5" height="14.7">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
           <a class="social__icon social__icon--facebook" href="#" target="-blank">
             <span class="visually-hidden">Мы в facebook</span>
             <svg class="social__image social__image--facebook" width="8.7" height="18.9">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
           <a class="social__icon social__icon--youtube" href="#" target="-blank">
             <span class="visually-hidden">Мы в youtube</span>
             <svg class="social__image social__image--youtube" width="14.6" height="14">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </div>
@@ -332,7 +333,7 @@
             <p class="copyright__comment">Разработано</p>
             <span class="visually-hidden">html academy</span>
             <svg class="copyright__image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </div>
